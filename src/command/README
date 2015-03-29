@@ -1,0 +1,24 @@
+CMD Bridge
+
+cmd_invoice_ops.c 
+    开票操作父菜单function集
+
+cmd_comm_manage.c
+    商品管理父菜单function集 
+
+cmd_invoice_manage.c
+    发票管理父菜单function集
+
+cmd_fiscal_manage.c
+    税控管理父菜单function集
+
+cmd_system_manage.c
+    系统管理父菜单function集
+
+cmd_other_ops.c 
+    其他父菜单function集
+
+
+父菜单下子菜单以文件中函数的形式实现，具体请酌情添加function base函数
+
+另外，check_user_level等函数需要UI实现，底层不知道当前用户的level

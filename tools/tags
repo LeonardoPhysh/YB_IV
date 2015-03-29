@@ -1,0 +1,164 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A_E_table	keyboard_tst.c	/^uint A_E_table[5] = {'A', 'B', 'C', 'D', 'E'};$/;"	v
+F_J_table	keyboard_tst.c	/^uint F_J_table[5] = {'F', 'G', 'H', 'I', 'J'};$/;"	v
+IME_STATUS	keyboard_tst.c	/^static volatile int IME_STATUS = INPUT_LOW_CASE;$/;"	v	file:
+K_J_table	keyboard_tst.c	/^uint K_J_table[5] = {'K', 'L', 'M', 'N', 'O'};$/;"	v
+PORT_0	card_tst.c	30;"	d	file:
+PORT_0	keyboard_tst.c	28;"	d	file:
+PORT_0	old_card_tst.c	1800;"	d	file:
+PORT_1	card_tst.c	31;"	d	file:
+PORT_1	keyboard_tst.c	29;"	d	file:
+PORT_1	old_card_tst.c	1801;"	d	file:
+PORT_2	card_tst.c	32;"	d	file:
+PORT_2	keyboard_tst.c	30;"	d	file:
+PORT_2	old_card_tst.c	1802;"	d	file:
+PORT_3	card_tst.c	33;"	d	file:
+PORT_3	keyboard_tst.c	31;"	d	file:
+PORT_3	old_card_tst.c	1803;"	d	file:
+P_T_table	keyboard_tst.c	/^uint P_T_table[5] = {'P', 'Q', 'R', 'S', 'T'};$/;"	v
+UP_key_map	keyboard_tst.c	/^uint * UP_key_map[] = {$/;"	v
+U_Y_table	keyboard_tst.c	/^uint U_Y_table[5] = {'U', 'V', 'W', 'X', 'Y'};$/;"	v
+Z_SP_table	keyboard_tst.c	/^uint Z_SP_table[5] = {BACK, ESC, SHIFT, ' ', 'Z'};$/;"	v
+a_e_table	keyboard_tst.c	/^uint a_e_table[5] = {'a', 'b', 'c', 'd', 'e'};$/;"	v
+card_daily_collect_sign	card_tst.c	/^static int card_daily_collect_sign(struct daily_collect * info, struct daily_collect_res * res)$/;"	f	file:	signature:(struct daily_collect * info, struct daily_collect_res * res)
+card_daily_collect_sign	old_card_tst.c	/^static int card_daily_collect_sign(struct daily_collect * info, struct daily_collect_res * res)$/;"	f	file:	signature:(struct daily_collect * info, struct daily_collect_res * res)
+card_data_collect	card_tst.c	/^static int card_data_collect(struct data_collect * info)$/;"	f	file:	signature:(struct data_collect * info)
+card_data_collect	old_card_tst.c	/^static int card_data_collect(struct data_collect * info)$/;"	f	file:	signature:(struct data_collect * info)
+card_data_collect_sign	card_tst.c	/^static int card_data_collect_sign(struct data_collect * info, struct daily_collect_res * res)$/;"	f	file:	signature:(struct data_collect * info, struct daily_collect_res * res)
+card_data_collect_sign	old_card_tst.c	/^static int card_data_collect_sign(struct data_collect * info, struct daily_collect_res * res)$/;"	f	file:	signature:(struct data_collect * info, struct daily_collect_res * res)
+card_debug	card_tst.c	/^static int card_debug(uchar * buf, int buf_size)$/;"	f	file:	signature:(uchar * buf, int buf_size)
+card_debug	old_card_tst.c	/^static int card_debug(uchar * buf, int buf_size)$/;"	f	file:	signature:(uchar * buf, int buf_size)
+card_declare_duty	card_tst.c	/^static int card_declare_duty(struct declare_duty * info, struct declare_res * res)$/;"	f	file:	signature:(struct declare_duty * info, struct declare_res * res)
+card_declare_duty	old_card_tst.c	/^static int card_declare_duty(struct declare_duty * info, struct declare_res * res)$/;"	f	file:	signature:(struct declare_duty * info, struct declare_res * res)
+card_dev	card_tst.c	/^static int card_dev = 0;$/;"	v	file:
+card_dev	old_card_tst.c	/^static int card_dev = 0;$/;"	v	file:
+card_device_init	card_tst.c	/^int card_device_init(void)$/;"	f	signature:(void)
+card_device_init	old_card_tst.c	/^int card_device_init(void)$/;"	f	signature:(void)
+card_device_stop	card_tst.c	/^int card_device_stop(void)$/;"	f	signature:(void)
+card_device_stop	old_card_tst.c	/^int card_device_stop(void)$/;"	f	signature:(void)
+card_distribute_invoice_nb	card_tst.c	/^static int card_distribute_invoice_nb(struct invoice_roll_info * info)$/;"	f	file:	signature:(struct invoice_roll_info * info)
+card_distribute_invoice_nb	old_card_tst.c	/^static int card_distribute_invoice_nb(struct invoice_roll_info * info)$/;"	f	file:	signature:(struct invoice_roll_info * info)
+card_echoplex_controls	card_tst.c	/^static int card_echoplex_controls()$/;"	f	file:
+card_echoplex_controls	old_card_tst.c	/^static int card_echoplex_controls()$/;"	f	file:
+card_external_authentication	card_tst.c	/^static int card_external_authentication(int CARD, uchar key_id, uchar *serect)$/;"	f	file:	signature:(int CARD, uchar key_id, uchar *serect)
+card_external_authentication	old_card_tst.c	/^static int card_external_authentication(int CARD, uchar key_id, uchar *serect)$/;"	f	file:	signature:(int CARD, uchar key_id, uchar *serect)
+card_get_challenge	card_tst.c	/^static int card_get_challenge(int CARD, uchar size, uchar *randon)$/;"	f	file:	signature:(int CARD, uchar size, uchar *randon)
+card_get_challenge	old_card_tst.c	/^static int card_get_challenge(int CARD, uchar size, uchar *randon)$/;"	f	file:	signature:(int CARD, uchar size, uchar *randon)
+card_get_register_nb	card_tst.c	/^static int card_get_register_nb(struct register_info * info)$/;"	f	file:	signature:(struct register_info * info)
+card_get_register_nb	old_card_tst.c	/^static int card_get_register_nb(struct register_info * info)$/;"	f	file:	signature:(struct register_info * info)
+card_get_res	card_tst.c	/^static int card_get_res(struct card_res_buf * res_buf)$/;"	f	file:	signature:(struct card_res_buf * res_buf)
+card_get_res	old_card_tst.c	/^static int card_get_res(struct card_res_buf * res_buf)$/;"	f	file:	signature:(struct card_res_buf * res_buf)
+card_input_invoice_nb	card_tst.c	/^static int card_input_invoice_nb(struct invoice_roll_info * info)$/;"	f	file:	signature:(struct invoice_roll_info * info)
+card_input_invoice_nb	old_card_tst.c	/^static int card_input_invoice_nb(struct invoice_roll_info * info)$/;"	f	file:	signature:(struct invoice_roll_info * info)
+card_issue_invoice	card_tst.c	/^static int card_issue_invoice(struct issue_invoice *info, struct issue_invoice_res * res)$/;"	f	file:	signature:(struct issue_invoice *info, struct issue_invoice_res * res)
+card_issue_invoice	old_card_tst.c	/^static int card_issue_invoice(struct issue_invoice *info, struct issue_invoice_res * res)$/;"	f	file:	signature:(struct issue_invoice *info, struct issue_invoice_res * res)
+card_power_off	card_tst.c	/^static int card_power_off(int CARD)$/;"	f	file:	signature:(int CARD)
+card_power_off	old_card_tst.c	/^static int card_power_off(int CARD)$/;"	f	file:	signature:(int CARD)
+card_power_on	card_tst.c	/^static int card_power_on(int CARD)$/;"	f	file:	signature:(int CARD)
+card_power_on	old_card_tst.c	/^static int card_power_on(int CARD)$/;"	f	file:	signature:(int CARD)
+card_power_rst	card_tst.c	/^static int card_power_rst(int CARD)$/;"	f	file:	signature:(int CARD)
+card_power_rst	old_card_tst.c	/^static int card_power_rst(int CARD)$/;"	f	file:	signature:(int CARD)
+card_read_binary	card_tst.c	/^static int card_read_binary(int CARD, int offset, int size, uchar *res)$/;"	f	file:	signature:(int CARD, int offset, int size, uchar *res)
+card_read_binary	old_card_tst.c	/^static int card_read_binary(int CARD, int offset, int size, uchar *res)$/;"	f	file:	signature:(int CARD, int offset, int size, uchar *res)
+card_read_record	card_tst.c	/^static int card_read_record(int CARD, uchar record_nb, int size, uchar *res)$/;"	f	file:	signature:(int CARD, uchar record_nb, int size, uchar *res)
+card_read_record	old_card_tst.c	/^static int card_read_record(int CARD, uchar record_nb, int size, uchar *res)$/;"	f	file:	signature:(int CARD, uchar record_nb, int size, uchar *res)
+card_reget_res	card_tst.c	/^static int card_reget_res(struct card_res_buf * res_buf)$/;"	f	file:	signature:(struct card_res_buf * res_buf)
+card_register_sign	card_tst.c	/^static int card_register_sign(struct register_info * info)$/;"	f	file:	signature:(struct register_info * info)
+card_register_sign	old_card_tst.c	/^static int card_register_sign(struct register_info * info)$/;"	f	file:	signature:(struct register_info * info)
+card_select_file_by_df	card_tst.c	/^static int card_select_file_by_df(int CARD, const char *file_name)$/;"	f	file:	signature:(int CARD, const char *file_name)
+card_select_file_by_df	old_card_tst.c	/^static int card_select_file_by_df(int CARD, const char *file_name)$/;"	f	file:	signature:(int CARD, const char *file_name)
+card_select_file_by_id	card_tst.c	/^static int card_select_file_by_id(int CARD, int file_id)$/;"	f	file:	signature:(int CARD, int file_id)
+card_select_file_by_id	old_card_tst.c	/^static int card_select_file_by_id(int CARD, int file_id)$/;"	f	file:	signature:(int CARD, int file_id)
+card_send_cmd	card_tst.c	/^static int card_send_cmd(struct card_send_buf *send_buf)$/;"	f	file:	signature:(struct card_send_buf *send_buf)
+card_send_cmd	old_card_tst.c	/^static int card_send_cmd(struct card_send_buf *send_buf)$/;"	f	file:	signature:(struct card_send_buf *send_buf)
+card_terminal_register	card_tst.c	/^static int card_terminal_register(struct register_info * info)$/;"	f	file:	signature:(struct register_info * info)
+card_terminal_register	old_card_tst.c	/^static int card_terminal_register(struct register_info * info)$/;"	f	file:	signature:(struct register_info * info)
+card_uart_setup	uart.c	/^int card_uart_setup(int fd) $/;"	f	signature:(int fd)
+card_update_binary	card_tst.c	/^static int card_update_binary(int CARD, int offset, int size, uchar *res)$/;"	f	file:	signature:(int CARD, int offset, int size, uchar *res)
+card_update_binary	old_card_tst.c	/^static int card_update_binary(int CARD, int offset, int size, uchar *res)$/;"	f	file:	signature:(int CARD, int offset, int size, uchar *res)
+card_update_controls	card_tst.c	/^static int card_update_controls(struct update_ctl_info * info)$/;"	f	file:	signature:(struct update_ctl_info * info)
+card_update_controls	old_card_tst.c	/^static int card_update_controls(struct update_ctl_info * info)$/;"	f	file:	signature:(struct update_ctl_info * info)
+card_update_record	card_tst.c	/^static int card_update_record(int CARD, uchar record_nb, int size, uchar *res)$/;"	f	file:	signature:(int CARD, uchar record_nb, int size, uchar *res)
+card_update_record	old_card_tst.c	/^static int card_update_record(int CARD, uchar record_nb, int size, uchar *res)$/;"	f	file:	signature:(int CARD, uchar record_nb, int size, uchar *res)
+card_verify_fiscal_pin	card_tst.c	/^static int card_verify_fiscal_pin(uchar *old_pin, uchar * new_pin)$/;"	f	file:	signature:(uchar *old_pin, uchar * new_pin)
+card_verify_fiscal_pin	old_card_tst.c	/^static int card_verify_fiscal_pin(uchar *old_pin, uchar * new_pin)$/;"	f	file:	signature:(uchar *old_pin, uchar * new_pin)
+check_res_data	card_tst.c	/^static int check_res_data(struct card_res_buf *res_buf)$/;"	f	file:	signature:(struct card_res_buf *res_buf)
+check_res_data	old_card_tst.c	/^static int check_res_data(struct card_res_buf *res_buf)$/;"	f	file:	signature:(struct card_res_buf *res_buf)
+clear_cache	keyboard_tst.c	/^int clear_cache(void)$/;"	f	signature:(void)
+decode_key	keyboard_tst.c	/^uint decode_key(int ch)$/;"	f	signature:(int ch)
+err_num	card_tst.c	/^int err_num = 0;$/;"	v
+err_num	old_card_tst.c	/^int err_num = 0;$/;"	v
+f_j_table	keyboard_tst.c	/^uint f_j_table[5] = {'f', 'g', 'h', 'i', 'j'};$/;"	v
+fill_chksum	card_tst.c	/^static int fill_chksum(struct card_send_buf *send_buf)$/;"	f	file:	signature:(struct card_send_buf *send_buf)
+fill_chksum	old_card_tst.c	/^static int fill_chksum(struct card_send_buf *send_buf)$/;"	f	file:	signature:(struct card_send_buf *send_buf)
+fiscal_card_base	card_tst.c	/^static struct fiscal_card fiscal_card_base = {$/;"	v	typeref:struct:fiscal_card	file:
+fiscal_card_base	old_card_tst.c	/^static struct fiscal_card fiscal_card_base = {$/;"	v	typeref:struct:fiscal_card	file:
+flush_uart	uart.c	/^int flush_uart(int fd)$/;"	f	signature:(int fd)
+func_1_table	keyboard_tst.c	/^uint func_1_table[5] = {'\\0', '\\0', '\\0', PAPER_IN, PAPER_OUT};$/;"	v
+func_2_table	keyboard_tst.c	/^uint func_2_table[5] = {RIGHT, LEFT, '\\0', '\\0', '\\0'};$/;"	v
+func_3_table	keyboard_tst.c	/^uint func_3_table[5] = {DOWN, UP, '\\0', '\\0', '\\0'};$/;"	v
+func_4_table	keyboard_tst.c	/^uint func_4_table[5] = {BACK, ESC, SHIFT, HANG, VIEW};$/;"	v
+func_5_table	keyboard_tst.c	/^uint func_5_table[5] = {TOTAL, '\\0', '\\0', '\\0', '\\0'};$/;"	v
+func_6_table	keyboard_tst.c	/^uint func_6_table[5] = {ENTER, '\\0', '\\0', '\\0', '\\0'};$/;"	v
+func_key_map	keyboard_tst.c	/^uint * func_key_map[] = {$/;"	v
+g_key_code	keyboard_tst.c	/^static struct key_code g_key_code = {$/;"	v	typeref:struct:key_code	file:
+g_port	card_tst.c	/^int g_port = 0;$/;"	v
+g_port	keyboard_tst.c	/^static int g_port = 0;$/;"	v	file:
+get_fiscal_card	card_tst.c	/^struct fiscal_card * get_fiscal_card(void)$/;"	f	signature:(void)
+get_fiscal_card	old_card_tst.c	/^struct fiscal_card * get_fiscal_card(void)$/;"	f	signature:(void)
+get_ime_status	keyboard_tst.c	/^int get_ime_status(void)$/;"	f	signature:(void)
+get_keycode	keyboard_tst.c	/^int get_keycode(void)$/;"	f	signature:(void)
+get_res_buf	card_tst.c	/^static struct card_res_buf * get_res_buf(void)$/;"	f	file:	signature:(void)
+get_res_buf	old_card_tst.c	/^static struct card_res_buf * get_res_buf(void)$/;"	f	file:	signature:(void)
+get_send_buf	card_tst.c	/^static struct card_send_buf *get_send_buf(void)$/;"	f	file:	signature:(void)
+get_send_buf	old_card_tst.c	/^static struct card_send_buf *get_send_buf(void)$/;"	f	file:	signature:(void)
+get_user_card	card_tst.c	/^struct user_card * get_user_card(void)$/;"	f	signature:(void)
+get_user_card	old_card_tst.c	/^struct user_card * get_user_card(void)$/;"	f	signature:(void)
+k_cache_lock	keyboard_tst.c	/^static pthread_mutex_t k_cache_lock;$/;"	v	file:
+k_j_table	keyboard_tst.c	/^uint k_j_table[5] = {'k', 'l', 'm', 'n', 'o'};$/;"	v
+kb_uart_setup	uart.c	/^int kb_uart_setup(int fd) $/;"	f	signature:(int fd)
+keyboard_init	keyboard_tst.c	/^pthread_t keyboard_init(void) $/;"	f	signature:(void)
+keyboard_stop	keyboard_tst.c	/^int keyboard_stop(void)$/;"	f	signature:(void)
+keyboard_thread	keyboard_tst.c	/^void * keyboard_thread(void *arg)$/;"	f	signature:(void *arg)
+low_key_map	keyboard_tst.c	/^uint * low_key_map[] = {$/;"	v
+main	card_tst.c	/^int main(void)$/;"	f	signature:(void)
+main	keyboard_tst.c	/^int main(void)$/;"	f	signature:(void)
+main	old_card_tst.c	/^int main(void)$/;"	f	signature:(void)
+name_arr	uart.c	/^static int name_arr[] = {38400,  19200,  9600,  4800,  2400,  1200,  300,$/;"	v	file:
+nul_table	keyboard_tst.c	/^uint nul_table[5] = {'\\0', '\\0', '\\0', '\\0', '\\0',};$/;"	v
+num_1_table	keyboard_tst.c	/^uint num_1_table[5] = {RIGHT, LEFT, '6', '5', '4'};$/;"	v
+num_2_table	keyboard_tst.c	/^uint num_2_table[5] = {DOWN, UP, '9', '8', '7'};$/;"	v
+num_3_table	keyboard_tst.c	/^uint num_3_table[5] = {'\\0', '\\0', '3', '2', '1'};$/;"	v
+num_4_table	keyboard_tst.c	/^uint num_4_table[5] = {'\\0', '\\0', '.', D_ZERO, '0'};$/;"	v
+open_uart	uart.c	/^int open_uart(char *dev, int flag)$/;"	f	signature:(char *dev, int flag)
+p_t_table	keyboard_tst.c	/^uint p_t_table[5] = {'p', 'q', 'r', 's', 't'};$/;"	v
+prepare_cmd	card_tst.c	/^static struct card_send_buf * prepare_cmd(int CARD, int CMD, int size, $/;"	f	file:	signature:(int CARD, int CMD, int size, struct apdu_cmd_send * cmd_buf)
+prepare_cmd	old_card_tst.c	/^static struct card_send_buf * prepare_cmd(int CARD, int CMD, int size, $/;"	f	file:	signature:(int CARD, int CMD, int size, struct apdu_cmd_send * cmd_buf)
+print_res_data	old_card_tst.c	/^static int print_res_data(struct card_res_buf * buf)$/;"	f	file:	signature:(struct card_res_buf * buf)
+read_uart	uart.c	/^int read_uart(int fd, uchar *buf, int size) $/;"	f	signature:(int fd, uchar *buf, int size)
+res_buf	card_tst.c	/^static struct card_res_buf * res_buf;$/;"	v	typeref:struct:card_res_buf	file:
+res_buf	old_card_tst.c	/^static struct card_res_buf * res_buf;$/;"	v	typeref:struct:card_res_buf	file:
+send_buf	card_tst.c	/^static struct card_send_buf *send_buf;$/;"	v	typeref:struct:card_send_buf	file:
+send_buf	old_card_tst.c	/^static struct card_send_buf *send_buf;$/;"	v	typeref:struct:card_send_buf	file:
+set_ime_status	keyboard_tst.c	/^int set_ime_status(int mode)$/;"	f	signature:(int mode)
+set_parity	uart.c	/^int set_parity(int fd, int databits, int stopbits, int parity)$/;"	f	signature:(int fd, int databits, int stopbits, int parity)
+set_speed	uart.c	/^int set_speed(int fd, int speed)$/;"	f	signature:(int fd, int speed)
+sign_1_table	keyboard_tst.c	/^uint sign_1_table[5] = {'.', '\/', '?', '=', '|'};$/;"	v
+sign_2_table	keyboard_tst.c	/^uint sign_2_table[5] = {'-', '+', '^', '%', '$'};$/;"	v
+sign_3_table	keyboard_tst.c	/^uint sign_3_table[5] = {']', '[', '(', '*', '&'};$/;"	v
+sign_4_table	keyboard_tst.c	/^uint sign_4_table[5] = {BACK, ESC, SHIFT, '\\0', '\\0'};$/;"	v
+sign_5_table	keyboard_tst.c	/^uint sign_5_table[5] = {'\\0', '\\0', '#', '@', '!'};$/;"	v
+sign_6_table	keyboard_tst.c	/^uint sign_6_table[5] = {'\\0', '\\0', '\\0', '\\\\', '('};$/;"	v
+sign_key_map	keyboard_tst.c	/^uint * sign_key_map[] = {$/;"	v
+speed_arr	uart.c	/^static int speed_arr[] = { B38400, B19200, B9600, B4800, B2400, B1200, B300,$/;"	v	file:
+tid	keyboard_tst.c	/^static pthread_t tid;$/;"	v	file:
+u_y_table	keyboard_tst.c	/^uint u_y_table[5] = {'u', 'v', 'w', 'x', 'y'};$/;"	v
+user_card_base	card_tst.c	/^static struct user_card user_card_base = {$/;"	v	typeref:struct:user_card	file:
+user_card_base	old_card_tst.c	/^static struct user_card user_card_base = {$/;"	v	typeref:struct:user_card	file:
+write_uart	uart.c	/^int write_uart(int fd, uchar *buf, int size) $/;"	f	signature:(int fd, uchar *buf, int size)
+z_sp_table	keyboard_tst.c	/^uint z_sp_table[5] = {BACK, ESC, SHIFT, ' ', 'z'};$/;"	v

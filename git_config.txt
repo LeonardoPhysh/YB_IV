@@ -1,0 +1,20 @@
+1全局設置:
+	git config --global user.name 'Your Name'
+	git config --global user.email 'Your E-mail'
+
+2接著:
+• 在本地建立新的 Git Repository
+	mkdir projpath
+	cd projpath
+	git init
+	touch README.md
+	git add README.md
+	git commit -m 'first commit'
+	git remote add origin 'git@gitcafe.com:yourname/yourproject.git'
+	git push -u origin master
+或
+• 在本地已有 Git Repository
+	cd existing_git_repo
+	git remote add origin 'git@gitcafe.com:yourname/yourproject.git'
+	git push -u origin master
+	

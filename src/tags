@@ -1,0 +1,1225 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A_E_table	input/keyboard.c	/^uint A_E_table[5] = {'A', 'B', 'C', 'D', 'E'};$/;"	v
+CHINESE_CHAR_SIZE	print/print-flat.h	56;"	d
+CHN_PAD_BLANK	input/input.c	477;"	d	file:
+CMD_CHECK_PAPER	print/print-flat.h	40;"	d
+CMD_ENTER_CHINESE	print/print-flat.h	38;"	d
+CMD_EXIT_CHINESE	print/print-flat.h	39;"	d
+CMD_NEXT_PAGE	print/print-flat.h	41;"	d
+CMD_PRINTER_INIT	print/print-flat.h	32;"	d
+CMD_SET_LEFT_MARGIN	print/print-flat.h	33;"	d
+CMD_SET_LINE_SPACE	print/print-flat.h	36;"	d
+CMD_SET_MOVE_UNIT	print/print-flat.h	37;"	d
+CMD_SET_RIGHT_MARGIN	print/print-flat.h	34;"	d
+CMD_SET_TOP_MARGIN	print/print-flat.h	35;"	d
+COMM_COUNT_POS	print/print-flat.h	48;"	d
+COMM_MONNEY_POS	print/print-flat.h	50;"	d
+COMM_UNIT_POS	print/print-flat.h	49;"	d
+CONTENT_SIZE	input/input.c	452;"	d	file:
+DEFAULT_BOT_PARA_B1	print/print-flat.h	27;"	d
+DEFAULT_BOT_PARA_B2	print/print-flat.h	28;"	d
+DEFAULT_LEFT_MARGIN	print/print-flat.h	22;"	d
+DEFAULT_MOVE_UNIT	print/print-flat.h	24;"	d
+DEFAULT_RIGHT_MARGIN	print/print-flat.h	23;"	d
+DEFAULT_TOP_PARA_T1	print/print-flat.h	25;"	d
+DEFAULT_TOP_PARA_T2	print/print-flat.h	26;"	d
+F_J_table	input/keyboard.c	/^uint F_J_table[5] = {'F', 'G', 'H', 'I', 'J'};$/;"	v
+IME_PAD_BLANK	input/input.c	476;"	d	file:
+IME_STATUS	input/keyboard.c	/^static volatile int IME_STATUS = INPUT_LOW_CASE;$/;"	v	file:
+INDEX_NUM_A	input/py_dict.h	15;"	d
+INDEX_NUM_B	input/py_dict.h	16;"	d
+INDEX_NUM_C	input/py_dict.h	17;"	d
+INDEX_NUM_D	input/py_dict.h	18;"	d
+INDEX_NUM_E	input/py_dict.h	19;"	d
+INDEX_NUM_F	input/py_dict.h	20;"	d
+INDEX_NUM_G	input/py_dict.h	21;"	d
+INDEX_NUM_H	input/py_dict.h	22;"	d
+INDEX_NUM_I	input/py_dict.h	23;"	d
+INDEX_NUM_J	input/py_dict.h	24;"	d
+INDEX_NUM_K	input/py_dict.h	25;"	d
+INDEX_NUM_L	input/py_dict.h	26;"	d
+INDEX_NUM_M	input/py_dict.h	27;"	d
+INDEX_NUM_N	input/py_dict.h	28;"	d
+INDEX_NUM_O	input/py_dict.h	29;"	d
+INDEX_NUM_P	input/py_dict.h	30;"	d
+INDEX_NUM_Q	input/py_dict.h	31;"	d
+INDEX_NUM_R	input/py_dict.h	32;"	d
+INDEX_NUM_S	input/py_dict.h	33;"	d
+INDEX_NUM_T	input/py_dict.h	34;"	d
+INDEX_NUM_U	input/py_dict.h	35;"	d
+INDEX_NUM_V	input/py_dict.h	36;"	d
+INDEX_NUM_W	input/py_dict.h	37;"	d
+INDEX_NUM_X	input/py_dict.h	38;"	d
+INDEX_NUM_Y	input/py_dict.h	39;"	d
+INDEX_NUM_Z	input/py_dict.h	40;"	d
+INV_DATE_POS	print/print-flat.h	44;"	d
+INV_NUM_POS	print/print-flat.h	46;"	d
+INV_TYPE_POS	print/print-flat.h	45;"	d
+K_J_table	input/keyboard.c	/^uint K_J_table[5] = {'K', 'L', 'M', 'N', 'O'};$/;"	v
+LCM_CLEAR_CMD	ui/lcm_api.h	11;"	d
+LCM_CURSOR_CMD	ui/lcm_api.h	12;"	d
+LCM_REVERSE_CMD	ui/lcm_api.h	13;"	d
+MAX_CHAR_PER_ITEM	print/print-flat.h	58;"	d
+MAX_COUNT_LENGHT	print/print-flat.h	63;"	d
+MAX_DATE_LENGTH	print/print-flat.h	61;"	d
+MAX_MONNEY_LENGHT	print/print-flat.h	62;"	d
+MAX_NUM_LENGTH	print/print-flat.h	60;"	d
+MAX_TITLE_LENGTH	print/print-flat.h	57;"	d
+MONEY_HOR_POS	print/print-flat.h	51;"	d
+MONEY_VER_POS	print/print-flat.h	52;"	d
+OFF	ui/lcm_api.h	16;"	d
+ON	ui/lcm_api.h	15;"	d
+PRINT_CMD	print/print-flat.h	31;"	d
+P_T_table	input/keyboard.c	/^uint P_T_table[5] = {'P', 'Q', 'R', 'S', 'T'};$/;"	v
+REG_NUM_POS	print/print-flat.h	53;"	d
+SAY_NO	ui/ui_api.c	/^int SAY_NO(void) {return NEGATIVE;}$/;"	f	signature:(void)
+SAY_YES	ui/ui_api.c	/^int SAY_YES(void) {return POSITIVE;}$/;"	f	signature:(void)
+TAX_NUM_POS	print/print-flat.h	47;"	d
+TCHAR	input/py_dict.h	/^typedef unsigned short TCHAR;$/;"	t
+TOTALPINYIN	input/py_dict.h	13;"	d
+TOTALWORDS	input/py_dict.h	12;"	d
+UP_key_map	input/keyboard.c	/^uint * UP_key_map[] = {$/;"	v
+U_Y_table	input/keyboard.c	/^uint U_Y_table[5] = {'U', 'V', 'W', 'X', 'Y'};$/;"	v
+Z_SP_table	input/keyboard.c	/^uint Z_SP_table[5] = {BACK, ESC, SHIFT, ' ', 'Z'};$/;"	v
+__LCM_API_H	ui/lcm_api.h	9;"	d
+__PRINT_FLAT_H__	print/print-flat.h	10;"	d
+__PY_DICT_H__	input/py_dict.h	10;"	d
+a_e_table	input/keyboard.c	/^uint a_e_table[5] = {'a', 'b', 'c', 'd', 'e'};$/;"	v
+add_bcd_date	misc/common.c	/^int add_bcd_date(struct bcd_date *date, uint days)$/;"	f	signature:(struct bcd_date *date, uint days)
+bcd_to_dec	misc/common.c	/^int bcd_to_dec(uchar *bcd_data, uint *dec_data)$/;"	f	signature:(uchar *bcd_data, uint *dec_data)
+bcd_to_greg	misc/common.c	/^int bcd_to_greg(struct bcd_date *date, uint *year, uint *mon, uint *day)$/;"	f	signature:(struct bcd_date *date, uint *year, uint *mon, uint *day)
+bcd_to_str	misc/common.c	/^int bcd_to_str(const uchar *bcd, char *str, int len)$/;"	f	signature:(const uchar *bcd, char *str, int len)
+buyer_info	print/print-flat.h	/^	struct print_buyer_info buyer_info;$/;"	m	struct:print_frame	typeref:struct:print_frame::print_buyer_info	access:public
+buyer_title	print/print-flat.h	/^    char buyer_title[MAX_TITLE_LENGTH + 1];$/;"	m	struct:print_buyer_info	access:public
+buyer_type	print/print-flat.h	/^    char buyer_type[MAX_CHAR_PER_ITEM + 1];$/;"	m	struct:print_buyer_info	access:public
+card_daily_collect_sign	fiscal/tax_card_base.c	/^static int card_daily_collect_sign(struct daily_collect * info, struct daily_collect_res * res)$/;"	f	file:	signature:(struct daily_collect * info, struct daily_collect_res * res)
+card_data_collect	fiscal/tax_card_base.c	/^static int card_data_collect(struct data_collect * info)$/;"	f	file:	signature:(struct data_collect * info)
+card_data_collect_sign	fiscal/tax_card_base.c	/^static int card_data_collect_sign(struct data_collect * info, struct daily_collect_res * res)$/;"	f	file:	signature:(struct data_collect * info, struct daily_collect_res * res)
+card_debug	fiscal/tax_card_base.c	/^static int card_debug(uchar * buf, int buf_size)$/;"	f	file:	signature:(uchar * buf, int buf_size)
+card_declare_duty	fiscal/tax_card_base.c	/^static int card_declare_duty(struct declare_duty * info, struct declare_res * res)$/;"	f	file:	signature:(struct declare_duty * info, struct declare_res * res)
+card_dev	fiscal/tax_card_base.c	/^static int card_dev = 0;$/;"	v	file:
+card_device_init	fiscal/tax_card_base.c	/^int card_device_init(void)$/;"	f	signature:(void)
+card_device_stop	fiscal/tax_card_base.c	/^int card_device_stop(void)$/;"	f	signature:(void)
+card_distribute_invoice_nb	fiscal/tax_card_base.c	/^static int card_distribute_invoice_nb(struct invoice_roll_info * info)$/;"	f	file:	signature:(struct invoice_roll_info * info)
+card_echoplex_controls	fiscal/tax_card_base.c	/^static int card_echoplex_controls()$/;"	f	file:
+card_external_authentication	fiscal/tax_card_base.c	/^static int card_external_authentication(int CARD, uchar key_id, uchar *serect)$/;"	f	file:	signature:(int CARD, uchar key_id, uchar *serect)
+card_get_challenge	fiscal/tax_card_base.c	/^static int card_get_challenge(int CARD, uchar size, uchar *randon)$/;"	f	file:	signature:(int CARD, uchar size, uchar *randon)
+card_get_register_nb	fiscal/tax_card_base.c	/^static int card_get_register_nb(struct register_info * info)$/;"	f	file:	signature:(struct register_info * info)
+card_get_res	fiscal/tax_card_base.c	/^static int card_get_res(struct card_res_buf * res_buf)$/;"	f	file:	signature:(struct card_res_buf * res_buf)
+card_input_invoice_nb	fiscal/tax_card_base.c	/^static int card_input_invoice_nb(struct invoice_roll_info * info)$/;"	f	file:	signature:(struct invoice_roll_info * info)
+card_internal_authentication	fiscal/tax_card_base.c	/^static int card_internal_authentication(int CARD, uchar key_id, uchar *serect, $/;"	f	file:	signature:(int CARD, uchar key_id, uchar *serect, uchar *res)
+card_issue_invoice	fiscal/tax_card_base.c	/^static int card_issue_invoice(struct issue_invoice *info, struct issue_invoice_res * res)$/;"	f	file:	signature:(struct issue_invoice *info, struct issue_invoice_res * res)
+card_power_off	fiscal/tax_card_base.c	/^static int card_power_off(int CARD)$/;"	f	file:	signature:(int CARD)
+card_power_on	fiscal/tax_card_base.c	/^static int card_power_on(int CARD)$/;"	f	file:	signature:(int CARD)
+card_power_rst	fiscal/tax_card_base.c	/^static int card_power_rst(int CARD)$/;"	f	file:	signature:(int CARD)
+card_read_binary	fiscal/tax_card_base.c	/^static int card_read_binary(int CARD, int offset, int size, uchar *res)$/;"	f	file:	signature:(int CARD, int offset, int size, uchar *res)
+card_read_record	fiscal/tax_card_base.c	/^static int card_read_record(int CARD, uchar record_nb, int size, uchar *res)$/;"	f	file:	signature:(int CARD, uchar record_nb, int size, uchar *res)
+card_reget_res	fiscal/tax_card_base.c	/^static int card_reget_res(struct card_res_buf * res_buf)$/;"	f	file:	signature:(struct card_res_buf * res_buf)
+card_register_sign	fiscal/tax_card_base.c	/^static int card_register_sign(struct register_info * info)$/;"	f	file:	signature:(struct register_info * info)
+card_select_file_by_df	fiscal/tax_card_base.c	/^static int card_select_file_by_df(int CARD, const char *file_name)$/;"	f	file:	signature:(int CARD, const char *file_name)
+card_select_file_by_id	fiscal/tax_card_base.c	/^static int card_select_file_by_id(int CARD, int file_id)$/;"	f	file:	signature:(int CARD, int file_id)
+card_send_cmd	fiscal/tax_card_base.c	/^static int card_send_cmd(struct card_send_buf *send_buf)$/;"	f	file:	signature:(struct card_send_buf *send_buf)
+card_terminal_register	fiscal/tax_card_base.c	/^static int card_terminal_register(struct register_info * info)$/;"	f	file:	signature:(struct register_info * info)
+card_uart_setup	misc/uart.c	/^int card_uart_setup(int fd) $/;"	f	signature:(int fd)
+card_update_binary	fiscal/tax_card_base.c	/^static int card_update_binary(int CARD, int offset, int size, uchar *res)$/;"	f	file:	signature:(int CARD, int offset, int size, uchar *res)
+card_update_controls	fiscal/tax_card_base.c	/^static int card_update_controls(struct update_ctl_info * info)$/;"	f	file:	signature:(struct update_ctl_info * info)
+card_update_record	fiscal/tax_card_base.c	/^static int card_update_record(int CARD, uchar record_nb, int size, uchar *data)$/;"	f	file:	signature:(int CARD, uchar record_nb, int size, uchar *data)
+card_verify_fiscal_pin	fiscal/tax_card_base.c	/^static int card_verify_fiscal_pin(uchar *old_pin, uchar * new_pin)$/;"	f	file:	signature:(uchar *old_pin, uchar * new_pin)
+card_verify_func	fiscal/tax_card_base.c	/^static int card_verify_func(int CARD, uchar pin_id, uchar pin_len, uchar *pin) $/;"	f	file:	signature:(int CARD, uchar pin_id, uchar pin_len, uchar *pin)
+check_card_authority_fc	fiscal/tax_system.c	/^static int check_card_authority_fc(uchar key_id)$/;"	f	file:	signature:(uchar key_id)
+check_card_base	fiscal/tax_card_base.c	/^static struct check_card check_card_base = {$/;"	v	typeref:struct:check_card	file:
+check_card_get_chk_rec_num	fiscal/tax_system.c	/^static int check_card_get_chk_rec_num(uchar *num)$/;"	f	file:	signature:(uchar *num)
+check_card_get_ctl_data	fiscal/tax_system.c	/^static int check_card_get_ctl_data(uchar *ctl_data)$/;"	f	file:	signature:(uchar *ctl_data)
+check_card_get_date_code	fiscal/tax_system.c	/^static int check_card_get_date_code(struct bcd_date *valid_date, uchar *auth_code)$/;"	f	file:	signature:(struct bcd_date *valid_date, uchar *auth_code)
+check_card_get_total_rec_num	fiscal/tax_system.c	/^static int check_card_get_total_rec_num(uchar *num)$/;"	f	file:	signature:(uchar *num)
+check_card_power_on	fiscal/tax_system.c	/^static int check_card_power_on(void)$/;"	f	file:	signature:(void)
+check_card_read_chk_rec	fiscal/tax_system.c	/^static int check_card_read_chk_rec(uchar rec_num, uchar *rbuf)$/;"	f	file:	signature:(uchar rec_num, uchar *rbuf)
+check_card_verify	fiscal/tax_system.c	/^static int check_card_verify(uchar pin_id, uchar pin_len, uchar *pin)$/;"	f	file:	signature:(uchar pin_id, uchar pin_len, uchar *pin)
+check_card_write_chk_rec	fiscal/tax_system.c	/^static int check_card_write_chk_rec(uchar rec_num, uchar *sbuf)$/;"	f	file:	signature:(uchar rec_num, uchar *sbuf)
+check_logout	ui/ui_api.c	/^int check_logout(void)$/;"	f	signature:(void)
+check_res_data	fiscal/tax_card_base.c	/^static int check_res_data(uchar *buf, int size)$/;"	f	file:	signature:(uchar *buf, int size)
+check_shutdown	ui/ui_api.c	/^int check_shutdown(void)$/;"	f	signature:(void)
+check_userlevel	ui/ui_api.c	/^int check_userlevel(int level) $/;"	f	signature:(int level)
+chinese_fee	misc/common.c	/^void chinese_fee(float fee, char * desc)$/;"	f	signature:(float fee, char * desc)
+clear_cache	input/keyboard.c	/^int clear_cache(void)$/;"	f	signature:(void)
+clear_screen	ui/ui_api.c	/^int clear_screen(void)$/;"	f	signature:(void)
+cmd_add_dpt	command/cmd_comm_manage.c	/^int cmd_add_dpt(void)$/;"	f	signature:(void)
+cmd_add_plu	command/cmd_comm_manage.c	/^int cmd_add_plu(void)$/;"	f	signature:(void)
+cmd_add_user	command/cmd_system_manage.c	/^int cmd_add_user(void)$/;"	f	signature:(void)
+cmd_declare_preview	command/cmd_fiscal_manage.c	/^int cmd_declare_preview(void)$/;"	f	signature:(void)
+cmd_del_dpt	command/cmd_comm_manage.c	/^int cmd_del_dpt(void)$/;"	f	signature:(void)
+cmd_del_plu_by_barcode	command/cmd_comm_manage.c	/^int cmd_del_plu_by_barcode(void)$/;"	f	signature:(void)
+cmd_del_plu_by_name	command/cmd_comm_manage.c	/^int cmd_del_plu_by_name(void)$/;"	f	signature:(void)
+cmd_del_plu_by_num	command/cmd_comm_manage.c	/^int cmd_del_plu_by_num(void)$/;"	f	signature:(void)
+cmd_del_user	command/cmd_system_manage.c	/^int cmd_del_user(void)$/;"	f	signature:(void)
+cmd_demo_dist_roll	command/cmd_other_ops.c	/^int cmd_demo_dist_roll(void)$/;"	f	signature:(void)
+cmd_demo_fiscal_init	command/cmd_other_ops.c	/^int cmd_demo_fiscal_init(void)$/;"	f	signature:(void)
+cmd_demo_issue_inv	command/cmd_other_ops.c	/^int cmd_demo_issue_inv(void)$/;"	f	signature:(void)
+cmd_demo_mount_roll	command/cmd_other_ops.c	/^int cmd_demo_mount_roll(void)$/;"	f	signature:(void)
+cmd_demo_return_inv	command/cmd_other_ops.c	/^int cmd_demo_return_inv(void)$/;"	f	signature:(void)
+cmd_demo_spoil_inv	command/cmd_other_ops.c	/^int cmd_demo_spoil_inv(void)$/;"	f	signature:(void)
+cmd_demo_view_cur_roll	command/cmd_other_ops.c	/^int cmd_demo_view_cur_roll(void)$/;"	f	signature:(void)
+cmd_demo_view_inv	command/cmd_other_ops.c	/^int cmd_demo_view_inv(void)$/;"	f	signature:(void)
+cmd_demo_view_inv_roll	command/cmd_other_ops.c	/^int cmd_demo_view_inv_roll(void)$/;"	f	signature:(void)
+cmd_develop_sys	command/cmd_other_ops.c	/^int cmd_develop_sys(void)$/;"	f	signature:(void)
+cmd_dist_inv	command/cmd_invoice_manage.c	/^int cmd_dist_inv(void)$/;"	f	signature:(void)
+cmd_fiscal_init	command/cmd_fiscal_manage.c	/^int cmd_fiscal_init(void)$/;"	f	signature:(void)
+cmd_inspect_by_uart	command/cmd_fiscal_manage.c	/^int cmd_inspect_by_uart(void)$/;"	f	signature:(void)
+cmd_inspect_daily_collect	command/cmd_fiscal_manage.c	/^int cmd_inspect_daily_collect(void)$/;"	f	signature:(void)
+cmd_inspect_declare_data	command/cmd_fiscal_manage.c	/^int cmd_inspect_declare_data(void)$/;"	f	signature:(void)
+cmd_inspect_inv_by_date	command/cmd_fiscal_manage.c	/^int cmd_inspect_inv_by_date(void)$/;"	f	signature:(void)
+cmd_inspect_inv_by_nb	command/cmd_fiscal_manage.c	/^int cmd_inspect_inv_by_nb(void)$/;"	f	signature:(void)
+cmd_mach_transfer	command/cmd_fiscal_manage.c	/^int cmd_mach_transfer(void)$/;"	f	signature:(void)
+cmd_man_issue_inv	command/cmd_invoice_ops.c	/^int cmd_man_issue_inv(void)$/;"	f	signature:(void)
+cmd_modify_dpt	command/cmd_comm_manage.c	/^int cmd_modify_dpt(void)$/;"	f	signature:(void)
+cmd_modify_plu_by_barcode	command/cmd_comm_manage.c	/^int cmd_modify_plu_by_barcode(void)$/;"	f	signature:(void)
+cmd_modify_plu_by_name	command/cmd_comm_manage.c	/^int cmd_modify_plu_by_name(void)$/;"	f	signature:(void)
+cmd_modify_plu_by_num	command/cmd_comm_manage.c	/^int cmd_modify_plu_by_num(void)$/;"	f	signature:(void)
+cmd_modify_user	command/cmd_system_manage.c	/^int cmd_modify_user(void)$/;"	f	signature:(void)
+cmd_month_declare_duty	command/cmd_fiscal_manage.c	/^int cmd_month_declare_duty(void)$/;"	f	signature:(void)
+cmd_mount_roll	command/cmd_invoice_manage.c	/^int cmd_mount_roll(void)$/;"	f	signature:(void)
+cmd_normal_declare_duty	command/cmd_fiscal_manage.c	/^int cmd_normal_declare_duty(void)$/;"	f	signature:(void)
+cmd_print_setup	command/cmd_other_ops.c	/^int cmd_print_setup(void)$/;"	f	signature:(void)
+cmd_resume_transact	command/cmd_invoice_ops.c	/^int cmd_resume_transact(void)$/;"	f	signature:(void)
+cmd_return_inv	command/cmd_invoice_ops.c	/^int cmd_return_inv(void)$/;"	f	signature:(void)
+cmd_set_date_time	command/cmd_fiscal_manage.c	/^int cmd_set_date_time(void)$/;"	f	signature:(void)
+cmd_spoil_area_inv	command/cmd_invoice_ops.c	/^int cmd_spoil_area_inv(void)$/;"	f	signature:(void)
+cmd_spoil_cur_inv	command/cmd_invoice_ops.c	/^int cmd_spoil_cur_inv(void)$/;"	f	signature:(void)
+cmd_spoil_left_inv	command/cmd_invoice_ops.c	/^int cmd_spoil_left_inv(void)$/;"	f	signature:(void)
+cmd_stock_manage	command/cmd_comm_manage.c	/^int cmd_stock_manage(void)$/;"	f	signature:(void)
+cmd_sw_update_by_network	command/cmd_system_manage.c	/^int cmd_sw_update_by_network(void)$/;"	f	signature:(void)
+cmd_sw_update_by_uart	command/cmd_system_manage.c	/^int cmd_sw_update_by_uart(void)$/;"	f	signature:(void)
+cmd_sw_update_by_usb	command/cmd_system_manage.c	/^int cmd_sw_update_by_usb(void)$/;"	f	signature:(void)
+cmd_sw_update_set_keycode	command/cmd_system_manage.c	/^int cmd_sw_update_set_keycode(void)$/;"	f	signature:(void)
+cmd_system_logout	command/cmd_other_ops.c	/^int cmd_system_logout(void)$/;"	f	signature:(void)
+cmd_system_restart	command/cmd_other_ops.c	/^int cmd_system_restart(void)$/;"	f	signature:(void)
+cmd_system_setup	command/cmd_system_manage.c	/^int cmd_system_setup(void)$/;"	f	signature:(void)
+cmd_transact_by_barcode	command/cmd_invoice_ops.c	/^int cmd_transact_by_barcode(void)$/;"	f	signature:(void)
+cmd_transact_by_num	command/cmd_invoice_ops.c	/^int cmd_transact_by_num(void)$/;"	f	signature:(void)
+cmd_update_control	command/cmd_fiscal_manage.c	/^int cmd_update_control(void)$/;"	f	signature:(void)
+cmd_update_taxpayer	command/cmd_fiscal_manage.c	/^int cmd_update_taxpayer(void)$/;"	f	signature:(void)
+cmd_view_buyed_inv_info	command/cmd_invoice_manage.c	/^int cmd_view_buyed_inv_info(void)$/;"	f	signature:(void)
+cmd_view_cur_roll	command/cmd_invoice_manage.c	/^int cmd_view_cur_roll(void)$/;"	f	signature:(void)
+cmd_view_daily_collect	command/cmd_other_ops.c	/^int cmd_view_daily_collect(void)$/;"	f	signature:(void)
+cmd_view_date_time	command/cmd_system_manage.c	/^int cmd_view_date_time(void)$/;"	f	signature:(void)
+cmd_view_declare_data	command/cmd_other_ops.c	/^int cmd_view_declare_data(void)$/;"	f	signature:(void)
+cmd_view_declare_info	command/cmd_system_manage.c	/^int cmd_view_declare_info(void)$/;"	f	signature:(void)
+cmd_view_disted_roll	command/cmd_invoice_manage.c	/^int cmd_view_disted_roll(void)$/;"	f	signature:(void)
+cmd_view_dpt	command/cmd_comm_manage.c	/^int cmd_view_dpt(void)$/;"	f	signature:(void)
+cmd_view_inv_roll	command/cmd_other_ops.c	/^int cmd_view_inv_roll(void)$/;"	f	signature:(void)
+cmd_view_issue_info	command/cmd_system_manage.c	/^int cmd_view_issue_info(void)$/;"	f	signature:(void)
+cmd_view_mach_info	command/cmd_system_manage.c	/^int cmd_view_mach_info(void)$/;"	f	signature:(void)
+cmd_view_ower_info	command/cmd_system_manage.c	/^int cmd_view_ower_info(void)$/;"	f	signature:(void)
+cmd_view_period_collect	command/cmd_other_ops.c	/^int cmd_view_period_collect(void)$/;"	f	signature:(void)
+cmd_view_plu_by_barcode	command/cmd_comm_manage.c	/^int cmd_view_plu_by_barcode(void)$/;"	f	signature:(void)
+cmd_view_plu_by_name	command/cmd_comm_manage.c	/^int cmd_view_plu_by_name(void)$/;"	f	signature:(void)
+cmd_view_plu_by_num	command/cmd_comm_manage.c	/^int cmd_view_plu_by_num(void)$/;"	f	signature:(void)
+cmd_view_print_info	command/cmd_system_manage.c	/^int cmd_view_print_info(void)$/;"	f	signature:(void)
+cmd_view_safe_log	command/cmd_other_ops.c	/^int cmd_view_safe_log(void)$/;"	f	signature:(void)
+cmd_view_single_inv	command/cmd_other_ops.c	/^int cmd_view_single_inv(void)$/;"	f	signature:(void)
+cmd_view_taxrate_info	command/cmd_system_manage.c	/^int cmd_view_taxrate_info(void)$/;"	f	signature:(void)
+cmd_view_user	command/cmd_system_manage.c	/^int cmd_view_user(void)$/;"	f	signature:(void)
+col	ui/lcm_api.h	/^    int col;$/;"	m	struct:lcm_data	access:public
+comm_items	print/print-flat.h	/^	struct print_comm_item comm_items[10];$/;"	m	struct:print_frame	typeref:struct:print_frame::print_comm_item	access:public
+comm_num	print/print-flat.h	/^    int comm_num;$/;"	m	struct:print_frame	access:public
+comm_title	print/print-flat.h	/^	struct print_comm_tile  comm_title;$/;"	m	struct:print_frame	typeref:struct:print_frame::print_comm_tile	access:public
+count	print/print-flat.h	/^    char count[MAX_TITLE_LENGTH + 1];$/;"	m	struct:print_comm_tile	access:public
+crc16_chk	misc/common.c	/^ushort crc16_chk(uchar *buf, uint size)$/;"	f	signature:(uchar *buf, uint size)
+crc32_chk	misc/common.c	/^uint crc32_chk(uchar *buf, uint size)$/;"	f	signature:(uchar *buf, uint size)
+creat_crc16_table	misc/common.c	/^static void creat_crc16_table(ushort *crc16_table)$/;"	f	file:	signature:(ushort *crc16_table)
+creat_crc32_table	misc/common.c	/^static void creat_crc32_table(uint *crc32_table)$/;"	f	file:	signature:(uint *crc32_table)
+create_data	ui/lcm_api.c	/^int create_data(int row, int col, int size, char *str, struct lcm_data *datap)$/;"	f	signature:(int row, int col, int size, char *str, struct lcm_data *datap)
+date	print/print-flat.h	/^    char date[MAX_DATE_LENGTH + 1];$/;"	m	struct:print_title	access:public
+deadline	misc/real_time.c	/^struct bcd_date deadline  = {$/;"	v	typeref:struct:bcd_date
+debug_msg	misc/common.c	/^int debug_msg(const char *format, ...)$/;"	f	signature:(const char *format, ...)
+dec_to_bcd	misc/common.c	/^int dec_to_bcd(uint *dec_data, uchar *bcd_data)$/;"	f	signature:(uint *dec_data, uchar *bcd_data)
+decode_key	input/keyboard.c	/^uint decode_key(int ch)$/;"	f	signature:(int ch)
+display_err_msg	ui/ui_api.c	/^int display_err_msg(int err, char *msg)$/;"	f	signature:(int err, char *msg)
+display_info	ui/ui_api.c	/^int display_info(char *msg)$/;"	f	signature:(char *msg)
+display_str	ui/ui_api.c	/^int display_str(int row, int col, char *format, ...)$/;"	f	signature:(int row, int col, char *format, ...)
+display_warn	ui/ui_api.c	/^int display_warn(char *msg)$/;"	f	signature:(char *msg)
+do_add_comm_to_list	command/cmd_invoice_ops.c	/^static int do_add_comm_to_list(struct plu_item * tmp_item, int count)$/;"	f	file:	signature:(struct plu_item * tmp_item, int count)
+do_check_date	command/cmd_fiscal_manage.c	/^inline int do_check_date(struct bcd_date *s_date, struct bcd_date * e_date)$/;"	f	signature:(struct bcd_date *s_date, struct bcd_date * e_date)
+do_check_origin_inv	command/cmd_invoice_ops.c	/^static int do_check_origin_inv(struct tax_sys_invoice_detail_record * inv_detail)$/;"	f	file:	signature:(struct tax_sys_invoice_detail_record * inv_detail)
+do_check_start_and_end	command/cmd_other_ops.c	/^int do_check_start_and_end(struct bcd_date * start_date, struct bcd_date * end_date)$/;"	f	signature:(struct bcd_date * start_date, struct bcd_date * end_date)
+do_check_user_and_date	command/cmd_other_ops.c	/^int do_check_user_and_date(struct bcd_date * date)$/;"	f	signature:(struct bcd_date * date)
+do_decrease_plu_count	command/cmd_invoice_ops.c	/^static int do_decrease_plu_count(void)$/;"	f	file:	signature:(void)
+do_delete_plu	command/cmd_comm_manage.c	/^int do_delete_plu()$/;"	f
+do_get_comm_item	command/cmd_invoice_ops.c	/^static int do_get_comm_item(char * title)$/;"	f	file:	signature:(char * title)
+do_hang_up_transact	command/cmd_invoice_ops.c	/^static int do_hang_up_transact(void)$/;"	f	file:	signature:(void)
+do_inspect_prepare	command/cmd_fiscal_manage.c	/^int do_inspect_prepare(int type, struct tax_sys_check_info *chk_info)$/;"	f	signature:(int type, struct tax_sys_check_info *chk_info)
+do_issue_invoice	command/cmd_invoice_ops.c	/^static int do_issue_invoice(void)$/;"	f	file:	signature:(void)
+do_modify_comm_items	command/cmd_invoice_ops.c	/^static int do_modify_comm_items(void)$/;"	f	file:	signature:(void)
+do_modify_plu	command/cmd_comm_manage.c	/^int do_modify_plu()$/;"	f
+do_print_invoice	command/cmd_invoice_ops.c	/^static int do_print_invoice(void)$/;"	f	file:	signature:(void)
+do_print_invoke	print/print-flat.c	/^static int do_print_invoke(void)$/;"	f	file:	signature:(void)
+do_return_invoice	command/cmd_invoice_ops.c	/^static int do_return_invoice(struct tax_sys_invoice_detail_record * ori_detail)$/;"	f	file:	signature:(struct tax_sys_invoice_detail_record * ori_detail)
+do_set_date	command/cmd_fiscal_manage.c	/^int do_set_date(void)$/;"	f	signature:(void)
+do_set_time	command/cmd_fiscal_manage.c	/^int do_set_time(void)$/;"	f	signature:(void)
+do_subtotal_comm_items	command/cmd_invoice_ops.c	/^static int do_subtotal_comm_items(void)$/;"	f	file:	signature:(void)
+do_transact	command/cmd_invoice_ops.c	/^static int do_transact(void)$/;"	f	file:	signature:(void)
+do_update_daily_record	command/cmd_fiscal_manage.c	/^int do_update_daily_record(struct tax_sys_check_info *chk_info, $/;"	f	signature:(struct tax_sys_check_info *chk_info, struct tax_sys_check_idx *chk_idx)
+do_update_declare_record	command/cmd_fiscal_manage.c	/^int do_update_declare_record(struct tax_sys_check_info *chk_info, $/;"	f	signature:(struct tax_sys_check_info *chk_info, struct tax_sys_check_idx *chk_idx)
+do_update_invoice_record	command/cmd_fiscal_manage.c	/^int do_update_invoice_record(struct tax_sys_check_info *chk_info, $/;"	f	signature:(struct tax_sys_check_info *chk_info, struct tax_sys_check_idx *chk_idx)
+do_view_comm_items	command/cmd_invoice_ops.c	/^static int do_view_comm_items(void)$/;"	f	file:	signature:(void)
+do_view_dpt	command/cmd_comm_manage.c	/^int do_view_dpt(char *title)$/;"	f	signature:(char *title)
+do_view_plu_by_barcode	command/cmd_comm_manage.c	/^int do_view_plu_by_barcode(struct plu_item *item)$/;"	f	signature:(struct plu_item *item)
+do_view_plu_by_name	command/cmd_comm_manage.c	/^int do_view_plu_by_name(struct plu_item * item)$/;"	f	signature:(struct plu_item * item)
+do_view_plu_by_num	command/cmd_comm_manage.c	/^int do_view_plu_by_num(struct plu_item *item)$/;"	f	signature:(struct plu_item *item)
+do_view_user	command/cmd_system_manage.c	/^int do_view_user(char *title)$/;"	f	signature:(char *title)
+end_cover_int	misc/common.c	/^int end_cover_int(uchar *dist, uchar *src)$/;"	f	signature:(uchar *dist, uchar *src)
+end_cover_llong	misc/common.c	/^int end_cover_llong(uchar *dist, uchar *src)$/;"	f	signature:(uchar *dist, uchar *src)
+end_cover_long	misc/common.c	/^int end_cover_long(uchar *dist, uchar *src)$/;"	f	signature:(uchar *dist, uchar *src)
+end_cover_short	misc/common.c	/^int end_cover_short(uchar *dist, uchar *src)$/;"	f	signature:(uchar *dist, uchar *src)
+err_num	misc/error.c	/^int err_num = 0;$/;"	v
+f_j_table	input/keyboard.c	/^uint f_j_table[5] = {'f', 'g', 'h', 'i', 'j'};$/;"	v
+file_ops_append_record	misc/file_core.c	/^static int file_ops_append_record(FILE *stream, struct file_record_node *record_node)$/;"	f	file:	signature:(FILE *stream, struct file_record_node *record_node)
+file_ops_clear_record	misc/file_core.c	/^static int file_ops_clear_record(const char *filename)$/;"	f	file:	signature:(const char *filename)
+file_ops_close_file	misc/file_core.c	/^static int file_ops_close_file(FILE *fp)$/;"	f	file:	signature:(FILE *fp)
+file_ops_creat_dir	misc/file_core.c	/^static int file_ops_creat_dir(const char *path)$/;"	f	file:	signature:(const char *path)
+file_ops_creat_file	misc/file_core.c	/^static int file_ops_creat_file(const char *filename, int mode, int record_num)$/;"	f	file:	signature:(const char *filename, int mode, int record_num)
+file_ops_del_dir	misc/file_core.c	/^static int file_ops_del_dir(const char *path)$/;"	f	file:	signature:(const char *path)
+file_ops_del_file	misc/file_core.c	/^static int file_ops_del_file(const char *filename)$/;"	f	file:	signature:(const char *filename)
+file_ops_del_record	misc/file_core.c	/^static int file_ops_del_record(FILE *stream, int offset)$/;"	f	file:	signature:(FILE *stream, int offset)
+file_ops_force_del_dir	misc/file_core.c	/^static int file_ops_force_del_dir(const char *path)$/;"	f	file:	signature:(const char *path)
+file_ops_modify_record	misc/file_core.c	/^static int file_ops_modify_record(FILE *stream, int offset, struct file_record_node *record_buf)$/;"	f	file:	signature:(FILE *stream, int offset, struct file_record_node *record_buf)
+file_ops_open_file	misc/file_core.c	/^static FILE * file_ops_open_file(const char * filename)$/;"	f	file:	signature:(const char * filename)
+file_ops_read_head	misc/file_core.c	/^static int file_ops_read_head(FILE *stream, struct file_head_node *head_node)$/;"	f	file:	signature:(FILE *stream, struct file_head_node *head_node)
+file_ops_read_record	misc/file_core.c	/^static int file_ops_read_record(FILE *stream, int offset, struct file_record_node  *record_buf)$/;"	f	file:	signature:(FILE *stream, int offset, struct file_record_node *record_buf)
+file_ops_write_head	misc/file_core.c	/^static int file_ops_write_head(FILE *stream, struct file_head_node *head_node)$/;"	f	file:	signature:(FILE *stream, struct file_head_node *head_node)
+file_ops_write_record	misc/file_core.c	/^static int file_ops_write_record(FILE *stream, int offset, struct file_record_node  *record_node)$/;"	f	file:	signature:(FILE *stream, int offset, struct file_record_node *record_node)
+fill_chksum	fiscal/tax_card_base.c	/^static int fill_chksum(struct card_send_buf *send_buf)$/;"	f	file:	signature:(struct card_send_buf *send_buf)
+fiscal_card_base	fiscal/tax_card_base.c	/^static struct fiscal_card fiscal_card_base = {$/;"	v	typeref:struct:fiscal_card	file:
+fiscal_card_get_app_info	fiscal/tax_system.c	/^static int fiscal_card_get_app_info(struct tax_sys_app_info * app_info)$/;"	f	file:	signature:(struct tax_sys_app_info * app_info)
+fiscal_card_get_card_nb	fiscal/tax_system.c	/^static int fiscal_card_get_card_nb(uchar *res)$/;"	f	file:	signature:(uchar *res)
+fiscal_card_get_invoice_info	fiscal/tax_system.c	/^static int fiscal_card_get_invoice_info(struct input_invoice_info * inv_info)$/;"	f	file:	signature:(struct input_invoice_info * inv_info)
+fiscal_card_get_machine_nb	fiscal/tax_system.c	/^static int fiscal_card_get_machine_nb(uchar *res)$/;"	f	file:	signature:(uchar *res)
+fiscal_card_get_new_ctl_data	fiscal/tax_system.c	/^static int fiscal_card_get_new_ctl_data(struct tax_sys_app_info * new_app)$/;"	f	file:	signature:(struct tax_sys_app_info * new_app)
+fiscal_card_get_tax_index	fiscal/tax_system.c	/^static int fiscal_card_get_tax_index(uchar *tax_index)$/;"	f	file:	signature:(uchar *tax_index)
+fiscal_card_get_taxpayer_name	fiscal/tax_system.c	/^static int fiscal_card_get_taxpayer_name(uchar *buf)$/;"	f	file:	signature:(uchar *buf)
+fiscal_card_get_taxpayer_nb	fiscal/tax_system.c	/^static int fiscal_card_get_taxpayer_nb(uchar *res)$/;"	f	file:	signature:(uchar *res)
+fiscal_card_power_on	fiscal/tax_system.c	/^static int fiscal_card_power_on(void)$/;"	f	file:	signature:(void)
+fiscal_card_update_invoice_info	fiscal/tax_system.c	/^static int fiscal_card_update_invoice_info(struct input_invoice_info * inv_info)$/;"	f	file:	signature:(struct input_invoice_info * inv_info)
+flat_print_ops	print/print-flat.c	/^struct print_ops flat_print_ops = {$/;"	v	typeref:struct:print_ops
+flat_printer_type	print/print-flat.c	/^struct printer_type flat_printer_type = {$/;"	v	typeref:struct:printer_type
+flush_uart	misc/uart.c	/^int flush_uart(int fd)$/;"	f	signature:(int fd)
+func_1_table	input/keyboard.c	/^uint func_1_table[5] = {'\\0', '\\0', '\\0', PAPER_IN, PAPER_OUT};$/;"	v
+func_2_table	input/keyboard.c	/^uint func_2_table[5] = {RIGHT, LEFT, '\\0', '\\0', '\\0'};$/;"	v
+func_3_table	input/keyboard.c	/^uint func_3_table[5] = {DOWN, UP, '\\0', '\\0', '\\0'};$/;"	v
+func_4_table	input/keyboard.c	/^uint func_4_table[5] = {BACK, ESC, SHIFT, HANG, VIEW};$/;"	v
+func_5_table	input/keyboard.c	/^uint func_5_table[5] = {TOTAL, '\\0', '\\0', '\\0', '\\0'};$/;"	v
+func_6_table	input/keyboard.c	/^uint func_6_table[5] = {ENTER, '\\0', '\\0', '\\0', '\\0'};$/;"	v
+func_key_map	input/keyboard.c	/^uint * func_key_map[] = {$/;"	v
+g_PRINT_FD_INIT	print/print-flat.c	/^static int g_PRINT_FD_INIT = NEGATIVE;     \/* Print ready Flag *\/$/;"	v	file:
+g_PRINT_UNIT_INIT	print/print-flat.c	/^static int g_PRINT_UNIT_INIT = NEGATIVE;   \/* Move unit ready flag *\/$/;"	v	file:
+g_cur_frame_id	ui/ui_api.c	/^static int g_cur_frame_id = 0;$/;"	v	file:
+g_cur_item_id	ui/ui_api.c	/^static int g_cur_item_id = 0;$/;"	v	file:
+g_cur_roll	fiscal/tax_system.c	/^struct tax_sys_buy_roll_record g_cur_roll;$/;"	v	typeref:struct:tax_sys_buy_roll_record
+g_cur_roll_left	fiscal/tax_system.c	/^struct tax_sys_cur_roll_left_record  g_cur_roll_left;$/;"	v	typeref:struct:tax_sys_cur_roll_left_record
+g_file_ops	misc/file_core.c	/^struct file_operate g_file_ops = {$/;"	v	typeref:struct:file_operate
+g_fis_config	fiscal/tax_system.c	/^struct tax_sys_fis_config_record  g_fis_config;$/;"	v	typeref:struct:tax_sys_fis_config_record
+g_hang_flag	command/cmd_invoice_ops.c	/^static int g_hang_flag = NEGATIVE;$/;"	v	file:
+g_hang_trans_items	command/cmd_invoice_ops.c	/^static struct tax_sys_transact_items g_hang_trans_items;$/;"	v	typeref:struct:tax_sys_transact_items	file:
+g_inv_detail	command/cmd_invoice_ops.c	/^static struct tax_sys_invoice_detail_record g_inv_detail;$/;"	v	typeref:struct:tax_sys_invoice_detail_record	file:
+g_key_code	input/keyboard.c	/^static struct key_code g_key_code = {$/;"	v	typeref:struct:key_code	file:
+g_logout_flag	ui/ui_api.c	/^static int g_logout_flag = NEGATIVE;$/;"	v	file:
+g_mach_info	fiscal/tax_system.c	/^struct machine_info_record g_mach_info;$/;"	v	typeref:struct:machine_info_record
+g_normal_trans_items	command/cmd_invoice_ops.c	/^static struct tax_sys_transact_items g_normal_trans_items;$/;"	v	typeref:struct:tax_sys_transact_items	file:
+g_origin_pin	fiscal/tax_system.c	/^struct tax_sys_pin_record  g_origin_pin;$/;"	v	typeref:struct:tax_sys_pin_record
+g_pin	fiscal/tax_system.c	/^struct tax_sys_pin_record  g_pin;$/;"	v	typeref:struct:tax_sys_pin_record
+g_plu_ops	misc/plu.c	/^struct plu_operate g_plu_ops = {$/;"	v	typeref:struct:plu_operate
+g_print_frame	print/print-flat.c	/^static struct print_frame * g_print_frame = NULL;$/;"	v	typeref:struct:print_frame	file:
+g_print_sys	print/print-core.c	/^static struct print_sys g_print_sys = {$/;"	v	typeref:struct:print_sys	file:
+g_printer	print/print-core.c	/^static struct printer_type * g_printer[MAX_PRINT_TYPE] = {0};$/;"	v	typeref:struct:printer_type	file:
+g_protect_record	fiscal/tax_system.c	/^struct tax_sys_protect_record g_protect_record;$/;"	v	typeref:struct:tax_sys_protect_record
+g_rt_operate	misc/real_time.c	/^struct rt_operate g_rt_operate = {$/;"	v	typeref:struct:rt_operate
+g_shutdown_flag	ui/ui_api.c	/^static int g_shutdown_flag = NEGATIVE;$/;"	v	file:
+g_sys_app_info	fiscal/tax_system.c	/^struct tax_sys_app_info  g_sys_app_info;$/;"	v	typeref:struct:tax_sys_app_info
+g_sys_config	fiscal/tax_system.c	/^struct tax_sys_config_record  g_sys_config;$/;"	v	typeref:struct:tax_sys_config_record
+g_tax_system_base	fiscal/tax_system.c	/^static struct tax_system g_tax_system_base = {$/;"	v	typeref:struct:tax_system	file:
+gb2312	input/py_dict.h	/^TCHAR gb2312[TOTALWORDS] = {$/;"	v
+get_anykey	misc/common.c	/^int get_anykey(void)$/;"	f	signature:(void)
+get_barcode	input/input.c	/^int get_barcode(int row, int col, char * barcode)$/;"	f	signature:(int row, int col, char * barcode)
+get_bcd_date	input/input.c	/^int get_bcd_date(int row, int col, struct bcd_date * enddate)$/;"	f	signature:(int row, int col, struct bcd_date * enddate)
+get_check_card	fiscal/tax_card_base.c	/^struct check_card * get_check_card(void)$/;"	f	signature:(void)
+get_chn_pad	input/input.c	/^static int get_chn_pad(char *chn, char *chn_content)$/;"	f	file:	signature:(char *chn, char *chn_content)
+get_chn_str	input/input.c	/^int get_chn_str(int row, int col, char *name)$/;"	f	signature:(int row, int col, char *name)
+get_col	ui/ui_api.c	/^inline static int get_col(int menu_id, int item_id)$/;"	f	file:	signature:(int menu_id, int item_id)
+get_color	ui/ui_api.c	/^inline static int get_color(int menu_id, int item_id)$/;"	f	file:	signature:(int menu_id, int item_id)
+get_cur_frame_id	ui/ui_api.c	/^inline static int get_cur_frame_id(void)$/;"	f	file:	signature:(void)
+get_cur_user	ui/ui_api.c	/^struct user * get_cur_user(void)$/;"	f	signature:(void)
+get_err_msg	misc/error.c	/^char *get_err_msg(int err)$/;"	f	signature:(int err)
+get_file_ops	misc/file_core.c	/^struct file_operate * get_file_ops(void)$/;"	f	signature:(void)
+get_fis_type	command/cmd_comm_manage.c	/^int get_fis_type(void)$/;"	f	signature:(void)
+get_fis_type_name	command/cmd_comm_manage.c	/^char * get_fis_type_name(int index)$/;"	f	signature:(int index)
+get_fiscal_card	fiscal/tax_card_base.c	/^struct fiscal_card * get_fiscal_card(void)$/;"	f	signature:(void)
+get_fiscal_code	command/cmd_invoice_ops.c	/^static int get_fiscal_code(struct issue_invoice_res * inv_res) $/;"	f	file:	signature:(struct issue_invoice_res * inv_res)
+get_flat_printer	print/print-core.c	/^extern struct printer_type * get_flat_printer(void);$/;"	p	file:	signature:(void)
+get_flat_printer	print/print-flat.c	/^struct printer_type * get_flat_printer(void) $/;"	f	signature:(void)
+get_greg_time	input/input.c	/^int get_greg_time(int row, int col, struct greg_time *time)$/;"	f	signature:(int row, int col, struct greg_time *time)
+get_hang_flag	command/cmd_invoice_ops.c	/^inline static int get_hang_flag(void)$/;"	f	file:	signature:(void)
+get_hex_num	input/input.c	/^int get_hex_num(int row, int col, uchar *pin, int len)$/;"	f	signature:(int row, int col, uchar *pin, int len)
+get_ime_status	input/keyboard.c	/^int get_ime_status(void)$/;"	f	signature:(void)
+get_inter_num	input/input.c	/^int get_inter_num(int row, int col, int *num)$/;"	f	signature:(int row, int col, int *num)
+get_item_num	ui/ui_api.c	/^inline static int get_item_num(int menu_id)$/;"	f	file:	signature:(int menu_id)
+get_keycode	input/keyboard.c	/^int get_keycode(void)$/;"	f	signature:(void)
+get_next_action	ui/ui_api.c	/^inline static ACTION get_next_action(int menu_id, int item_id)$/;"	f	file:	signature:(int menu_id, int item_id)
+get_next_id	ui/ui_api.c	/^inline static int get_next_id(int menu_id, int item_id)$/;"	f	file:	signature:(int menu_id, int item_id)
+get_paid_up	command/cmd_invoice_ops.c	/^static int get_paid_up(int *paid_up)$/;"	f	file:	signature:(int *paid_up)
+get_parent_id	ui/ui_api.c	/^inline static int get_parent_id(int id)$/;"	f	file:	signature:(int id)
+get_passwd	input/input.c	/^int get_passwd(int row, int col, char *password)$/;"	f	signature:(int row, int col, char *password)
+get_plu_count	command/cmd_invoice_ops.c	/^static int get_plu_count(int *count, struct plu_item * tmp_item)$/;"	f	file:	signature:(int *count, struct plu_item * tmp_item)
+get_plu_num	command/cmd_invoice_ops.c	/^static int get_plu_num(int row, int col, int *plu_num)$/;"	f	file:	signature:(int row, int col, int *plu_num)
+get_plu_ops	misc/plu.c	/^struct plu_operate * get_plu_ops(void)$/;"	f	signature:(void)
+get_power_state	misc/power.c	/^struct power_state * get_power_state(void)$/;"	f	signature:(void)
+get_print_frame	print/print-flat.c	/^struct print_frame * get_print_frame(void)$/;"	f	signature:(void)
+get_print_sys	print/print-core.c	/^struct print_sys * get_print_sys(void) $/;"	f	signature:(void)
+get_res_buf	fiscal/tax_card_base.c	/^static struct card_res_buf * get_res_buf(void)$/;"	f	file:	signature:(void)
+get_roll_printer	print/print-core.c	/^extern struct printer_type * get_roll_printer(void);$/;"	p	file:	signature:(void)
+get_roll_printer	print/print-roll.c	/^struct printer_type * get_roll_printer(void) $/;"	f	signature:(void)
+get_row	ui/ui_api.c	/^inline static int get_row(int menu_id, int item_id)$/;"	f	file:	signature:(int menu_id, int item_id)
+get_rt_ops	misc/real_time.c	/^struct rt_operate * get_rt_ops(void) $/;"	f	signature:(void)
+get_send_buf	fiscal/tax_card_base.c	/^static struct card_send_buf *get_send_buf(void)$/;"	f	file:	signature:(void)
+get_string	input/input.c	/^int get_string(int row, int col, char *str)$/;"	f	signature:(int row, int col, char *str)
+get_target_frame	ui/ui_api.c	/^static struct frame * get_target_frame(int id)$/;"	f	file:	signature:(int id)
+get_tax_system	fiscal/tax_system.c	/^struct tax_system * get_tax_system(void)$/;"	f	signature:(void)
+get_title	ui/ui_api.c	/^inline static char * get_title(int menu_id, int item_id)$/;"	f	file:	signature:(int menu_id, int item_id)
+get_user_card	fiscal/tax_card_base.c	/^struct user_card * get_user_card(void)$/;"	f	signature:(void)
+greg_to_bcd	misc/common.c	/^int greg_to_bcd(struct bcd_date *date, uint year, uint mon, uint day)$/;"	f	signature:(struct bcd_date *date, uint year, uint mon, uint day)
+greg_to_julian	misc/common.c	/^uint greg_to_julian(int y, int m, int d)$/;"	f	signature:(int y, int m, int d)
+highlight_off	ui/ui_api.c	/^int highlight_off(int row)$/;"	f	signature:(int row)
+highlight_on	ui/ui_api.c	/^int highlight_on(int row)$/;"	f	signature:(int row)
+index	input/py_dict.h	/^struct index$/;"	s
+index::mb	input/py_dict.h	/^    char *mb;$/;"	m	struct:index	access:public
+index::py	input/py_dict.h	/^    char *py;$/;"	m	struct:index	access:public
+index_a	input/py_dict.h	/^struct index index_a[]={$/;"	v	typeref:struct:index
+index_b	input/py_dict.h	/^struct index index_b[]={$/;"	v	typeref:struct:index
+index_c	input/py_dict.h	/^struct index index_c[]={$/;"	v	typeref:struct:index
+index_d	input/py_dict.h	/^struct index index_d[]={$/;"	v	typeref:struct:index
+index_e	input/py_dict.h	/^struct index index_e[]={$/;"	v	typeref:struct:index
+index_end	input/py_dict.h	/^struct index index_end[]={$/;"	v	typeref:struct:index
+index_f	input/py_dict.h	/^struct index index_f[]={$/;"	v	typeref:struct:index
+index_g	input/py_dict.h	/^struct index index_g[]={$/;"	v	typeref:struct:index
+index_h	input/py_dict.h	/^struct index    index_h[]={$/;"	v	typeref:struct:index
+index_headletter	input/py_dict.h	/^struct index * index_headletter[]={$/;"	v	typeref:struct:index
+index_i	input/py_dict.h	/^struct index index_i[]= {$/;"	v	typeref:struct:index
+index_j	input/py_dict.h	/^struct index index_j[]={$/;"	v	typeref:struct:index
+index_k	input/py_dict.h	/^struct index index_k[]={$/;"	v	typeref:struct:index
+index_l	input/py_dict.h	/^struct index index_l[]={$/;"	v	typeref:struct:index
+index_m	input/py_dict.h	/^struct index index_m[]={$/;"	v	typeref:struct:index
+index_n	input/py_dict.h	/^struct index index_n[]={$/;"	v	typeref:struct:index
+index_num	input/py_dict.h	/^int index_num[26] = {$/;"	v
+index_o	input/py_dict.h	/^struct index index_o[]={$/;"	v	typeref:struct:index
+index_p	input/py_dict.h	/^struct index index_p[]={$/;"	v	typeref:struct:index
+index_q	input/py_dict.h	/^struct index index_q[]={$/;"	v	typeref:struct:index
+index_r	input/py_dict.h	/^struct index index_r[]={$/;"	v	typeref:struct:index
+index_s	input/py_dict.h	/^struct index index_s[]={$/;"	v	typeref:struct:index
+index_t	input/py_dict.h	/^struct index    index_t[]={$/;"	v	typeref:struct:index
+index_u	input/py_dict.h	/^struct index index_u[]={$/;"	v	typeref:struct:index
+index_v	input/py_dict.h	/^struct index index_v[]={$/;"	v	typeref:struct:index
+index_w	input/py_dict.h	/^struct index index_w[]={$/;"	v	typeref:struct:index
+index_x	input/py_dict.h	/^struct index index_x[]={$/;"	v	typeref:struct:index
+index_y	input/py_dict.h	/^struct index index_y[]={$/;"	v	typeref:struct:index
+index_z	input/py_dict.h	/^struct index index_z[]={$/;"	v	typeref:struct:index
+info	ui/lcm_api.h	/^    char info[28];$/;"	m	struct:lcm_data	access:public
+input	input/py_engin.c	/^char input[10];$/;"	v
+invoice_num	print/print-flat.h	/^    char invoice_num[MAX_NUM_LENGTH + 1];$/;"	m	struct:print_title	access:public
+is_ascii	misc/common.c	/^int is_ascii(int sw_code)$/;"	f	signature:(int sw_code)
+is_check_card_ready	fiscal/tax_system.c	/^static int is_check_card_ready(void)$/;"	f	file:	signature:(void)
+is_fiscal_card_ready	fiscal/tax_system.c	/^static int is_fiscal_card_ready(void)$/;"	f	file:	signature:(void)
+is_fiscal_card_register	fiscal/tax_system.c	/^static int is_fiscal_card_register(void)$/;"	f	file:	signature:(void)
+is_func	misc/common.c	/^int is_func(int sw_code)$/;"	f	signature:(int sw_code)
+is_num	misc/common.c	/^int is_num(int sw_code)$/;"	f	signature:(int sw_code)
+is_printable	misc/common.c	/^int is_printable(int sw_code)$/;"	f	signature:(int sw_code)
+is_user_card_ready	fiscal/tax_system.c	/^static int is_user_card_ready(void)$/;"	f	file:	signature:(void)
+item_count	print/print-flat.h	/^    char item_count[MAX_NUM_LENGTH];$/;"	m	struct:print_comm_item	access:public
+item_monney	print/print-flat.h	/^    char item_monney[MAX_NUM_LENGTH];    $/;"	m	struct:print_comm_item	access:public
+item_name	print/print-flat.h	/^    char item_name[MAX_CHAR_PER_ITEM];$/;"	m	struct:print_comm_item	access:public
+item_price	print/print-flat.h	/^    char item_price[MAX_NUM_LENGTH];$/;"	m	struct:print_comm_item	access:public
+julian_to_greg	misc/common.c	/^void julian_to_greg(uint jd, uint *year, uint *mon, uint *day)$/;"	f	signature:(uint jd, uint *year, uint *mon, uint *day)
+k_cache_lock	input/keyboard.c	/^static pthread_mutex_t k_cache_lock;$/;"	v	file:
+k_j_table	input/keyboard.c	/^uint k_j_table[5] = {'k', 'l', 'm', 'n', 'o'};$/;"	v
+kb_uart_setup	misc/uart.c	/^int kb_uart_setup(int fd) $/;"	f	signature:(int fd)
+keyboard_init	input/keyboard.c	/^pthread_t keyboard_init(void) $/;"	f	signature:(void)
+keyboard_stop	input/keyboard.c	/^int keyboard_stop(void)$/;"	f	signature:(void)
+keyboard_thread	input/keyboard.c	/^void * keyboard_thread(void *arg)$/;"	f	signature:(void *arg)
+lcm_clear	ui/lcm_api.c	/^int lcm_clear(void) $/;"	f	signature:(void)
+lcm_clear	ui/lcm_api.h	/^extern int lcm_clear(void);$/;"	p	signature:(void)
+lcm_data	ui/lcm_api.h	/^struct lcm_data $/;"	s
+lcm_data::col	ui/lcm_api.h	/^    int col;$/;"	m	struct:lcm_data	access:public
+lcm_data::info	ui/lcm_api.h	/^    char info[28];$/;"	m	struct:lcm_data	access:public
+lcm_data::row	ui/lcm_api.h	/^    int row;$/;"	m	struct:lcm_data	access:public
+lcm_data::size	ui/lcm_api.h	/^    int size;$/;"	m	struct:lcm_data	access:public
+lcm_open	ui/lcm_api.c	/^int lcm_open(void)$/;"	f	signature:(void)
+lcm_printf	ui/lcm_api.c	/^int lcm_printf(int row, int col, char *str)$/;"	f	signature:(int row, int col, char *str)
+lcm_printf	ui/lcm_api.h	/^extern int lcm_printf(int row, int col, char *str);$/;"	p	signature:(int row, int col, char *str)
+lcm_rev_line	ui/lcm_api.c	/^int lcm_rev_line(int row)$/;"	f	signature:(int row)
+lcm_rev_line	ui/lcm_api.h	/^extern int lcm_rev_line(int num);$/;"	p	signature:(int num)
+lcm_set_cursor	ui/lcm_api.c	/^int lcm_set_cursor(int row, int col, int cursor, int blink)$/;"	f	signature:(int row, int col, int cursor, int blink)
+lcm_set_cursor	ui/lcm_api.h	/^extern int lcm_set_cursor(int row, int col, int cursor, int blink);$/;"	p	signature:(int row, int col, int cursor, int blink)
+lcm_write	ui/lcm_api.c	/^int lcm_write(struct lcm_data *datap)$/;"	f	signature:(struct lcm_data *datap)
+log_in	ui/ui_api.c	/^int log_in(void)$/;"	f	signature:(void)
+log_out	ui/ui_api.c	/^int log_out(void)$/;"	f	signature:(void)
+login_user	ui/ui_api.c	/^static struct user login_user;$/;"	v	typeref:struct:user	file:
+low_case_title	print/print-flat.h	/^ 	char low_case_title[MAX_TITLE_LENGTH]; $/;"	m	struct:print_comm_monney	access:public
+low_key_map	input/keyboard.c	/^uint * low_key_map[] = {$/;"	v
+low_total	print/print-flat.h	/^ 	char low_total[MAX_MONNEY_LENGHT];$/;"	m	struct:print_comm_monney	access:public
+main	start_main.c	/^int main(void)$/;"	f	signature:(void)
+mb	input/py_dict.h	/^    char *mb;$/;"	m	struct:index	access:public
+mb_a	input/py_dict.h	/^char  mb_a[]     ={"阿啊"};$/;"	v
+mb_ai	input/py_dict.h	/^char  mb_ai[]    ={"哎哀唉埃挨皑癌矮蔼艾爱隘碍"};$/;"	v
+mb_an	input/py_dict.h	/^char  mb_an[]    ={"安氨鞍俺岸按案胺暗"};$/;"	v
+mb_ang	input/py_dict.h	/^char  mb_ang[]   ={"肮昂盎"};$/;"	v
+mb_ao	input/py_dict.h	/^char  mb_ao[]    ={"凹敖熬翱袄傲奥澳懊"};$/;"	v
+mb_ba	input/py_dict.h	/^char  mb_ba[]    ={"八巴叭扒吧芭疤捌笆拔跋把靶坝爸罢霸"};$/;"	v
+mb_bai	input/py_dict.h	/^char  mb_bai[]   ={"白百佰柏摆败拜稗"};$/;"	v
+mb_ban	input/py_dict.h	/^char  mb_ban[]   ={"扳班般颁斑搬板版办半伴扮拌绊瓣"};$/;"	v
+mb_bang	input/py_dict.h	/^char  mb_bang[]  ={"邦帮梆绑榜膀蚌傍棒谤磅镑"};$/;"	v
+mb_bao	input/py_dict.h	/^char  mb_bao[]   ={"包苞胞褒雹宝饱保堡报抱豹鲍暴爆剥薄瀑"};$/;"	v
+mb_bei	input/py_dict.h	/^char  mb_bei[]   ={"卑杯悲碑北贝狈备背钡倍被惫焙辈"};$/;"	v
+mb_ben	input/py_dict.h	/^char  mb_ben[]   ={"奔本苯笨夯"};$/;"	v
+mb_beng	input/py_dict.h	/^char  mb_beng[]  ={"崩绷甭泵迸蹦"};$/;"	v
+mb_bi	input/py_dict.h	/^char  mb_bi[]    ={"逼鼻比彼笔鄙币必毕闭庇毖陛毙敝痹蓖弊碧蔽壁避臂"};$/;"	v
+mb_bian	input/py_dict.h	/^char  mb_bian[]  ={"边编鞭贬扁卞便变遍辨辩辫"};$/;"	v
+mb_biao	input/py_dict.h	/^char  mb_biao[]  ={"彪标膘表"};$/;"	v
+mb_bie	input/py_dict.h	/^char  mb_bie[]   ={"憋鳖别瘪"};$/;"	v
+mb_bin	input/py_dict.h	/^char  mb_bin[]   ={"宾彬斌滨濒摈"};$/;"	v
+mb_bing	input/py_dict.h	/^char  mb_bing[]  ={"冰兵丙秉柄炳饼并病"};$/;"	v
+mb_bo	input/py_dict.h	/^char  mb_bo[]    ={"拨波玻钵脖菠播伯驳帛泊勃铂舶博渤搏箔膊卜"};$/;"	v
+mb_bu	input/py_dict.h	/^char  mb_bu[]    ={"补哺捕不布步怖部埠簿"};$/;"	v
+mb_ca	input/py_dict.h	/^char  mb_ca[]    ={"擦"};$/;"	v
+mb_cai	input/py_dict.h	/^char  mb_cai[]   ={"猜才材财裁采彩睬踩菜蔡"};$/;"	v
+mb_can	input/py_dict.h	/^char  mb_can[]   ={"参餐残蚕惭惨灿"};$/;"	v
+mb_cang	input/py_dict.h	/^char  mb_cang[]  ={"仓沧苍舱藏"};$/;"	v
+mb_cao	input/py_dict.h	/^char  mb_cao[]   ={"操糙曹槽草"};$/;"	v
+mb_ce	input/py_dict.h	/^char  mb_ce[]    ={"册侧厕测策"};$/;"	v
+mb_ceng	input/py_dict.h	/^char  mb_ceng[]  ={"层蹭曾"};$/;"	v
+mb_cha	input/py_dict.h	/^char  mb_cha[]   ={"叉插查茬茶搽察碴岔诧差刹"};$/;"	v
+mb_chai	input/py_dict.h	/^char  mb_chai[]  ={"拆柴豺"};$/;"	v
+mb_chan	input/py_dict.h	/^char  mb_chan[]  ={"掺搀谗馋缠蝉产铲阐颤"};$/;"	v
+mb_chang	input/py_dict.h	/^char  mb_chang[] ={"昌猖肠尝偿常厂场敞畅倡唱"};$/;"	v
+mb_chao	input/py_dict.h	/^char  mb_chao[]  ={"抄钞超巢朝嘲潮吵炒绰"};$/;"	v
+mb_che	input/py_dict.h	/^char  mb_che[]   ={"车扯彻掣撤澈"};$/;"	v
+mb_chen	input/py_dict.h	/^char  mb_chen[]  ={"郴尘臣忱沉辰陈晨衬趁"};$/;"	v
+mb_cheng	input/py_dict.h	/^char  mb_cheng[] ={"称撑成呈承诚城乘惩程澄橙逞骋秤"};$/;"	v
+mb_chi	input/py_dict.h	/^char  mb_chi[]   ={"吃痴弛池驰迟持尺侈齿耻斥赤炽翅"};$/;"	v
+mb_chong	input/py_dict.h	/^char  mb_chong[] ={"充冲虫崇宠"};$/;"	v
+mb_chou	input/py_dict.h	/^char  mb_chou[]  ={"抽仇绸畴愁稠筹酬踌丑瞅臭"};$/;"	v
+mb_chu	input/py_dict.h	/^char  mb_chu[]   ={"出初除厨滁锄雏橱躇础储楚处搐触矗畜"};$/;"	v
+mb_chuai	input/py_dict.h	/^char  mb_chuai[] ={"揣"};$/;"	v
+mb_chuan	input/py_dict.h	/^char  mb_chuan[] ={"川穿传船椽喘串"};$/;"	v
+mb_chuang	input/py_dict.h	/^char  mb_chuang[]={"闯疮窗床创"};$/;"	v
+mb_chui	input/py_dict.h	/^char  mb_chui[]  ={"吹炊垂捶锤"};$/;"	v
+mb_chun	input/py_dict.h	/^char  mb_chun[]  ={"春椿纯唇淳醇蠢"};$/;"	v
+mb_chuo	input/py_dict.h	/^char  mb_chuo[]  ={"戳"};$/;"	v
+mb_ci	input/py_dict.h	/^char  mb_ci[]    ={"疵词茨瓷慈辞磁雌此次刺赐"};$/;"	v
+mb_cong	input/py_dict.h	/^char  mb_cong[]  ={"囱从匆葱聪丛"};$/;"	v
+mb_cou	input/py_dict.h	/^char  mb_cou[]   ={"凑"};$/;"	v
+mb_cu	input/py_dict.h	/^char  mb_cu[]    ={"粗促醋簇"};$/;"	v
+mb_cuan	input/py_dict.h	/^char  mb_cuan[]  ={"蹿窜篡"};$/;"	v
+mb_cui	input/py_dict.h	/^char  mb_cui[]   ={"崔催摧脆淬瘁粹翠"};$/;"	v
+mb_cun	input/py_dict.h	/^char  mb_cun[]   ={"村存寸"};$/;"	v
+mb_cuo	input/py_dict.h	/^char  mb_cuo[]   ={"搓磋撮挫措错"};$/;"	v
+mb_da	input/py_dict.h	/^char  mb_da[]    ={"搭达答瘩打大"};$/;"	v
+mb_dai	input/py_dict.h	/^char  mb_dai[]   ={"呆歹傣代带待怠殆贷袋逮戴"};$/;"	v
+mb_dan	input/py_dict.h	/^char  mb_dan[]   ={"丹单担耽郸胆掸旦但诞弹惮淡蛋氮"};$/;"	v
+mb_dang	input/py_dict.h	/^char  mb_dang[]  ={"当挡党荡档"};$/;"	v
+mb_dao	input/py_dict.h	/^char  mb_dao[]   ={"刀导岛倒捣祷蹈到悼盗道稻"};$/;"	v
+mb_de	input/py_dict.h	/^char  mb_de[]    ={"得德的"};$/;"	v
+mb_deng	input/py_dict.h	/^char  mb_deng[]  ={"灯登蹬等邓凳瞪"};$/;"	v
+mb_di	input/py_dict.h	/^char  mb_di[]    ={"低堤滴狄迪敌涤笛嫡底抵地弟帝递第缔蒂"};$/;"	v
+mb_dian	input/py_dict.h	/^char  mb_dian[]  ={"掂滇颠典点碘电佃甸店垫惦淀奠殿靛"};$/;"	v
+mb_diao	input/py_dict.h	/^char  mb_diao[]  ={"刁叼凋碉雕吊钓掉"};$/;"	v
+mb_die	input/py_dict.h	/^char  mb_die[]   ={"爹跌迭谍叠碟蝶"};$/;"	v
+mb_ding	input/py_dict.h	/^char  mb_ding[]  ={"丁叮盯钉顶鼎订定锭"};$/;"	v
+mb_diu	input/py_dict.h	/^char  mb_diu[]   ={"丢"};$/;"	v
+mb_dong	input/py_dict.h	/^char  mb_dong[]  ={"东冬董懂动冻侗恫栋洞"};$/;"	v
+mb_dou	input/py_dict.h	/^char  mb_dou[]   ={"都兜斗抖陡豆逗痘"};$/;"	v
+mb_du	input/py_dict.h	/^char  mb_du[]    ={"督毒读犊独堵赌睹妒杜肚度渡镀"};$/;"	v
+mb_duan	input/py_dict.h	/^char  mb_duan[]  ={"端短段断缎锻"};$/;"	v
+mb_dui	input/py_dict.h	/^char  mb_dui[]   ={"堆队对兑"};$/;"	v
+mb_dun	input/py_dict.h	/^char  mb_dun[]   ={"吨敦墩蹲盾钝顿遁"};$/;"	v
+mb_duo	input/py_dict.h	/^char  mb_duo[]   ={"多哆夺掇朵垛躲剁堕舵惰跺"};$/;"	v
+mb_e	input/py_dict.h	/^char  mb_e[]     ={"讹俄娥峨鹅蛾额厄扼恶饿鄂遏"};$/;"	v
+mb_en	input/py_dict.h	/^char  mb_en[]    ={"恩"};$/;"	v
+mb_er	input/py_dict.h	/^char  mb_er[]    ={"儿而尔耳洱饵二贰"};$/;"	v
+mb_fa	input/py_dict.h	/^char  mb_fa[]    ={"发乏伐罚阀筏法珐"};$/;"	v
+mb_fan	input/py_dict.h	/^char  mb_fan[]   ={"帆番翻藩凡矾钒烦樊繁反返犯泛饭范贩"};$/;"	v
+mb_fang	input/py_dict.h	/^char  mb_fang[]  ={"方坊芳防妨房肪仿访纺放"};$/;"	v
+mb_fei	input/py_dict.h	/^char  mb_fei[]   ={"飞非啡菲肥匪诽吠废沸肺费"};$/;"	v
+mb_fen	input/py_dict.h	/^char  mb_fen[]   ={"分吩纷芬氛酚坟汾焚粉份奋忿愤粪"};$/;"	v
+mb_feng	input/py_dict.h	/^char  mb_feng[]  ={"丰风枫封疯峰烽锋蜂冯逢缝讽凤奉"};$/;"	v
+mb_fo	input/py_dict.h	/^char  mb_fo[]    ={"佛"};$/;"	v
+mb_fou	input/py_dict.h	/^char  mb_fou[]   ={"否"};$/;"	v
+mb_fu	input/py_dict.h	/^char  mb_fu[]    ={"夫肤孵敷弗伏扶拂服俘氟浮涪符袱幅福辐抚甫府斧俯釜辅腑腐父讣付妇负附咐阜复赴副傅富赋缚腹覆"};$/;"	v
+mb_ga	input/py_dict.h	/^char  mb_ga[]    ={"嘎噶"};$/;"	v
+mb_gai	input/py_dict.h	/^char  mb_gai[]   ={"该改钙盖溉概"};$/;"	v
+mb_gan	input/py_dict.h	/^char  mb_gan[]   ={"干甘杆肝柑竿秆赶敢感赣"};$/;"	v
+mb_gang	input/py_dict.h	/^char  mb_gang[]  ={"冈刚岗纲肛缸钢港杠"};$/;"	v
+mb_gao	input/py_dict.h	/^char  mb_gao[]   ={"皋羔高膏篙糕搞稿镐告"};$/;"	v
+mb_ge	input/py_dict.h	/^char  mb_ge[]    ={"戈疙哥胳鸽割搁歌阁革格葛隔个各铬咯"};$/;"	v
+mb_gei	input/py_dict.h	/^char  mb_gei[]   ={"给"};$/;"	v
+mb_gen	input/py_dict.h	/^char  mb_gen[]   ={"根跟"};$/;"	v
+mb_geng	input/py_dict.h	/^char  mb_geng[]  ={"更庚耕羹埂耿梗"};$/;"	v
+mb_gong	input/py_dict.h	/^char  mb_gong[]  ={"工弓公功攻供宫恭躬龚巩汞拱共贡"};$/;"	v
+mb_gou	input/py_dict.h	/^char  mb_gou[]   ={"勾沟钩狗苟构购垢够"};$/;"	v
+mb_gu	input/py_dict.h	/^char  mb_gu[]    ={"估咕姑孤沽菇辜箍古谷股骨蛊鼓固故顾雇"};$/;"	v
+mb_gua	input/py_dict.h	/^char  mb_gua[]   ={"瓜刮剐寡挂褂"};$/;"	v
+mb_guai	input/py_dict.h	/^char  mb_guai[]  ={"乖拐怪"};$/;"	v
+mb_guan	input/py_dict.h	/^char  mb_guan[]  ={"关观官冠棺馆管贯惯灌罐"};$/;"	v
+mb_guang	input/py_dict.h	/^char  mb_guang[] ={"光广逛"};$/;"	v
+mb_gui	input/py_dict.h	/^char  mb_gui[]   ={"归圭龟规闺硅瑰轨诡癸鬼刽柜贵桂跪"};$/;"	v
+mb_gun	input/py_dict.h	/^char  mb_gun[]   ={"辊滚棍"};$/;"	v
+mb_guo	input/py_dict.h	/^char  mb_guo[]   ={"郭锅国果裹过"};$/;"	v
+mb_ha	input/py_dict.h	/^char  mb_ha[]    ={"蛤哈"};$/;"	v
+mb_hai	input/py_dict.h	/^char  mb_hai[]   ={"孩骸海亥骇害氦"};$/;"	v
+mb_han	input/py_dict.h	/^char  mb_han[]   ={"酣憨含邯函涵寒韩罕喊汉汗旱悍捍焊憾撼翰"};$/;"	v
+mb_hang	input/py_dict.h	/^char  mb_hang[]  ={"杭航行"};$/;"	v
+mb_hao	input/py_dict.h	/^char  mb_hao[]   ={"毫豪嚎壕好郝号浩耗"};$/;"	v
+mb_he	input/py_dict.h	/^char  mb_he[]    ={"呵喝禾合何和河阂核荷涸盒菏贺褐赫鹤"};$/;"	v
+mb_hei	input/py_dict.h	/^char  mb_hei[]   ={"黑嘿"};$/;"	v
+mb_hen	input/py_dict.h	/^char  mb_hen[]   ={"痕很狠恨"};$/;"	v
+mb_heng	input/py_dict.h	/^char  mb_heng[]  ={"亨哼恒横衡"};$/;"	v
+mb_hong	input/py_dict.h	/^char  mb_hong[]  ={"轰哄烘弘红宏洪虹鸿"};$/;"	v
+mb_hou	input/py_dict.h	/^char  mb_hou[]   ={"侯喉猴吼后厚候"};$/;"	v
+mb_hu	input/py_dict.h	/^char  mb_hu[]    ={"乎呼忽弧狐胡壶湖葫瑚糊蝴虎唬互户护沪"};$/;"	v
+mb_hua	input/py_dict.h	/^char  mb_hua[]   ={"花华哗滑猾化划画话"};$/;"	v
+mb_huai	input/py_dict.h	/^char  mb_huai[]  ={"怀徊淮槐坏"};$/;"	v
+mb_huan	input/py_dict.h	/^char  mb_huan[]  ={"欢还环桓缓幻宦唤换涣患焕痪豢"};$/;"	v
+mb_huang	input/py_dict.h	/^char  mb_huang[] ={"荒慌皇凰黄惶煌蝗磺簧恍晃谎幌"};$/;"	v
+mb_hui	input/py_dict.h	/^char  mb_hui[]   ={"灰恢挥辉徽回蛔悔卉汇会讳绘诲烩贿晦秽惠毁慧"};$/;"	v
+mb_hun	input/py_dict.h	/^char  mb_hun[]   ={"昏荤婚浑魂混"};$/;"	v
+mb_huo	input/py_dict.h	/^char  mb_huo[]   ={"豁活火伙或货获祸惑霍"};$/;"	v
+mb_ji	input/py_dict.h	/^char  mb_ji[]    ={"讥击饥圾机肌鸡迹姬积基绩缉畸箕稽激及吉汲级即极急疾棘集嫉辑籍几己挤脊计记伎纪妓忌技际剂季既济继寂寄悸祭蓟冀藉"};$/;"	v
+mb_jia	input/py_dict.h	/^char  mb_jia[]   ={"加夹佳枷家嘉荚颊甲贾钾价驾架假嫁稼挟"};$/;"	v
+mb_jian	input/py_dict.h	/^char  mb_jian[]  ={"奸尖坚歼间肩艰兼监笺缄煎拣俭柬茧捡减剪检硷简碱见件建饯剑荐贱健涧舰渐溅践鉴键箭"};$/;"	v
+mb_jiang	input/py_dict.h	/^char  mb_jiang[] ={"江姜将浆僵疆讲奖桨蒋匠降酱"};$/;"	v
+mb_jiao	input/py_dict.h	/^char  mb_jiao[]  ={"交郊娇浇骄胶椒焦蕉礁角狡绞饺矫脚铰搅剿缴叫轿较教窖酵觉嚼"};$/;"	v
+mb_jie	input/py_dict.h	/^char  mb_jie[]   ={"阶皆接秸揭街节劫杰洁结捷睫截竭姐解介戒芥届界疥诫借"};$/;"	v
+mb_jin	input/py_dict.h	/^char  mb_jin[]   ={"巾今斤金津筋襟仅紧谨锦尽劲近进晋浸烬禁靳"};$/;"	v
+mb_jing	input/py_dict.h	/^char  mb_jing[]  ={"京经茎荆惊晶睛粳兢精鲸井颈景警净径痉竞竟敬靖境静镜"};$/;"	v
+mb_jiong	input/py_dict.h	/^char  mb_jiong[] ={"炯窘"};$/;"	v
+mb_jiu	input/py_dict.h	/^char  mb_jiu[]   ={"纠究揪九久灸玖韭酒旧臼咎疚厩救就舅"};$/;"	v
+mb_ju	input/py_dict.h	/^char  mb_ju[]    ={"居拘狙驹疽鞠局桔菊咀沮举矩句巨拒具炬俱剧惧据距锯聚踞"};$/;"	v
+mb_juan	input/py_dict.h	/^char  mb_juan[]  ={"娟捐鹃卷倦绢眷"};$/;"	v
+mb_jue	input/py_dict.h	/^char  mb_jue[]   ={"撅决诀抉绝倔掘爵攫"};$/;"	v
+mb_jun	input/py_dict.h	/^char  mb_jun[]   ={"军君均钧菌俊郡峻浚骏竣"};$/;"	v
+mb_ka	input/py_dict.h	/^char  mb_ka[]    ={"咖喀卡"};$/;"	v
+mb_kai	input/py_dict.h	/^char  mb_kai[]   ={"开揩凯慨楷"};$/;"	v
+mb_kan	input/py_dict.h	/^char  mb_kan[]   ={"槛刊勘堪坎砍看"};$/;"	v
+mb_kang	input/py_dict.h	/^char  mb_kang[]  ={"康慷糠扛亢抗炕"};$/;"	v
+mb_kao	input/py_dict.h	/^char  mb_kao[]   ={"考拷烤靠"};$/;"	v
+mb_ke	input/py_dict.h	/^char  mb_ke[]    ={"坷苛柯科棵颗磕壳咳可渴克刻客课"};$/;"	v
+mb_ken	input/py_dict.h	/^char  mb_ken[]   ={"肯垦恳啃"};$/;"	v
+mb_keng	input/py_dict.h	/^char  mb_keng[]  ={"吭坑"};$/;"	v
+mb_kong	input/py_dict.h	/^char  mb_kong[]  ={"空孔恐控"};$/;"	v
+mb_kou	input/py_dict.h	/^char  mb_kou[]   ={"抠口扣寇"};$/;"	v
+mb_ku	input/py_dict.h	/^char  mb_ku[]    ={"枯哭窟苦库裤酷"};$/;"	v
+mb_kua	input/py_dict.h	/^char  mb_kua[]   ={"夸垮挎胯跨"};$/;"	v
+mb_kuai	input/py_dict.h	/^char  mb_kuai[]  ={"块快侩筷"};$/;"	v
+mb_kuan	input/py_dict.h	/^char  mb_kuan[]  ={"宽款"};$/;"	v
+mb_kuang	input/py_dict.h	/^char  mb_kuang[] ={"匡筐狂况旷矿框眶"};$/;"	v
+mb_kui	input/py_dict.h	/^char  mb_kui[]   ={"亏岿盔窥奎葵魁傀愧溃馈"};$/;"	v
+mb_kun	input/py_dict.h	/^char  mb_kun[]   ={"坤昆捆困"};$/;"	v
+mb_kuo	input/py_dict.h	/^char  mb_kuo[]   ={"扩括阔廓"};$/;"	v
+mb_la	input/py_dict.h	/^char  mb_la[]    ={"垃拉啦喇腊蜡辣"};$/;"	v
+mb_lai	input/py_dict.h	/^char  mb_lai[]   ={"来莱赖"};$/;"	v
+mb_lan	input/py_dict.h	/^char  mb_lan[]   ={"兰拦栏婪阑蓝谰澜篮览揽缆懒烂滥"};$/;"	v
+mb_lang	input/py_dict.h	/^char  mb_lang[]  ={"郎狼廊琅榔朗浪"};$/;"	v
+mb_lao	input/py_dict.h	/^char  mb_lao[]   ={"捞劳牢老佬姥涝烙酪"};$/;"	v
+mb_le	input/py_dict.h	/^char  mb_le[]    ={"乐勒了"};$/;"	v
+mb_lei	input/py_dict.h	/^char  mb_lei[]   ={"雷镭垒磊蕾儡肋泪类累擂"};$/;"	v
+mb_leng	input/py_dict.h	/^char  mb_leng[]  ={"棱楞冷"};$/;"	v
+mb_li	input/py_dict.h	/^char  mb_li[]    ={"厘梨狸离莉犁漓璃黎篱礼李里哩理鲤力历厉立吏丽利励沥例隶俐荔栗砾粒傈痢"};$/;"	v
+mb_lian	input/py_dict.h	/^char  mb_lian[]  ={"连帘怜涟莲联廉镰敛脸练炼恋链"};$/;"	v
+mb_liang	input/py_dict.h	/^char  mb_liang[] ={"俩良凉梁粮粱两亮谅辆晾量"};$/;"	v
+mb_liao	input/py_dict.h	/^char  mb_liao[]  ={"潦辽疗聊僚寥廖撩燎镣料撂"};$/;"	v
+mb_lie	input/py_dict.h	/^char  mb_lie[]   ={"列劣烈猎裂"};$/;"	v
+mb_lin	input/py_dict.h	/^char  mb_lin[]   ={"邻林临淋琳霖磷鳞凛吝赁拎"};$/;"	v
+mb_ling	input/py_dict.h	/^char  mb_ling[]  ={"伶灵岭玲凌铃陵羚菱零龄领令另"};$/;"	v
+mb_liu	input/py_dict.h	/^char  mb_liu[]   ={"溜刘流留琉硫馏榴瘤柳六"};$/;"	v
+mb_long	input/py_dict.h	/^char  mb_long[]  ={"龙咙笼聋隆窿陇垄拢"};$/;"	v
+mb_lou	input/py_dict.h	/^char  mb_lou[]   ={"娄楼搂篓陋漏"};$/;"	v
+mb_lu	input/py_dict.h	/^char  mb_lu[]    ={"露卢庐芦炉颅卤虏掳鲁陆录赂鹿禄碌路戮潞麓"};$/;"	v
+mb_luan	input/py_dict.h	/^char  mb_luan[]  ={"孪峦挛滦卵乱"};$/;"	v
+mb_lue	input/py_dict.h	/^char  mb_lue[]   ={"掠略"};$/;"	v
+mb_lun	input/py_dict.h	/^char  mb_lun[]   ={"抡仑伦沦纶轮论"};$/;"	v
+mb_luo	input/py_dict.h	/^char  mb_luo[]   ={"罗萝逻锣箩骡螺裸洛络骆落"};$/;"	v
+mb_lv	input/py_dict.h	/^char  mb_lv[]    ={"滤驴吕侣旅铝屡缕履律虑率绿氯"};$/;"	v
+mb_ma	input/py_dict.h	/^char  mb_ma[]    ={"妈麻马玛码蚂骂吗嘛"};$/;"	v
+mb_mai	input/py_dict.h	/^char  mb_mai[]   ={"埋买迈麦卖脉"};$/;"	v
+mb_man	input/py_dict.h	/^char  mb_man[]   ={"蛮馒瞒满曼谩慢漫蔓"};$/;"	v
+mb_mang	input/py_dict.h	/^char  mb_mang[]  ={"忙芒盲茫莽氓"};$/;"	v
+mb_mao	input/py_dict.h	/^char  mb_mao[]   ={"猫毛矛茅锚卯铆茂冒贸帽貌"};$/;"	v
+mb_me	input/py_dict.h	/^char  mb_me[]    ={"么"};$/;"	v
+mb_mei	input/py_dict.h	/^char  mb_mei[]   ={"没枚玫眉梅媒煤酶霉每美镁妹昧媚寐"};$/;"	v
+mb_men	input/py_dict.h	/^char  mb_men[]   ={"门闷们"};$/;"	v
+mb_meng	input/py_dict.h	/^char  mb_meng[]  ={"萌盟檬猛蒙锰孟梦"};$/;"	v
+mb_mi	input/py_dict.h	/^char  mb_mi[]    ={"弥迷谜醚糜靡米眯泌觅秘密幂蜜"};$/;"	v
+mb_mian	input/py_dict.h	/^char  mb_mian[]  ={"眠绵棉免勉娩冕缅面"};$/;"	v
+mb_miao	input/py_dict.h	/^char  mb_miao[]  ={"苗描瞄秒渺藐妙庙"};$/;"	v
+mb_mie	input/py_dict.h	/^char  mb_mie[]   ={"灭蔑"};$/;"	v
+mb_min	input/py_dict.h	/^char  mb_min[]   ={"民皿抿闽悯敏"};$/;"	v
+mb_ming	input/py_dict.h	/^char  mb_ming[]  ={"名明鸣铭螟命"};$/;"	v
+mb_miu	input/py_dict.h	/^char  mb_miu[]   ={"谬"};$/;"	v
+mb_mo	input/py_dict.h	/^char  mb_mo[]    ={"貉摸摹模膜摩磨蘑魔抹末沫陌莫寞漠墨默"};$/;"	v
+mb_mou	input/py_dict.h	/^char  mb_mou[]   ={"牟谋某"};$/;"	v
+mb_mu	input/py_dict.h	/^char  mb_mu[]    ={"母亩牡姆拇木目牧募墓幕睦慕暮穆"};$/;"	v
+mb_na	input/py_dict.h	/^char  mb_na[]    ={"拿哪那纳娜钠呐"};$/;"	v
+mb_nai	input/py_dict.h	/^char  mb_nai[]   ={"乃奶氖奈耐"};$/;"	v
+mb_nan	input/py_dict.h	/^char  mb_nan[]   ={"男南难"};$/;"	v
+mb_nang	input/py_dict.h	/^char  mb_nang[]  ={"囊"};$/;"	v
+mb_nao	input/py_dict.h	/^char  mb_nao[]   ={"挠恼脑闹淖"};$/;"	v
+mb_ne	input/py_dict.h	/^char  mb_ne[]    ={"呢"};$/;"	v
+mb_nei	input/py_dict.h	/^char  mb_nei[]   ={"内馁"};$/;"	v
+mb_nen	input/py_dict.h	/^char  mb_nen[]   ={"嫩"};$/;"	v
+mb_neng	input/py_dict.h	/^char  mb_neng[]  ={"能"};$/;"	v
+mb_ni	input/py_dict.h	/^char  mb_ni[]    ={"妮尼泥倪霓你拟逆匿溺腻"};$/;"	v
+mb_nian	input/py_dict.h	/^char  mb_nian[]  ={"拈年捻撵碾念蔫"};$/;"	v
+mb_niang	input/py_dict.h	/^char  mb_niang[] ={"娘酿"};$/;"	v
+mb_niao	input/py_dict.h	/^char  mb_niao[]  ={"鸟尿"};$/;"	v
+mb_nie	input/py_dict.h	/^char  mb_nie[]   ={"捏涅聂啮镊镍孽"};$/;"	v
+mb_nin	input/py_dict.h	/^char  mb_nin[]   ={"您"};$/;"	v
+mb_ning	input/py_dict.h	/^char  mb_ning[]  ={"宁拧狞柠凝泞"};$/;"	v
+mb_niu	input/py_dict.h	/^char  mb_niu[]   ={"牛扭纽钮"};$/;"	v
+mb_nong	input/py_dict.h	/^char  mb_nong[]  ={"农浓脓弄"};$/;"	v
+mb_nu	input/py_dict.h	/^char  mb_nu[]    ={"奴努怒"};$/;"	v
+mb_nuan	input/py_dict.h	/^char  mb_nuan[]  ={"暖"};$/;"	v
+mb_nue	input/py_dict.h	/^char  mb_nue[]   ={"疟虐"};$/;"	v
+mb_nuo	input/py_dict.h	/^char  mb_nuo[]   ={"挪诺懦糯"};$/;"	v
+mb_nv	input/py_dict.h	/^char  mb_nv[]    ={"女"};$/;"	v
+mb_o	input/py_dict.h	/^char  mb_o[]     ={"哦"};$/;"	v
+mb_ou	input/py_dict.h	/^char  mb_ou[]    ={"欧殴鸥呕偶藕沤"};$/;"	v
+mb_pa	input/py_dict.h	/^char  mb_pa[]    ={"趴啪爬耙琶帕怕"};$/;"	v
+mb_pai	input/py_dict.h	/^char  mb_pai[]   ={"拍徘排牌派湃"};$/;"	v
+mb_pan	input/py_dict.h	/^char  mb_pan[]   ={"潘攀盘磐判叛盼畔"};$/;"	v
+mb_pang	input/py_dict.h	/^char  mb_pang[]  ={"乓庞旁耪胖"};$/;"	v
+mb_pao	input/py_dict.h	/^char  mb_pao[]   ={"抛刨咆炮袍跑泡"};$/;"	v
+mb_pei	input/py_dict.h	/^char  mb_pei[]   ={"呸胚陪培赔裴沛佩配"};$/;"	v
+mb_pen	input/py_dict.h	/^char  mb_pen[]   ={"喷盆"};$/;"	v
+mb_peng	input/py_dict.h	/^char  mb_peng[]  ={"抨砰烹朋彭棚硼蓬鹏澎篷膨捧碰"};$/;"	v
+mb_pi	input/py_dict.h	/^char  mb_pi[]    ={"辟批坯披砒劈霹皮毗疲啤琵脾匹痞屁僻譬"};$/;"	v
+mb_pian	input/py_dict.h	/^char  mb_pian[]  ={"片偏篇骗"};$/;"	v
+mb_piao	input/py_dict.h	/^char  mb_piao[]  ={"漂飘瓢票"};$/;"	v
+mb_pie	input/py_dict.h	/^char  mb_pie[]   ={"撇瞥"};$/;"	v
+mb_pin	input/py_dict.h	/^char  mb_pin[]   ={"拼贫频品聘"};$/;"	v
+mb_ping	input/py_dict.h	/^char  mb_ping[]  ={"乒平评凭坪苹屏瓶萍"};$/;"	v
+mb_po	input/py_dict.h	/^char  mb_po[]    ={"坡泼颇婆迫破粕魄"};$/;"	v
+mb_pou	input/py_dict.h	/^char  mb_pou[]   ={"剖"};$/;"	v
+mb_pu	input/py_dict.h	/^char  mb_pu[]    ={"脯仆扑铺莆菩葡蒲朴圃埔浦普谱曝"};$/;"	v
+mb_qi	input/py_dict.h	/^char  mb_qi[]    ={"七沏妻柒凄栖戚期欺漆祁齐其奇歧祈脐崎畦骑棋旗乞企岂启起气讫迄弃汽泣契砌器"};$/;"	v
+mb_qia	input/py_dict.h	/^char  mb_qia[]   ={"掐恰洽"};$/;"	v
+mb_qian	input/py_dict.h	/^char  mb_qian[]  ={"千仟扦迁钎牵铅谦签前钱钳乾潜黔浅遣谴欠堑嵌歉"};$/;"	v
+mb_qiang	input/py_dict.h	/^char  mb_qiang[] ={"呛羌枪腔强墙蔷抢"};$/;"	v
+mb_qiao	input/py_dict.h	/^char  mb_qiao[]  ={"悄敲锹橇乔侨桥瞧巧俏峭窍翘撬鞘"};$/;"	v
+mb_qie	input/py_dict.h	/^char  mb_qie[]   ={"切茄且怯窃"};$/;"	v
+mb_qin	input/py_dict.h	/^char  mb_qin[]   ={"亲侵钦芹秦琴禽勤擒寝沁"};$/;"	v
+mb_qing	input/py_dict.h	/^char  mb_qing[]  ={"青氢轻倾卿清情晴氰擎顷请庆"};$/;"	v
+mb_qiong	input/py_dict.h	/^char  mb_qiong[] ={"穷琼"};$/;"	v
+mb_qiu	input/py_dict.h	/^char  mb_qiu[]   ={"丘邱秋囚求泅酋球"};$/;"	v
+mb_qu	input/py_dict.h	/^char  mb_qu[]    ={"区曲驱屈蛆躯趋渠取娶龋去趣"};$/;"	v
+mb_quan	input/py_dict.h	/^char  mb_quan[]  ={"圈全权泉拳痊醛颧犬劝券"};$/;"	v
+mb_que	input/py_dict.h	/^char  mb_que[]   ={"炔缺瘸却雀确鹊榷"};$/;"	v
+mb_qun	input/py_dict.h	/^char  mb_qun[]   ={"裙群"};$/;"	v
+mb_ran	input/py_dict.h	/^char  mb_ran[]   ={"然燃冉染"};$/;"	v
+mb_rang	input/py_dict.h	/^char  mb_rang[]  ={"瓤嚷壤攘让"};$/;"	v
+mb_rao	input/py_dict.h	/^char  mb_rao[]   ={"饶扰绕"};$/;"	v
+mb_re	input/py_dict.h	/^char  mb_re[]    ={"惹热"};$/;"	v
+mb_ren	input/py_dict.h	/^char  mb_ren[]   ={"人仁壬忍刃认任纫妊韧"};$/;"	v
+mb_reng	input/py_dict.h	/^char  mb_reng[]  ={"扔仍"};$/;"	v
+mb_ri	input/py_dict.h	/^char  mb_ri[]    ={"日"};$/;"	v
+mb_rong	input/py_dict.h	/^char  mb_rong[]  ={"戎绒茸荣容溶蓉熔融冗"};$/;"	v
+mb_rou	input/py_dict.h	/^char  mb_rou[]   ={"柔揉肉"};$/;"	v
+mb_ru	input/py_dict.h	/^char  mb_ru[]    ={"如茹儒孺蠕汝乳辱入褥"};$/;"	v
+mb_ruan	input/py_dict.h	/^char  mb_ruan[]  ={"阮软"};$/;"	v
+mb_rui	input/py_dict.h	/^char  mb_rui[]   ={"蕊锐瑞"};$/;"	v
+mb_run	input/py_dict.h	/^char  mb_run[]   ={"闰润"};$/;"	v
+mb_ruo	input/py_dict.h	/^char  mb_ruo[]   ={"若弱"};$/;"	v
+mb_sa	input/py_dict.h	/^char  mb_sa[]    ={"撒洒萨"};$/;"	v
+mb_sai	input/py_dict.h	/^char  mb_sai[]   ={"塞腮鳃赛"};$/;"	v
+mb_san	input/py_dict.h	/^char  mb_san[]   ={"三叁伞散"};$/;"	v
+mb_sang	input/py_dict.h	/^char  mb_sang[]  ={"桑嗓丧"};$/;"	v
+mb_sao	input/py_dict.h	/^char  mb_sao[]   ={"搔骚扫嫂"};$/;"	v
+mb_se	input/py_dict.h	/^char  mb_se[]    ={"色涩瑟"};$/;"	v
+mb_sen	input/py_dict.h	/^char  mb_sen[]   ={"森"};$/;"	v
+mb_seng	input/py_dict.h	/^char  mb_seng[]  ={"僧"};$/;"	v
+mb_sha	input/py_dict.h	/^char  mb_sha[]   ={"杀沙纱砂莎傻啥煞厦"};$/;"	v
+mb_shai	input/py_dict.h	/^char  mb_shai[]  ={"筛晒"};$/;"	v
+mb_shan	input/py_dict.h	/^char  mb_shan[]  ={"山删杉衫珊煽闪陕汕苫扇善缮擅膳赡栅"};$/;"	v
+mb_shang	input/py_dict.h	/^char  mb_shang[] ={"伤商墒裳晌赏上尚"};$/;"	v
+mb_shao	input/py_dict.h	/^char  mb_shao[]  ={"捎梢烧稍勺芍韶少邵绍哨"};$/;"	v
+mb_she	input/py_dict.h	/^char  mb_she[]   ={"奢赊舌蛇舍设社射涉赦慑摄"};$/;"	v
+mb_shen	input/py_dict.h	/^char  mb_shen[]  ={"申伸身呻绅娠砷深神沈审婶肾甚渗慎什"};$/;"	v
+mb_sheng	input/py_dict.h	/^char  mb_sheng[] ={"升生声牲胜甥绳省圣盛剩"};$/;"	v
+mb_shi	input/py_dict.h	/^char  mb_shi[]   ={"匙尸失师虱诗施狮湿十石时识实拾蚀食史矢使始驶屎士氏世仕市示式事侍势视试饰室恃拭是柿适逝释嗜誓噬似"};$/;"	v
+mb_shou	input/py_dict.h	/^char  mb_shou[]  ={"收手守首寿受兽售授瘦"};$/;"	v
+mb_shu	input/py_dict.h	/^char  mb_shu[]   ={"书抒叔枢殊梳淑疏舒输蔬孰赎熟暑黍署鼠蜀薯曙术戍束述树竖恕庶数墅漱属"};$/;"	v
+mb_shua	input/py_dict.h	/^char  mb_shua[]  ={"刷耍"};$/;"	v
+mb_shuai	input/py_dict.h	/^char  mb_shuai[] ={"衰摔甩帅"};$/;"	v
+mb_shuan	input/py_dict.h	/^char  mb_shuan[] ={"拴栓"};$/;"	v
+mb_shuang	input/py_dict.h	/^char  mb_shuang[]={"双霜爽"};$/;"	v
+mb_shui	input/py_dict.h	/^char  mb_shui[]  ={"谁水税睡"};$/;"	v
+mb_shun	input/py_dict.h	/^char  mb_shun[]  ={"吮顺舜瞬"};$/;"	v
+mb_shuo	input/py_dict.h	/^char  mb_shuo[]  ={"说烁朔硕"};$/;"	v
+mb_si	input/py_dict.h	/^char  mb_si[]    ={"丝司私思斯嘶撕死巳四寺伺饲嗣肆"};$/;"	v
+mb_song	input/py_dict.h	/^char  mb_song[]  ={"松怂耸讼宋诵送颂"};$/;"	v
+mb_sou	input/py_dict.h	/^char  mb_sou[]   ={"嗽搜艘擞"};$/;"	v
+mb_space	input/py_dict.h	/^char  mb_space[] ={""};$/;"	v
+mb_su	input/py_dict.h	/^char  mb_su[]    ={"苏酥俗诉肃素速粟塑溯僳"};$/;"	v
+mb_suan	input/py_dict.h	/^char  mb_suan[]  ={"酸蒜算"};$/;"	v
+mb_sui	input/py_dict.h	/^char  mb_sui[]   ={"虽绥隋随髓岁祟遂碎隧穗"};$/;"	v
+mb_sun	input/py_dict.h	/^char  mb_sun[]   ={"孙损笋"};$/;"	v
+mb_suo	input/py_dict.h	/^char  mb_suo[]   ={"唆梭蓑缩所索琐锁"};$/;"	v
+mb_ta	input/py_dict.h	/^char  mb_ta[]    ={"她他它塌塔獭挞踏蹋"};$/;"	v
+mb_tai	input/py_dict.h	/^char  mb_tai[]   ={"胎台抬苔太汰态泰酞"};$/;"	v
+mb_tan	input/py_dict.h	/^char  mb_tan[]   ={"坍贪摊滩瘫坛谈痰谭潭檀坦袒毯叹炭探碳"};$/;"	v
+mb_tang	input/py_dict.h	/^char  mb_tang[]  ={"汤唐堂棠塘搪膛糖倘淌躺烫趟"};$/;"	v
+mb_tao	input/py_dict.h	/^char  mb_tao[]   ={"涛绦掏滔逃桃陶淘萄讨套"};$/;"	v
+mb_te	input/py_dict.h	/^char  mb_te[]    ={"特"};$/;"	v
+mb_teng	input/py_dict.h	/^char  mb_teng[]  ={"疼腾誊藤"};$/;"	v
+mb_ti	input/py_dict.h	/^char  mb_ti[]    ={"剔梯锑踢啼提题蹄体屉剃涕惕替嚏"};$/;"	v
+mb_tian	input/py_dict.h	/^char  mb_tian[]  ={"天添田恬甜填腆舔"};$/;"	v
+mb_tiao	input/py_dict.h	/^char  mb_tiao[]  ={"调挑条迢眺跳"};$/;"	v
+mb_tie	input/py_dict.h	/^char  mb_tie[]   ={"贴铁帖"};$/;"	v
+mb_ting	input/py_dict.h	/^char  mb_ting[]  ={"厅汀听烃廷亭庭停挺艇"};$/;"	v
+mb_tong	input/py_dict.h	/^char  mb_tong[]  ={"通同彤桐铜童酮瞳统捅桶筒痛"};$/;"	v
+mb_tou	input/py_dict.h	/^char  mb_tou[]   ={"偷头投透"};$/;"	v
+mb_tu	input/py_dict.h	/^char  mb_tu[]    ={"凸秃突图徒涂途屠土吐兔"};$/;"	v
+mb_tuan	input/py_dict.h	/^char  mb_tuan[]  ={"湍团"};$/;"	v
+mb_tui	input/py_dict.h	/^char  mb_tui[]   ={"推颓腿退蜕褪"};$/;"	v
+mb_tun	input/py_dict.h	/^char  mb_tun[]   ={"囤吞屯臀"};$/;"	v
+mb_tuo	input/py_dict.h	/^char  mb_tuo[]   ={"托拖脱驮陀驼鸵妥椭拓唾"};$/;"	v
+mb_wa	input/py_dict.h	/^char  mb_wa[]    ={"哇娃挖洼蛙瓦袜"};$/;"	v
+mb_wai	input/py_dict.h	/^char  mb_wai[]   ={"歪外"};$/;"	v
+mb_wan	input/py_dict.h	/^char  mb_wan[]   ={"弯湾豌丸完玩顽烷宛挽晚婉惋皖碗万腕"};$/;"	v
+mb_wang	input/py_dict.h	/^char  mb_wang[]  ={"汪亡王网往枉妄忘旺望"};$/;"	v
+mb_wei	input/py_dict.h	/^char  mb_wei[]   ={"危威微巍为韦围违桅唯惟维潍伟伪尾纬苇委萎卫未位味畏胃尉谓喂渭蔚慰魏"};$/;"	v
+mb_wen	input/py_dict.h	/^char  mb_wen[]   ={"温瘟文纹闻蚊吻紊稳问"};$/;"	v
+mb_weng	input/py_dict.h	/^char  mb_weng[]  ={"翁嗡瓮"};$/;"	v
+mb_wo	input/py_dict.h	/^char  mb_wo[]    ={"挝涡窝蜗我沃卧握斡"};$/;"	v
+mb_wu	input/py_dict.h	/^char  mb_wu[]    ={"乌污呜巫屋诬钨无毋吴吾芜梧五午伍坞武侮捂舞勿务戊物误悟晤雾"};$/;"	v
+mb_xi	input/py_dict.h	/^char  mb_xi[]    ={"夕汐西吸希昔析矽息牺悉惜烯硒晰犀稀溪锡熄熙嘻膝习席袭媳檄洗喜戏系细隙"};$/;"	v
+mb_xia	input/py_dict.h	/^char  mb_xia[]   ={"虾瞎匣侠峡狭暇辖霞下吓夏"};$/;"	v
+mb_xian	input/py_dict.h	/^char  mb_xian[]  ={"铣仙先纤掀锨鲜闲弦贤咸涎舷衔嫌显险县现线限宪陷馅羡献腺"};$/;"	v
+mb_xiang	input/py_dict.h	/^char  mb_xiang[] ={"乡相香厢湘箱襄镶详祥翔享响想向巷项象像橡"};$/;"	v
+mb_xiao	input/py_dict.h	/^char  mb_xiao[]  ={"宵消萧硝销霄嚣淆小晓孝肖哮效校笑啸"};$/;"	v
+mb_xie	input/py_dict.h	/^char  mb_xie[]   ={"些楔歇蝎协邪胁斜谐携鞋写泄泻卸屑械谢懈蟹"};$/;"	v
+mb_xin	input/py_dict.h	/^char  mb_xin[]   ={"心忻芯辛欣锌新薪信衅"};$/;"	v
+mb_xing	input/py_dict.h	/^char  mb_xing[]  ={"兴星惺猩腥刑邢形型醒杏姓幸性"};$/;"	v
+mb_xiong	input/py_dict.h	/^char  mb_xiong[] ={"凶兄匈汹胸雄熊"};$/;"	v
+mb_xiu	input/py_dict.h	/^char  mb_xiu[]   ={"宿休修羞朽秀绣袖锈嗅"};$/;"	v
+mb_xu	input/py_dict.h	/^char  mb_xu[]    ={"戌须虚嘘需墟徐许旭序叙恤绪续酗婿絮蓄吁"};$/;"	v
+mb_xuan	input/py_dict.h	/^char  mb_xuan[]  ={"轩宣喧玄悬旋选癣绚眩"};$/;"	v
+mb_xue	input/py_dict.h	/^char  mb_xue[]   ={"削靴薛穴学雪血"};$/;"	v
+mb_xun	input/py_dict.h	/^char  mb_xun[]   ={"勋熏寻巡旬驯询循训讯汛迅逊殉"};$/;"	v
+mb_ya	input/py_dict.h	/^char  mb_ya[]    ={"丫压呀押鸦鸭牙芽蚜崖涯衙哑雅亚讶"};$/;"	v
+mb_yan	input/py_dict.h	/^char  mb_yan[]   ={"咽烟淹焉阉延严言岩沿炎研盐阎蜒颜奄衍掩眼演厌彦砚唁宴艳验谚堰焰雁燕"};$/;"	v
+mb_yang	input/py_dict.h	/^char  mb_yang[]  ={"央殃秧鸯扬羊阳杨佯疡洋仰养氧痒样漾"};$/;"	v
+mb_yao	input/py_dict.h	/^char  mb_yao[]   ={"侥妖腰邀尧姚窑谣摇遥瑶咬舀药要耀钥"};$/;"	v
+mb_ye	input/py_dict.h	/^char  mb_ye[]    ={"椰噎爷耶也冶野业叶曳页夜掖液腋"};$/;"	v
+mb_yi	input/py_dict.h	/^char  mb_yi[]    ={"一伊衣医依铱壹揖仪夷沂宜姨胰移遗颐疑彝乙已以矣蚁倚椅义亿忆艺议亦屹异役抑译邑易绎诣疫益谊翌逸意溢肄裔毅翼臆"};$/;"	v
+mb_yin	input/py_dict.h	/^char  mb_yin[]   ={"因阴姻茵荫音殷吟寅淫银尹引饮隐印"};$/;"	v
+mb_ying	input/py_dict.h	/^char  mb_ying[]  ={"应英婴缨樱鹰迎盈荧莹萤营蝇赢颖影映硬"};$/;"	v
+mb_yo	input/py_dict.h	/^char  mb_yo[]    ={"哟"};$/;"	v
+mb_yong	input/py_dict.h	/^char  mb_yong[]  ={"佣拥痈庸雍臃永咏泳勇涌恿蛹踊用"};$/;"	v
+mb_you	input/py_dict.h	/^char  mb_you[]   ={"优忧幽悠尤由犹邮油铀游友有酉又右幼佑诱釉"};$/;"	v
+mb_yu	input/py_dict.h	/^char  mb_yu[]    ={"迂淤渝于予余盂鱼俞娱渔隅愉逾愚榆虞舆与宇屿羽雨禹语玉驭芋育郁狱峪浴预域欲喻寓御裕遇愈誉豫"};$/;"	v
+mb_yuan	input/py_dict.h	/^char  mb_yuan[]  ={"冤鸳渊元员园垣原圆袁援缘源猿辕远苑怨院愿"};$/;"	v
+mb_yue	input/py_dict.h	/^char  mb_yue[]   ={"曰约月岳悦阅跃粤越"};$/;"	v
+mb_yun	input/py_dict.h	/^char  mb_yun[]   ={"云匀郧耘允陨孕运晕酝韵蕴"};$/;"	v
+mb_za	input/py_dict.h	/^char  mb_za[]    ={"匝杂砸咋"};$/;"	v
+mb_zai	input/py_dict.h	/^char  mb_zai[]   ={"灾哉栽宰载再在仔"};$/;"	v
+mb_zan	input/py_dict.h	/^char  mb_zan[]   ={"咱攒暂赞"};$/;"	v
+mb_zang	input/py_dict.h	/^char  mb_zang[]  ={"赃脏葬"};$/;"	v
+mb_zao	input/py_dict.h	/^char  mb_zao[]   ={"遭糟凿早枣蚤澡藻灶皂造噪燥躁"};$/;"	v
+mb_ze	input/py_dict.h	/^char  mb_ze[]    ={"则择泽责"};$/;"	v
+mb_zei	input/py_dict.h	/^char  mb_zei[]   ={"贼"};$/;"	v
+mb_zen	input/py_dict.h	/^char  mb_zen[]   ={"怎"};$/;"	v
+mb_zeng	input/py_dict.h	/^char  mb_zeng[]  ={"增憎赠"};$/;"	v
+mb_zha	input/py_dict.h	/^char  mb_zha[]   ={"喳渣扎札轧闸铡眨乍诈炸榨柞"};$/;"	v
+mb_zhai	input/py_dict.h	/^char  mb_zhai[]  ={"斋摘宅翟窄债寨"};$/;"	v
+mb_zhan	input/py_dict.h	/^char  mb_zhan[]  ={"沾毡粘詹瞻斩展盏崭辗占战栈站绽湛蘸"};$/;"	v
+mb_zhang	input/py_dict.h	/^char  mb_zhang[] ={"长张章彰漳樟涨掌丈仗帐杖胀账障瘴"};$/;"	v
+mb_zhao	input/py_dict.h	/^char  mb_zhao[]  ={"招昭找沼召兆赵照罩肇爪"};$/;"	v
+mb_zhe	input/py_dict.h	/^char  mb_zhe[]   ={"遮折哲蛰辙者锗这浙蔗着"};$/;"	v
+mb_zhen	input/py_dict.h	/^char  mb_zhen[]  ={"贞针侦珍真砧斟甄臻诊枕疹阵振镇震帧"};$/;"	v
+mb_zheng	input/py_dict.h	/^char  mb_zheng[] ={"争征怔挣狰睁蒸拯整正证郑政症"};$/;"	v
+mb_zhi	input/py_dict.h	/^char  mb_zhi[]   ={"之支汁芝吱枝知织肢脂蜘执侄直值职植殖止只旨址纸指趾至志制帜治炙质峙挚秩致掷痔窒智滞稚置"};$/;"	v
+mb_zhong	input/py_dict.h	/^char  mb_zhong[] ={"中忠终盅钟衷肿种仲众重"};$/;"	v
+mb_zhou	input/py_dict.h	/^char  mb_zhou[]  ={"州舟诌周洲粥轴肘帚咒宙昼皱骤"};$/;"	v
+mb_zhu	input/py_dict.h	/^char  mb_zhu[]   ={"朱诛株珠诸猪蛛竹烛逐主拄煮嘱瞩住助注贮驻柱祝著蛀筑铸"};$/;"	v
+mb_zhua	input/py_dict.h	/^char  mb_zhua[]  ={"抓"};$/;"	v
+mb_zhuai	input/py_dict.h	/^char  mb_zhuai[] ={"拽"};$/;"	v
+mb_zhuan	input/py_dict.h	/^char  mb_zhuan[] ={"专砖转撰篆"};$/;"	v
+mb_zhuang	input/py_dict.h	/^char  mb_zhuang[]={"妆庄桩装壮状幢撞"};$/;"	v
+mb_zhui	input/py_dict.h	/^char  mb_zhui[]  ={"追椎锥坠缀赘"};$/;"	v
+mb_zhun	input/py_dict.h	/^char  mb_zhun[]  ={"谆准"};$/;"	v
+mb_zhuo	input/py_dict.h	/^char  mb_zhuo[]  ={"卓拙捉桌灼茁浊酌啄琢"};$/;"	v
+mb_zi	input/py_dict.h	/^char  mb_zi[]    ={"孜兹咨姿资淄滋籽子紫滓字自渍"};$/;"	v
+mb_zong	input/py_dict.h	/^char  mb_zong[]  ={"宗综棕踪鬃总纵"};$/;"	v
+mb_zou	input/py_dict.h	/^char  mb_zou[]   ={"邹走奏揍"};$/;"	v
+mb_zu	input/py_dict.h	/^char  mb_zu[]    ={"租足卒族诅阻组祖"};$/;"	v
+mb_zuan	input/py_dict.h	/^char  mb_zuan[]  ={"赚纂钻"};$/;"	v
+mb_zui	input/py_dict.h	/^char  mb_zui[]   ={"嘴最罪醉"};$/;"	v
+mb_zun	input/py_dict.h	/^char  mb_zun[]   ={"尊遵"};$/;"	v
+mb_zuo	input/py_dict.h	/^char  mb_zuo[]   ={"昨左佐作坐座做"};$/;"	v
+monney	print/print-flat.h	/^	struct print_comm_monney monney;$/;"	m	struct:print_frame	typeref:struct:print_frame::print_comm_monney	access:public
+monney	print/print-flat.h	/^    char monney[MAX_TITLE_LENGTH + 1];$/;"	m	struct:print_comm_tile	access:public
+name_arr	misc/uart.c	/^static int name_arr[] = {38400,  19200,  9600,  4800,  2400,  1200,  300,$/;"	v	file:
+nul_table	input/keyboard.c	/^uint nul_table[5] = {'\\0', '\\0', '\\0', '\\0', '\\0',};$/;"	v
+num_1_table	input/keyboard.c	/^uint num_1_table[5] = {RIGHT, LEFT, '6', '5', '4'};$/;"	v
+num_2_table	input/keyboard.c	/^uint num_2_table[5] = {DOWN, UP, '9', '8', '7'};$/;"	v
+num_3_table	input/keyboard.c	/^uint num_3_table[5] = {'\\0', '\\0', '3', '2', '1'};$/;"	v
+num_4_table	input/keyboard.c	/^uint num_4_table[5] = {'\\0', '\\0', '.', D_ZERO, '0'};$/;"	v
+open_uart	misc/uart.c	/^int open_uart(char *dev, int flag)$/;"	f	signature:(char *dev, int flag)
+p_t_table	input/keyboard.c	/^uint p_t_table[5] = {'p', 'q', 'r', 's', 't'};$/;"	v
+payee_info	print/print-flat.h	/^	struct print_payee_info payee_info;$/;"	m	struct:print_frame	typeref:struct:print_frame::print_payee_info	access:public
+payee_item	print/print-flat.h	/^   char payee_item[MAX_CHAR_PER_ITEM + 1];$/;"	m	struct:print_payee_info	access:public
+payee_title	print/print-flat.h	/^   char payee_title[MAX_TITLE_LENGTH + 1];$/;"	m	struct:print_payee_info	access:public
+plu_file_append_barcord_idx	misc/plu.c	/^static int plu_file_append_barcord_idx(char *barcode, int plu_num)$/;"	f	file:	signature:(char *barcode, int plu_num)
+plu_file_append_dpt	misc/plu.c	/^static int plu_file_append_dpt(int dpt_num, struct dpt_item * dpt_item)$/;"	f	file:	signature:(int dpt_num, struct dpt_item * dpt_item)
+plu_file_append_dpt_cfg	misc/plu.c	/^static int plu_file_append_dpt_cfg(struct dpt_cfg_item * dpt_cfg)$/;"	f	file:	signature:(struct dpt_cfg_item * dpt_cfg)
+plu_file_append_name_idx	misc/plu.c	/^static int plu_file_append_name_idx(char *name, int plu_num)$/;"	f	file:	signature:(char *name, int plu_num)
+plu_file_append_plu	misc/plu.c	/^static int plu_file_append_plu(int free_plu, struct plu_item * plu_item)$/;"	f	file:	signature:(int free_plu, struct plu_item * plu_item)
+plu_file_create_file	misc/plu.c	/^static int plu_file_create_file(void)$/;"	f	file:	signature:(void)
+plu_file_dec_count	misc/plu.c	/^static int plu_file_dec_count(void)$/;"	f	file:	signature:(void)
+plu_file_del_plu	misc/plu.c	/^static int plu_file_del_plu(int plu_num)$/;"	f	file:	signature:(int plu_num)
+plu_file_delete_barcode_idx	misc/plu.c	/^static int plu_file_delete_barcode_idx(char *barcode)$/;"	f	file:	signature:(char *barcode)
+plu_file_delete_dpt	misc/plu.c	/^static int plu_file_delete_dpt(int dpt_num)$/;"	f	file:	signature:(int dpt_num)
+plu_file_delete_name_idx	misc/plu.c	/^static int plu_file_delete_name_idx(char * name)$/;"	f	file:	signature:(char * name)
+plu_file_get_dpt_amount	misc/plu.c	/^static int plu_file_get_dpt_amount(void)$/;"	f	file:	signature:(void)
+plu_file_get_free_dpt	misc/plu.c	/^static int plu_file_get_free_dpt(void)$/;"	f	file:	signature:(void)
+plu_file_get_free_plu	misc/plu.c	/^static int plu_file_get_free_plu(int dpt_num)$/;"	f	file:	signature:(int dpt_num)
+plu_file_get_plu_count	misc/plu.c	/^static int plu_file_get_plu_count(int *count)$/;"	f	file:	signature:(int *count)
+plu_file_idx_by_barcord	misc/plu.c	/^static int plu_file_idx_by_barcord(char *barcode, int *offset)$/;"	f	file:	signature:(char *barcode, int *offset)
+plu_file_idx_by_name	misc/plu.c	/^static int plu_file_idx_by_name(char *name, int *offset)$/;"	f	file:	signature:(char *name, int *offset)
+plu_file_inc_count	misc/plu.c	/^static int plu_file_inc_count(void)$/;"	f	file:	signature:(void)
+plu_file_index_by_bc	misc/plu.c	/^static int plu_file_index_by_bc(char *bc, struct plu_item * item)$/;"	f	file:	signature:(char *bc, struct plu_item * item)
+plu_file_index_by_name	misc/plu.c	/^static int plu_file_index_by_name(char *name, struct plu_item *item)$/;"	f	file:	signature:(char *name, struct plu_item *item)
+plu_file_is_free_dpt	misc/plu.c	/^static int plu_file_is_free_dpt(int dpt_num)$/;"	f	file:	signature:(int dpt_num)
+plu_file_modify_barcode_idx	misc/plu.c	/^static int plu_file_modify_barcode_idx(int offset, int plu_num)$/;"	f	file:	signature:(int offset, int plu_num)
+plu_file_modify_dpt	misc/plu.c	/^static int plu_file_modify_dpt(int dpt_num, struct dpt_item *dpt_item)$/;"	f	file:	signature:(int dpt_num, struct dpt_item *dpt_item)
+plu_file_modify_dpt_cfg	misc/plu.c	/^static int plu_file_modify_dpt_cfg(int dpt_num, struct dpt_cfg_item * dpt_cfg)$/;"	f	file:	signature:(int dpt_num, struct dpt_cfg_item * dpt_cfg)
+plu_file_modify_name_idx	misc/plu.c	/^static int plu_file_modify_name_idx(int offset, struct plu_name_idx * name_idx)$/;"	f	file:	signature:(int offset, struct plu_name_idx * name_idx)
+plu_file_modify_plu	misc/plu.c	/^static int plu_file_modify_plu(int plu_num, struct plu_item * plu_item)$/;"	f	file:	signature:(int plu_num, struct plu_item * plu_item)
+plu_file_read_barcord_idx	misc/plu.c	/^static int plu_file_read_barcord_idx(int offset, struct plu_barcode_idx * bar_idx)$/;"	f	file:	signature:(int offset, struct plu_barcode_idx * bar_idx)
+plu_file_read_dpt	misc/plu.c	/^static int plu_file_read_dpt(int dpt_num, struct dpt_item * dpt_item)$/;"	f	file:	signature:(int dpt_num, struct dpt_item * dpt_item)
+plu_file_read_dpt_cfg	misc/plu.c	/^static int plu_file_read_dpt_cfg(int dpt_num, struct dpt_cfg_item * dpt_cfg)$/;"	f	file:	signature:(int dpt_num, struct dpt_cfg_item * dpt_cfg)
+plu_file_read_name_idx	misc/plu.c	/^static int plu_file_read_name_idx(int offset, struct plu_name_idx *name_idx)$/;"	f	file:	signature:(int offset, struct plu_name_idx *name_idx)
+plu_file_read_plu	misc/plu.c	/^static int plu_file_read_plu(int plu_num, struct plu_item * plu_item)$/;"	f	file:	signature:(int plu_num, struct plu_item * plu_item)
+pm_base	misc/power.c	/^struct power_state pm_base = {$/;"	v	typeref:struct:power_state
+pop_ui_statck	ui/ui_api.c	/^inline static int pop_ui_statck(void) $/;"	f	file:	signature:(void)
+power_check_power_state	misc/power.c	/^static int power_check_power_state()$/;"	f	file:
+prepare_cmd	fiscal/tax_card_base.c	/^static struct card_send_buf * prepare_cmd(int CARD, int CMD, int size, $/;"	f	file:	signature:(int CARD, int CMD, int size, struct apdu_cmd_send * cmd_buf)
+price	print/print-flat.h	/^    char price[MAX_TITLE_LENGTH + 1];$/;"	m	struct:print_comm_tile	access:public
+print_boot_check	print/print-flat.c	/^static int print_boot_check(void)$/;"	f	file:	signature:(void)
+print_boot_check	print/print-roll.c	/^static int print_boot_check(void) $/;"	f	file:	signature:(void)
+print_buyer_info	print/print-flat.h	/^struct print_buyer_info$/;"	s
+print_buyer_info::buyer_title	print/print-flat.h	/^    char buyer_title[MAX_TITLE_LENGTH + 1];$/;"	m	struct:print_buyer_info	access:public
+print_buyer_info::buyer_type	print/print-flat.h	/^    char buyer_type[MAX_CHAR_PER_ITEM + 1];$/;"	m	struct:print_buyer_info	access:public
+print_check	print/print-flat.c	/^static int print_check(void)$/;"	f	file:	signature:(void)
+print_comm_item	print/print-flat.h	/^struct print_comm_item$/;"	s
+print_comm_item::item_count	print/print-flat.h	/^    char item_count[MAX_NUM_LENGTH];$/;"	m	struct:print_comm_item	access:public
+print_comm_item::item_monney	print/print-flat.h	/^    char item_monney[MAX_NUM_LENGTH];    $/;"	m	struct:print_comm_item	access:public
+print_comm_item::item_name	print/print-flat.h	/^    char item_name[MAX_CHAR_PER_ITEM];$/;"	m	struct:print_comm_item	access:public
+print_comm_item::item_price	print/print-flat.h	/^    char item_price[MAX_NUM_LENGTH];$/;"	m	struct:print_comm_item	access:public
+print_comm_monney	print/print-flat.h	/^struct print_comm_monney$/;"	s
+print_comm_monney::low_case_title	print/print-flat.h	/^ 	char low_case_title[MAX_TITLE_LENGTH]; $/;"	m	struct:print_comm_monney	access:public
+print_comm_monney::low_total	print/print-flat.h	/^ 	char low_total[MAX_MONNEY_LENGHT];$/;"	m	struct:print_comm_monney	access:public
+print_comm_monney::up_case_title	print/print-flat.h	/^ 	char up_case_title[MAX_TITLE_LENGTH];$/;"	m	struct:print_comm_monney	access:public
+print_comm_monney::up_total	print/print-flat.h	/^ 	char up_total[MAX_CHAR_PER_ITEM];$/;"	m	struct:print_comm_monney	access:public
+print_comm_tile	print/print-flat.h	/^struct print_comm_tile$/;"	s
+print_comm_tile::count	print/print-flat.h	/^    char count[MAX_TITLE_LENGTH + 1];$/;"	m	struct:print_comm_tile	access:public
+print_comm_tile::monney	print/print-flat.h	/^    char monney[MAX_TITLE_LENGTH + 1];$/;"	m	struct:print_comm_tile	access:public
+print_comm_tile::price	print/print-flat.h	/^    char price[MAX_TITLE_LENGTH + 1];$/;"	m	struct:print_comm_tile	access:public
+print_comm_tile::type	print/print-flat.h	/^    char type[MAX_TITLE_LENGTH + 1];$/;"	m	struct:print_comm_tile	access:public
+print_conf	print/print-flat.c	/^static int print_conf(FILE *print_fp, int CMD)$/;"	f	file:	signature:(FILE *print_fp, int CMD)
+print_done_clean	print/print-flat.c	/^static int print_done_clean(FILE *fp, struct print_frame * cur_frame)$/;"	f	file:	signature:(FILE *fp, struct print_frame * cur_frame)
+print_frame	print/print-flat.h	/^struct print_frame$/;"	s
+print_frame::buyer_info	print/print-flat.h	/^	struct print_buyer_info buyer_info;$/;"	m	struct:print_frame	typeref:struct:print_frame::print_buyer_info	access:public
+print_frame::comm_items	print/print-flat.h	/^	struct print_comm_item comm_items[10];$/;"	m	struct:print_frame	typeref:struct:print_frame::print_comm_item	access:public
+print_frame::comm_num	print/print-flat.h	/^    int comm_num;$/;"	m	struct:print_frame	access:public
+print_frame::comm_title	print/print-flat.h	/^	struct print_comm_tile  comm_title;$/;"	m	struct:print_frame	typeref:struct:print_frame::print_comm_tile	access:public
+print_frame::monney	print/print-flat.h	/^	struct print_comm_monney monney;$/;"	m	struct:print_frame	typeref:struct:print_frame::print_comm_monney	access:public
+print_frame::payee_info	print/print-flat.h	/^	struct print_payee_info payee_info;$/;"	m	struct:print_frame	typeref:struct:print_frame::print_payee_info	access:public
+print_frame::reg_info	print/print-flat.h	/^	struct print_reg_info reg_info;$/;"	m	struct:print_frame	typeref:struct:print_frame::print_reg_info	access:public
+print_frame::title	print/print-flat.h	/^	struct print_title title;$/;"	m	struct:print_frame	typeref:struct:print_frame::print_title	access:public
+print_init	print/print-flat.c	/^static int print_init(void)$/;"	f	file:	signature:(void)
+print_invoice	print/print-flat.c	/^static int print_invoice(struct tax_sys_invoice_detail_record * inv_detail)$/;"	f	file:	signature:(struct tax_sys_invoice_detail_record * inv_detail)
+print_payee_info	print/print-flat.h	/^struct print_payee_info$/;"	s
+print_payee_info::payee_item	print/print-flat.h	/^   char payee_item[MAX_CHAR_PER_ITEM + 1];$/;"	m	struct:print_payee_info	access:public
+print_payee_info::payee_title	print/print-flat.h	/^   char payee_title[MAX_TITLE_LENGTH + 1];$/;"	m	struct:print_payee_info	access:public
+print_payee_info::tax_num	print/print-flat.h	/^   char tax_num[MAX_NUM_LENGTH + 1];$/;"	m	struct:print_payee_info	access:public
+print_payee_info::tax_title	print/print-flat.h	/^   char tax_title[MAX_TITLE_LENGTH + 1];$/;"	m	struct:print_payee_info	access:public
+print_reg_info	print/print-flat.h	/^struct print_reg_info$/;"	s
+print_reg_info::reg_name	print/print-flat.h	/^	char reg_name[MAX_TITLE_LENGTH];$/;"	m	struct:print_reg_info	access:public
+print_reg_info::reg_num	print/print-flat.h	/^	char reg_num[MAX_NUM_LENGTH]; $/;"	m	struct:print_reg_info	access:public
+print_reg_info::reg_num_title	print/print-flat.h	/^	char reg_num_title[MAX_TITLE_LENGTH];$/;"	m	struct:print_reg_info	access:public
+print_reg_info::reg_title	print/print-flat.h	/^	char reg_title[MAX_TITLE_LENGTH];$/;"	m	struct:print_reg_info	access:public
+print_set_buyer_info	print/print-flat.c	/^static int print_set_buyer_info(char *buyer)$/;"	f	file:	signature:(char *buyer)
+print_set_comm_info	print/print-flat.c	/^static int print_set_comm_info(int num, struct tax_sys_comm_item *comm_info)$/;"	f	file:	signature:(int num, struct tax_sys_comm_item *comm_info)
+print_set_comm_title	print/print-flat.c	/^static int print_set_comm_title(void)$/;"	f	file:	signature:(void)
+print_set_hor_pos	print/print-flat.c	/^static int print_set_hor_pos(FILE *fp, char pos)$/;"	f	file:	signature:(FILE *fp, char pos)
+print_set_monney	print/print-flat.c	/^static int print_set_monney(char *chinese, int amount)$/;"	f	file:	signature:(char *chinese, int amount)
+print_set_payee_info	print/print-flat.c	/^static int print_set_payee_info(char *payee, char *taxnum)$/;"	f	file:	signature:(char *payee, char *taxnum)
+print_set_reg_info	print/print-flat.c	/^static int print_set_reg_info(char *reg_name, char *reg_num)$/;"	f	file:	signature:(char *reg_name, char *reg_num)
+print_set_title	print/print-flat.c	/^static int print_set_title(char *date, char *type, int invoice_num)$/;"	f	file:	signature:(char *date, char *type, int invoice_num)
+print_set_ver_pos	print/print-flat.c	/^static int print_set_ver_pos(FILE *fp, char pos)$/;"	f	file:	signature:(FILE *fp, char pos)
+print_space	print/print-flat.c	/^static int print_space(char *buf, int num)$/;"	f	file:	signature:(char *buf, int num)
+print_sys_boot_check	print/print-core.c	/^static int print_sys_boot_check(void)$/;"	f	file:	signature:(void)
+print_sys_daily_info	print/print-core.c	/^static int print_sys_daily_info(struct tax_sys_daily_collect_record *daily_rec)$/;"	f	file:	signature:(struct tax_sys_daily_collect_record *daily_rec)
+print_sys_declare_info	print/print-core.c	/^static int print_sys_declare_info(struct tax_sys_declare_duty_record *declare_rec)$/;"	f	file:	signature:(struct tax_sys_declare_duty_record *declare_rec)
+print_sys_demo_invoice	print/print-core.c	/^static int print_sys_demo_invoice(void)$/;"	f	file:	signature:(void)
+print_sys_init	print/print-core.c	/^static int print_sys_init(struct print_sys * print_sys)$/;"	f	file:	signature:(struct print_sys * print_sys)
+print_sys_invoice	print/print-core.c	/^static int print_sys_invoice(struct tax_sys_invoice_detail_record *inv_detail)$/;"	f	file:	signature:(struct tax_sys_invoice_detail_record *inv_detail)
+print_sys_mach_info	print/print-core.c	/^static int print_sys_mach_info(struct machine_info_record * mach_info)$/;"	f	file:	signature:(struct machine_info_record * mach_info)
+print_sys_ops	print/print-core.c	/^static struct print_ops print_sys_ops = {$/;"	v	typeref:struct:print_ops	file:
+print_sys_period_info	print/print-core.c	/^static int print_sys_period_info(struct tax_sys_period_collect_record * period_rec)$/;"	f	file:	signature:(struct tax_sys_period_collect_record * period_rec)
+print_sys_prepare	print/print-core.c	/^static int print_sys_prepare(void)$/;"	f	file:	signature:(void)
+print_sys_roll_info	print/print-core.c	/^static int print_sys_roll_info(struct tax_sys_used_roll_id_record *roll_rec)$/;"	f	file:	signature:(struct tax_sys_used_roll_id_record *roll_rec)
+print_sys_self_check	print/print-core.c	/^static int print_sys_self_check(void)$/;"	f	file:	signature:(void)
+print_title	print/print-flat.h	/^struct print_title $/;"	s
+print_title::date	print/print-flat.h	/^    char date[MAX_DATE_LENGTH + 1];$/;"	m	struct:print_title	access:public
+print_title::invoice_num	print/print-flat.h	/^    char invoice_num[MAX_NUM_LENGTH + 1];$/;"	m	struct:print_title	access:public
+print_title::type	print/print-flat.h	/^    char type[MAX_TITLE_LENGTH + 1];$/;"	m	struct:print_title	access:public
+push_ui_statck	ui/ui_api.c	/^inline static int push_ui_statck(int id) $/;"	f	file:	signature:(int id)
+py	input/py_dict.h	/^    char *py;$/;"	m	struct:index	access:public
+py_ime	input/py_engin.c	/^char * py_ime(char *str)$/;"	f	signature:(char *str)
+question_user	ui/ui_api.c	/^int question_user(char *title)$/;"	f	signature:(char *title)
+read_uart	misc/uart.c	/^int read_uart(int fd, uchar *buf, int size) $/;"	f	signature:(int fd, uchar *buf, int size)
+reg_info	print/print-flat.h	/^	struct print_reg_info reg_info;$/;"	m	struct:print_frame	typeref:struct:print_frame::print_reg_info	access:public
+reg_name	print/print-flat.h	/^	char reg_name[MAX_TITLE_LENGTH];$/;"	m	struct:print_reg_info	access:public
+reg_num	print/print-flat.h	/^	char reg_num[MAX_NUM_LENGTH]; $/;"	m	struct:print_reg_info	access:public
+reg_num_title	print/print-flat.h	/^	char reg_num_title[MAX_TITLE_LENGTH];$/;"	m	struct:print_reg_info	access:public
+reg_title	print/print-flat.h	/^	char reg_title[MAX_TITLE_LENGTH];$/;"	m	struct:print_reg_info	access:public
+res_buf	fiscal/tax_card_base.c	/^static struct card_res_buf * res_buf;$/;"	v	typeref:struct:card_res_buf	file:
+roll_print_ops	print/print-roll.c	/^struct print_ops roll_print_ops = {$/;"	v	typeref:struct:print_ops
+roll_printer_type	print/print-roll.c	/^struct printer_type roll_printer_type = {$/;"	v	typeref:struct:printer_type
+row	ui/lcm_api.h	/^    int row;$/;"	m	struct:lcm_data	access:public
+rt_check_deadline	misc/real_time.c	/^static int rt_check_deadline(struct bcd_date * today)$/;"	f	file:	signature:(struct bcd_date * today)
+rt_cmp_bcd_date	misc/real_time.c	/^static int rt_cmp_bcd_date(struct bcd_date * a_date, struct bcd_date * b_date)$/;"	f	file:	signature:(struct bcd_date * a_date, struct bcd_date * b_date)
+rt_cmp_greg_time	misc/real_time.c	/^static int rt_cmp_greg_time(struct greg_time * a_time, struct greg_time *b_time) $/;"	f	file:	signature:(struct greg_time * a_time, struct greg_time *b_time)
+rt_get_cur_date	misc/real_time.c	/^static int rt_get_cur_date(struct bcd_date * date)$/;"	f	file:	signature:(struct bcd_date * date)
+rt_get_cur_time	misc/real_time.c	/^static int rt_get_cur_time(struct greg_time *time)$/;"	f	file:	signature:(struct greg_time *time)
+rt_get_next_date	misc/real_time.c	/^static int rt_get_next_date(struct bcd_date * date)$/;"	f	file:	signature:(struct bcd_date * date)
+rt_get_prev_date	misc/real_time.c	/^static int rt_get_prev_date(struct bcd_date * date)$/;"	f	file:	signature:(struct bcd_date * date)
+rt_set_cur_date	misc/real_time.c	/^static int rt_set_cur_date(struct bcd_date *date) $/;"	f	file:	signature:(struct bcd_date *date)
+rt_set_cur_time	misc/real_time.c	/^static int rt_set_cur_time(struct greg_time *time)$/;"	f	file:	signature:(struct greg_time *time)
+send_buf	fiscal/tax_card_base.c	/^static struct card_send_buf *send_buf;$/;"	v	typeref:struct:card_send_buf	file:
+set_color	ui/ui_api.c	/^inline static int set_color(int menu_id, int item_id, int color)$/;"	f	file:	signature:(int menu_id, int item_id, int color)
+set_cur_frame_id	ui/ui_api.c	/^inline static int set_cur_frame_id(int id)$/;"	f	file:	signature:(int id)
+set_cursor_off	ui/ui_api.c	/^int set_cursor_off(int row, int col)$/;"	f	signature:(int row, int col)
+set_cursor_on	ui/ui_api.c	/^int set_cursor_on(int row, int col)$/;"	f	signature:(int row, int col)
+set_hang_flag	command/cmd_invoice_ops.c	/^inline static int set_hang_flag(int flag)$/;"	f	file:	signature:(int flag)
+set_ime_status	input/keyboard.c	/^int set_ime_status(int mode)$/;"	f	signature:(int mode)
+set_logout_flag	ui/ui_api.c	/^int set_logout_flag(int flag)$/;"	f	signature:(int flag)
+set_parity	misc/uart.c	/^int set_parity(int fd, int databits, int stopbits, int parity)$/;"	f	signature:(int fd, int databits, int stopbits, int parity)
+set_questtion_title	ui/ui_api.c	/^inline static int set_questtion_title(char *str)$/;"	f	file:	signature:(char *str)
+set_shutdown_flag	ui/ui_api.c	/^int set_shutdown_flag(int flag)$/;"	f	signature:(int flag)
+set_speed	misc/uart.c	/^int set_speed(int fd, int speed)$/;"	f	signature:(int fd, int speed)
+show_add_user_info	command/cmd_system_manage.c	/^int show_add_user_info(char *title, struct user * user)$/;"	f	signature:(char *title, struct user * user)
+show_add_user_perm	command/cmd_system_manage.c	/^int show_add_user_perm(void)$/;"	f	signature:(void)
+show_chn_pad	input/input.c	485;"	d	file:
+show_current_ui	ui/ui_api.c	/^int show_current_ui(int id)$/;"	f	signature:(int id)
+show_dayly_collect_info	command/cmd_other_ops.c	/^int show_dayly_collect_info(struct tax_sys_daily_collect_record * daily_rec)$/;"	f	signature:(struct tax_sys_daily_collect_record * daily_rec)
+show_declare_info	command/cmd_other_ops.c	/^int show_declare_info(struct tax_sys_declare_duty_record * declare_rec)$/;"	f	signature:(struct tax_sys_declare_duty_record * declare_rec)
+show_develop_print_UI	command/cmd_other_ops.c	/^int show_develop_print_UI(void)$/;"	f	signature:(void)
+show_develop_sys_UI	command/cmd_other_ops.c	/^int show_develop_sys_UI(void)$/;"	f	signature:(void)
+show_get_enddate	command/cmd_fiscal_manage.c	/^int show_get_enddate(struct bcd_date *start, struct bcd_date *end)$/;"	f	signature:(struct bcd_date *start, struct bcd_date *end)
+show_get_verify_pin	command/cmd_fiscal_manage.c	/^int show_get_verify_pin(void)$/;"	f	signature:(void)
+show_ime_pad	input/input.c	479;"	d	file:
+show_inspect_UI	command/cmd_fiscal_manage.c	/^int show_inspect_UI(char *title)$/;"	f	signature:(char *title)
+show_inspect_chk_info	command/cmd_fiscal_manage.c	/^int show_inspect_chk_info(char *title, struct tax_sys_check_idx *chk_idx)$/;"	f	signature:(char *title, struct tax_sys_check_idx *chk_idx)
+show_inter_num	input/input.c	309;"	d	file:
+show_man_issue_inv	command/cmd_invoice_ops.c	/^static int show_man_issue_inv(void)$/;"	f	file:	signature:(void)
+show_period_collect	command/cmd_other_ops.c	/^int show_period_collect(struct tax_sys_period_collect_record * collect_rec)$/;"	f	signature:(struct tax_sys_period_collect_record * collect_rec)
+show_plu_item	command/cmd_comm_manage.c	/^int show_plu_item(int type, char * title, struct plu_item * plu_item) $/;"	f	signature:(int type, char * title, struct plu_item * plu_item)
+show_print_info	command/cmd_system_manage.c	/^int show_print_info(struct printer_type * printer)$/;"	f	signature:(struct printer_type * printer)
+show_print_setup_UI	command/cmd_other_ops.c	/^int show_print_setup_UI(void)$/;"	f	signature:(void)
+show_return_input_orige	command/cmd_invoice_ops.c	/^static int show_return_input_orige(uint inv_num)$/;"	f	file:	signature:(uint inv_num)
+show_return_orige_info	command/cmd_invoice_ops.c	/^static int show_return_orige_info(struct tax_sys_invoice_detail_record * ori_detail)$/;"	f	file:	signature:(struct tax_sys_invoice_detail_record * ori_detail)
+show_setup_date	command/cmd_fiscal_manage.c	/^int show_setup_date(struct bcd_date *today)$/;"	f	signature:(struct bcd_date *today)
+show_setup_time	command/cmd_fiscal_manage.c	/^int show_setup_time(struct greg_time *now)$/;"	f	signature:(struct greg_time *now)
+show_simple_frame	ui/ui_api.c	/^int show_simple_frame(struct simple_frame * frame) $/;"	f	signature:(struct simple_frame * frame)
+show_single_inv_info	command/cmd_other_ops.c	/^int show_single_inv_info(struct tax_sys_invoice_detail_record * ori_detail)$/;"	f	signature:(struct tax_sys_invoice_detail_record * ori_detail)
+show_spoil_invoice_num	command/cmd_invoice_ops.c	/^static int show_spoil_invoice_num(void) $/;"	f	file:	signature:(void)
+show_str	ui/ui_api.c	/^int show_str(int row, int col, char *str)$/;"	f	signature:(int row, int col, char *str)
+show_str_dmy_cur	ui/ui_api.c	/^int show_str_dmy_cur(int row, int col, char *str)$/;"	f	signature:(int row, int col, char *str)
+show_subtoal_menu	command/cmd_invoice_ops.c	/^static int show_subtoal_menu(int invoice_nb) $/;"	f	file:	signature:(int invoice_nb)
+show_trans_ensure_count	command/cmd_invoice_ops.c	/^static int show_trans_ensure_count(struct plu_item * plu_item, int item_num, int count)$/;"	f	file:	signature:(struct plu_item * plu_item, int item_num, int count)
+show_trans_ensure_plu	command/cmd_invoice_ops.c	/^static int show_trans_ensure_plu(int type, int item_num, struct plu_item *plu_item)$/;"	f	file:	signature:(int type, int item_num, struct plu_item *plu_item)
+show_trans_input_count	command/cmd_invoice_ops.c	/^static int show_trans_input_count(int item_num, struct plu_item* plu_item)$/;"	f	file:	signature:(int item_num, struct plu_item* plu_item)
+show_trans_input_drawer	command/cmd_invoice_ops.c	/^static int show_trans_input_drawer(void)$/;"	f	file:	signature:(void)
+show_trans_input_payer	command/cmd_invoice_ops.c	/^static int show_trans_input_payer(void)$/;"	f	file:	signature:(void)
+show_trans_input_plu	command/cmd_invoice_ops.c	/^static int show_trans_input_plu(int type, int item_num)$/;"	f	file:	signature:(int type, int item_num)
+show_used_roll_info	command/cmd_other_ops.c	/^int show_used_roll_info(struct tax_sys_used_roll_id_record * used_roll)$/;"	f	signature:(struct tax_sys_used_roll_id_record * used_roll)
+show_view_daily_collect_UI	command/cmd_other_ops.c	/^int show_view_daily_collect_UI(void)$/;"	f	signature:(void)
+show_view_declare_info_UI	command/cmd_other_ops.c	/^int show_view_declare_info_UI(void)$/;"	f	signature:(void)
+show_view_period_collect_UI	command/cmd_other_ops.c	/^int show_view_period_collect_UI(void)$/;"	f	signature:(void)
+show_view_single_inv_UI	command/cmd_other_ops.c	/^int show_view_single_inv_UI(void)$/;"	f	signature:(void)
+show_view_used_roll_UI	command/cmd_other_ops.c	/^int show_view_used_roll_UI(void)$/;"	f	signature:(void)
+shutdown	ui/ui_api.c	/^int shutdown(void)$/;"	f	signature:(void)
+sign_1_table	input/keyboard.c	/^uint sign_1_table[5] = {'.', '\/', '?', '=', '|'};$/;"	v
+sign_2_table	input/keyboard.c	/^uint sign_2_table[5] = {'-', '+', '^', '%', '$'};$/;"	v
+sign_3_table	input/keyboard.c	/^uint sign_3_table[5] = {']', '[', '(', '*', '&'};$/;"	v
+sign_4_table	input/keyboard.c	/^uint sign_4_table[5] = {BACK, ESC, SHIFT, '\\0', '\\0'};$/;"	v
+sign_5_table	input/keyboard.c	/^uint sign_5_table[5] = {'\\0', '\\0', '#', '@', '!'};$/;"	v
+sign_6_table	input/keyboard.c	/^uint sign_6_table[5] = {'\\0', '\\0', '\\0', '\\\\', '('};$/;"	v
+sign_handle	start_main.c	/^void sign_handle(int sig_num)$/;"	f	signature:(int sig_num)
+sign_key_map	input/keyboard.c	/^uint * sign_key_map[] = {$/;"	v
+size	ui/lcm_api.h	/^    int size;$/;"	m	struct:lcm_data	access:public
+speed_arr	misc/uart.c	/^static int speed_arr[] = { B38400, B19200, B9600, B4800, B2400, B1200, B300,$/;"	v	file:
+spellMagic	input/py_dict.h	/^unsigned short spellMagic[2 * TOTALPINYIN] = {$/;"	v
+sub_bcd_date	misc/common.c	/^int sub_bcd_date(struct bcd_date *date, uint days)$/;"	f	signature:(struct bcd_date *date, uint days)
+system_init	start_main.c	/^int system_init(void) $/;"	f	signature:(void)
+tax_base_check_date	fiscal/tax_system.c	/^static int tax_base_check_date(struct tax_sys_app_info * app_info)$/;"	f	file:	signature:(struct tax_sys_app_info * app_info)
+tax_base_check_deadline	fiscal/tax_system.c	/^static int tax_base_check_deadline(struct bcd_date *today)$/;"	f	file:	signature:(struct bcd_date *today)
+tax_base_check_declare_date	fiscal/tax_system.c	/^static int tax_base_check_declare_date(struct bcd_date *date) $/;"	f	file:	signature:(struct bcd_date *date)
+tax_base_check_lock_date	fiscal/tax_system.c	/^static int tax_base_check_lock_date(struct bcd_date *date)$/;"	f	file:	signature:(struct bcd_date *date)
+tax_base_get_check_info	fiscal/tax_system.c	/^static int tax_base_get_check_info(struct tax_sys_check_info * chk_info)$/;"	f	file:	signature:(struct tax_sys_check_info * chk_info)
+tax_base_get_last_declare_date	fiscal/tax_system.c	/^static int tax_base_get_last_declare_date(struct bcd_date * date)$/;"	f	file:	signature:(struct bcd_date * date)
+tax_base_get_rate_nb	fiscal/tax_system.c	/^static int tax_base_get_rate_nb(int index)$/;"	f	file:	signature:(int index)
+tax_base_invoice_check	fiscal/tax_system.c	/^static int tax_base_invoice_check(void)$/;"	f	file:	signature:(void)
+tax_base_verify_check_card	fiscal/tax_system.c	/^static int tax_base_verify_check_card(uchar *pin)$/;"	f	file:	signature:(uchar *pin)
+tax_file_append_cur_roll_id	fiscal/tax_file_op.c	/^int tax_file_append_cur_roll_id(struct tax_sys_cur_roll_id_record * cur_roll_id_rec)$/;"	f	signature:(struct tax_sys_cur_roll_id_record * cur_roll_id_rec)
+tax_file_append_daily_collect	fiscal/tax_file_op.c	/^int tax_file_append_daily_collect(struct tax_sys_daily_collect_record * daily_collect_rec)$/;"	f	signature:(struct tax_sys_daily_collect_record * daily_collect_rec)
+tax_file_append_declare_duty	fiscal/tax_file_op.c	/^int tax_file_append_declare_duty(struct tax_sys_declare_duty_record * declare_duty_rec)$/;"	f	signature:(struct tax_sys_declare_duty_record * declare_duty_rec)
+tax_file_append_dist_roll	fiscal/tax_file_op.c	/^int tax_file_append_dist_roll(struct tax_sys_invoice_roll_record *dist_roll_rec)$/;"	f	signature:(struct tax_sys_invoice_roll_record *dist_roll_rec)
+tax_file_append_invoice_detail	fiscal/tax_file_op.c	/^int tax_file_append_invoice_detail(struct tax_sys_invoice_detail_record * inv_detail_rec)$/;"	f	signature:(struct tax_sys_invoice_detail_record * inv_detail_rec)
+tax_file_append_today_id	fiscal/tax_file_op.c	/^int tax_file_append_today_id(struct tax_sys_today_id_record * today_id_rec)$/;"	f	signature:(struct tax_sys_today_id_record * today_id_rec)
+tax_file_append_used_roll_id	fiscal/tax_file_op.c	/^int tax_file_append_used_roll_id(struct tax_sys_used_roll_id_record *used_roll_record)$/;"	f	signature:(struct tax_sys_used_roll_id_record *used_roll_record)
+tax_file_append_user	fiscal/tax_file_op.c	/^int tax_file_append_user(struct user * new_user)$/;"	f	signature:(struct user * new_user)
+tax_file_clear	fiscal/tax_file_op.c	/^int tax_file_clear(const char *filename)$/;"	f	signature:(const char *filename)
+tax_file_creat_fiscal_file	fiscal/tax_file_op.c	/^int tax_file_creat_fiscal_file(void)$/;"	f	signature:(void)
+tax_file_del_record	fiscal/tax_file_op.c	/^int tax_file_del_record(const char *filename, int offset)$/;"	f	signature:(const char *filename, int offset)
+tax_file_delete_user	fiscal/tax_file_op.c	/^int tax_file_delete_user(int offset)$/;"	f	signature:(int offset)
+tax_file_find_chk_daily_idx	fiscal/tax_file_op.c	/^int tax_file_find_chk_daily_idx(struct tax_sys_check_idx *chk_inx)$/;"	f	signature:(struct tax_sys_check_idx *chk_inx)
+tax_file_find_chk_declare_idx	fiscal/tax_file_op.c	/^int tax_file_find_chk_declare_idx(struct tax_sys_check_idx *chk_inx)$/;"	f	signature:(struct tax_sys_check_idx *chk_inx)
+tax_file_find_chk_invoice_idx	fiscal/tax_file_op.c	/^int tax_file_find_chk_invoice_idx(struct tax_sys_check_idx *chk_inx)$/;"	f	signature:(struct tax_sys_check_idx *chk_inx)
+tax_file_find_cur_roll_id	fiscal/tax_file_op.c	/^int tax_file_find_cur_roll_id(uint invoice_num, $/;"	f	signature:(uint invoice_num, struct tax_sys_cur_roll_id_record *cur_roll_rec)
+tax_file_find_daily_collect	fiscal/tax_file_op.c	/^int tax_file_find_daily_collect(struct bcd_date * date, $/;"	f	signature:(struct bcd_date * date, struct tax_sys_daily_collect_record * daily_collect_rec)
+tax_file_find_declare_duty	fiscal/tax_file_op.c	/^int tax_file_find_declare_duty(struct bcd_date * date, $/;"	f	signature:(struct bcd_date * date, struct tax_sys_declare_duty_record * declare_duty_rec)
+tax_file_find_invoice_detail	fiscal/tax_file_op.c	/^int tax_file_find_invoice_detail(uint *inv_nb, $/;"	f	signature:(uint *inv_nb, struct tax_sys_invoice_detail_record *detail_rec)
+tax_file_find_period_collect	fiscal/tax_file_op.c	/^int tax_file_find_period_collect(struct tax_sys_period_collect_record * collect_rec)$/;"	f	signature:(struct tax_sys_period_collect_record * collect_rec)
+tax_file_find_today_id	fiscal/tax_file_op.c	/^int tax_file_find_today_id(uint invoice_num, struct tax_sys_today_id_record *today_id_rec)$/;"	f	signature:(uint invoice_num, struct tax_sys_today_id_record *today_id_rec)
+tax_file_find_used_roll_id	fiscal/tax_file_op.c	/^int tax_file_find_used_roll_id(uint invoice_num, $/;"	f	signature:(uint invoice_num, struct tax_sys_used_roll_id_record * used_roll_record)
+tax_file_find_user	fiscal/tax_file_op.c	/^int tax_file_find_user(char *user_name, struct user * find_user)$/;"	f	signature:(char *user_name, struct user * find_user)
+tax_file_get_real_offset	fiscal/tax_file_op.c	/^int tax_file_get_real_offset(FILE * fp, int offset)$/;"	f	signature:(FILE * fp, int offset)
+tax_file_get_rec_num	fiscal/tax_file_op.c	/^int tax_file_get_rec_num(const char *filename)$/;"	f	signature:(const char *filename)
+tax_file_is_empty	fiscal/tax_file_op.c	/^int tax_file_is_empty(const char *filename)$/;"	f	signature:(const char *filename)
+tax_file_is_full	fiscal/tax_file_op.c	/^int tax_file_is_full(const char *filename)$/;"	f	signature:(const char *filename)
+tax_file_modify_cur_roll_id	fiscal/tax_file_op.c	/^int tax_file_modify_cur_roll_id(int offset, $/;"	f	signature:(int offset, struct tax_sys_cur_roll_id_record * cur_roll_id_rec)
+tax_file_modify_daily_collect	fiscal/tax_file_op.c	/^int tax_file_modify_daily_collect(int offset, $/;"	f	signature:(int offset, struct tax_sys_daily_collect_record * daily_collect_rec)
+tax_file_modify_declare_duty	fiscal/tax_file_op.c	/^int tax_file_modify_declare_duty(int offset, struct tax_sys_declare_duty_record * declare_duty_rec)$/;"	f	signature:(int offset, struct tax_sys_declare_duty_record * declare_duty_rec)
+tax_file_modify_dist_roll	fiscal/tax_file_op.c	/^int tax_file_modify_dist_roll(int index, $/;"	f	signature:(int index, struct tax_sys_invoice_roll_record* dist_roll_rec)
+tax_file_modify_invoice_detail	fiscal/tax_file_op.c	/^int tax_file_modify_invoice_detail(int index, int offset,$/;"	f	signature:(int index, int offset, struct tax_sys_invoice_detail_record * inv_detail_rec)
+tax_file_modify_last_record	fiscal/tax_file_op.c	/^int tax_file_modify_last_record(const char *filename, uchar *buf, int size)$/;"	f	signature:(const char *filename, uchar *buf, int size)
+tax_file_modify_today_id	fiscal/tax_file_op.c	/^int tax_file_modify_today_id(int offset, struct tax_sys_today_id_record * today_id_rec)$/;"	f	signature:(int offset, struct tax_sys_today_id_record * today_id_rec)
+tax_file_modify_used_roll_id	fiscal/tax_file_op.c	/^int tax_file_modify_used_roll_id(int offset, $/;"	f	signature:(int offset, struct tax_sys_used_roll_id_record *used_roll_record)
+tax_file_modify_user	fiscal/tax_file_op.c	/^int tax_file_modify_user(int offset, struct user *user)$/;"	f	signature:(int offset, struct user *user)
+tax_file_read_amount	fiscal/tax_file_op.c	/^int tax_file_read_amount(struct tax_sys_amount_record * amount_rec)$/;"	f	signature:(struct tax_sys_amount_record * amount_rec)
+tax_file_read_app_info	fiscal/tax_file_op.c	/^int tax_file_read_app_info(struct tax_sys_app_info * app_info)$/;"	f	signature:(struct tax_sys_app_info * app_info)
+tax_file_read_buyed_roll	fiscal/tax_file_op.c	/^int tax_file_read_buyed_roll(struct tax_sys_buy_roll_record * buyed_roll)$/;"	f	signature:(struct tax_sys_buy_roll_record * buyed_roll)
+tax_file_read_crln	fiscal/tax_file_op.c	/^int tax_file_read_crln(struct tax_sys_cur_roll_left_record * cur_roll_left)$/;"	f	signature:(struct tax_sys_cur_roll_left_record * cur_roll_left)
+tax_file_read_cur_roll	fiscal/tax_file_op.c	/^int tax_file_read_cur_roll(struct tax_sys_buy_roll_record * cur_roll_record)$/;"	f	signature:(struct tax_sys_buy_roll_record * cur_roll_record)
+tax_file_read_cur_roll_id	fiscal/tax_file_op.c	/^int tax_file_read_cur_roll_id(int offset, $/;"	f	signature:(int offset, struct tax_sys_cur_roll_id_record * cur_roll_id_rec)
+tax_file_read_daily_collect	fiscal/tax_file_op.c	/^int tax_file_read_daily_collect(int offset, $/;"	f	signature:(int offset, struct tax_sys_daily_collect_record * daily_collect_rec)
+tax_file_read_declare_duty	fiscal/tax_file_op.c	/^int tax_file_read_declare_duty(int offset, $/;"	f	signature:(int offset, struct tax_sys_declare_duty_record * declare_duty_rec)
+tax_file_read_dist_roll	fiscal/tax_file_op.c	/^int tax_file_read_dist_roll(int offset, $/;"	f	signature:(int offset, struct tax_sys_invoice_roll_record* dist_roll_rec)
+tax_file_read_first_record	fiscal/tax_file_op.c	/^int tax_file_read_first_record(const char *filename, uchar *buf, int size)$/;"	f	signature:(const char *filename, uchar *buf, int size)
+tax_file_read_fis_cfg	fiscal/tax_file_op.c	/^int tax_file_read_fis_cfg(struct tax_sys_fis_config_record * fis_cfg)$/;"	f	signature:(struct tax_sys_fis_config_record * fis_cfg)
+tax_file_read_his_app_info	fiscal/tax_file_op.c	/^int tax_file_read_his_app_info(struct  tax_sys_his_app_info * his_app_info)$/;"	f	signature:(struct tax_sys_his_app_info * his_app_info)
+tax_file_read_invoice_cfg	fiscal/tax_file_op.c	/^int tax_file_read_invoice_cfg(struct tax_sys_id_cfg_record * invoice_cfg_rec)$/;"	f	signature:(struct tax_sys_id_cfg_record * invoice_cfg_rec)
+tax_file_read_invoice_detail	fiscal/tax_file_op.c	/^int tax_file_read_invoice_detail(int index, int offset,$/;"	f	signature:(int index, int offset, struct tax_sys_invoice_detail_record * inv_detail_rec)
+tax_file_read_last_dist	fiscal/tax_file_op.c	/^int tax_file_read_last_dist(struct tax_sys_invoice_roll_record * dist_roll_rec)$/;"	f	signature:(struct tax_sys_invoice_roll_record * dist_roll_rec)
+tax_file_read_last_record	fiscal/tax_file_op.c	/^int tax_file_read_last_record(const char *filename, uchar *buf, int size)$/;"	f	signature:(const char *filename, uchar *buf, int size)
+tax_file_read_mach_info	fiscal/tax_file_op.c	/^int tax_file_read_mach_info(struct machine_info_record * mach_info)$/;"	f	signature:(struct machine_info_record * mach_info)
+tax_file_read_next_record	fiscal/tax_file_op.c	/^int tax_file_read_next_record(FILE *fp, int offset, uchar *buf, int size)$/;"	f	signature:(FILE *fp, int offset, uchar *buf, int size)
+tax_file_read_origin_pin	fiscal/tax_file_op.c	/^int tax_file_read_origin_pin(struct tax_sys_pin_record * origin_pin)$/;"	f	signature:(struct tax_sys_pin_record * origin_pin)
+tax_file_read_pin	fiscal/tax_file_op.c	/^int tax_file_read_pin(struct tax_sys_pin_record * pin)$/;"	f	signature:(struct tax_sys_pin_record * pin)
+tax_file_read_prev_record	fiscal/tax_file_op.c	/^int tax_file_read_prev_record(FILE *fp, int offset, uchar *buf, int size)$/;"	f	signature:(FILE *fp, int offset, uchar *buf, int size)
+tax_file_read_protect	fiscal/tax_file_op.c	/^int tax_file_read_protect(struct tax_sys_protect_record * protect_rec)$/;"	f	signature:(struct tax_sys_protect_record * protect_rec)
+tax_file_read_sec_invoice	fiscal/tax_file_op.c	/^int tax_file_read_sec_invoice()$/;"	f
+tax_file_read_sys_cfg	fiscal/tax_file_op.c	/^int tax_file_read_sys_cfg(struct tax_sys_config_record * sys_cfg)$/;"	f	signature:(struct tax_sys_config_record * sys_cfg)
+tax_file_read_today_id	fiscal/tax_file_op.c	/^int tax_file_read_today_id(int offset, struct tax_sys_today_id_record * today_id_rec)$/;"	f	signature:(int offset, struct tax_sys_today_id_record * today_id_rec)
+tax_file_read_used_roll_id	fiscal/tax_file_op.c	/^int tax_file_read_used_roll_id(int offset, $/;"	f	signature:(int offset, struct tax_sys_used_roll_id_record *used_roll_record)
+tax_file_read_user	fiscal/tax_file_op.c	/^int tax_file_read_user(int offset, struct user * read_user)$/;"	f	signature:(int offset, struct user * read_user)
+tax_file_save_amount	fiscal/tax_file_op.c	/^int tax_file_save_amount(struct tax_sys_amount_record * amount_rec)$/;"	f	signature:(struct tax_sys_amount_record * amount_rec)
+tax_file_save_app_info	fiscal/tax_file_op.c	/^int tax_file_save_app_info(struct tax_sys_app_info * app_info)$/;"	f	signature:(struct tax_sys_app_info * app_info)
+tax_file_save_buyed_roll	fiscal/tax_file_op.c	/^int tax_file_save_buyed_roll(struct tax_sys_buy_roll_record * buyed_roll)$/;"	f	signature:(struct tax_sys_buy_roll_record * buyed_roll)
+tax_file_save_crln	fiscal/tax_file_op.c	/^int tax_file_save_crln(struct tax_sys_cur_roll_left_record *cur_roll_left)$/;"	f	signature:(struct tax_sys_cur_roll_left_record *cur_roll_left)
+tax_file_save_cur_roll	fiscal/tax_file_op.c	/^int tax_file_save_cur_roll(struct tax_sys_buy_roll_record * cur_roll_record)$/;"	f	signature:(struct tax_sys_buy_roll_record * cur_roll_record)
+tax_file_save_fis_cfg	fiscal/tax_file_op.c	/^int tax_file_save_fis_cfg(struct tax_sys_fis_config_record * fis_cfg)$/;"	f	signature:(struct tax_sys_fis_config_record * fis_cfg)
+tax_file_save_his_app_info	fiscal/tax_file_op.c	/^int tax_file_save_his_app_info(struct tax_sys_his_app_info * his_app_info)$/;"	f	signature:(struct tax_sys_his_app_info * his_app_info)
+tax_file_save_invoice_cfg	fiscal/tax_file_op.c	/^int tax_file_save_invoice_cfg(struct tax_sys_id_cfg_record * invoice_cfg_rec)$/;"	f	signature:(struct tax_sys_id_cfg_record * invoice_cfg_rec)
+tax_file_save_last_dist	fiscal/tax_file_op.c	/^int tax_file_save_last_dist(struct tax_sys_invoice_roll_record * dist_roll_rec)$/;"	f	signature:(struct tax_sys_invoice_roll_record * dist_roll_rec)
+tax_file_save_mach_info	fiscal/tax_file_op.c	/^int tax_file_save_mach_info(struct machine_info_record * mach_info)$/;"	f	signature:(struct machine_info_record * mach_info)
+tax_file_save_origin_pin	fiscal/tax_file_op.c	/^int tax_file_save_origin_pin(struct tax_sys_pin_record *pin)$/;"	f	signature:(struct tax_sys_pin_record *pin)
+tax_file_save_pin	fiscal/tax_file_op.c	/^int tax_file_save_pin(struct tax_sys_pin_record *pin)$/;"	f	signature:(struct tax_sys_pin_record *pin)
+tax_file_save_protect	fiscal/tax_file_op.c	/^int tax_file_save_protect(struct tax_sys_protect_record * protect_rec)$/;"	f	signature:(struct tax_sys_protect_record * protect_rec)
+tax_file_save_sec_invoice	fiscal/tax_file_op.c	/^int tax_file_save_sec_invoice()$/;"	f
+tax_file_save_sys_cfg	fiscal/tax_file_op.c	/^int tax_file_save_sys_cfg(struct tax_sys_config_record * sys_cfg) $/;"	f	signature:(struct tax_sys_config_record * sys_cfg)
+tax_file_term_clear	fiscal/tax_file_op.c	/^int tax_file_term_clear()$/;"	f
+tax_num	print/print-flat.h	/^   char tax_num[MAX_NUM_LENGTH + 1];$/;"	m	struct:print_payee_info	access:public
+tax_sys_card_init	fiscal/tax_system.c	/^int tax_sys_card_init(void)$/;"	f	signature:(void)
+tax_sys_check_finish_tax	fiscal/tax_system.c	/^static int tax_sys_check_finish_tax(uchar * card_nb)$/;"	f	file:	signature:(uchar * card_nb)
+tax_sys_collect_proc	fiscal/tax_system.c	/^static int tax_sys_collect_proc(struct tax_sys_daily_collect_record * dc_record)$/;"	f	file:	signature:(struct tax_sys_daily_collect_record * dc_record)
+tax_sys_cur_roll_collect	fiscal/tax_system.c	/^static int tax_sys_cur_roll_collect(void)$/;"	f	file:	signature:(void)
+tax_sys_daily_collect	fiscal/tax_system.c	/^static int tax_sys_daily_collect(void)$/;"	f	file:	signature:(void)
+tax_sys_dc_for_today	fiscal/tax_system.c	/^static int tax_sys_dc_for_today(struct bcd_date * today)$/;"	f	file:	signature:(struct bcd_date * today)
+tax_sys_declare_duty	fiscal/tax_system.c	/^static int tax_sys_declare_duty(int flag, struct bcd_date * end_date)$/;"	f	file:	signature:(int flag, struct bcd_date * end_date)
+tax_sys_dist_invoice	fiscal/tax_system.c	/^static int tax_sys_dist_invoice(struct tax_sys_invoice_roll_record * inv_roll_rec)$/;"	f	file:	signature:(struct tax_sys_invoice_roll_record * inv_roll_rec)
+tax_sys_fiscal_init	fiscal/tax_system.c	/^static int tax_sys_fiscal_init(void)$/;"	f	file:	signature:(void)
+tax_sys_fiscal_pre_init	fiscal/tax_system.c	/^static int tax_sys_fiscal_pre_init(void)$/;"	f	file:	signature:(void)
+tax_sys_get_buy_roll	fiscal/tax_system.c	/^static int tax_sys_get_buy_roll(int *roll_num, struct tax_sys_buy_roll_record * roll_rec)$/;"	f	file:	signature:(int *roll_num, struct tax_sys_buy_roll_record * roll_rec)
+tax_sys_get_invoice_nb	fiscal/tax_system.c	/^static int tax_sys_get_invoice_nb(uint *inv_nb)$/;"	f	file:	signature:(uint *inv_nb)
+tax_sys_is_fiscal_init	fiscal/tax_system.c	/^static int tax_sys_is_fiscal_init(void)$/;"	f	file:	signature:(void)
+tax_sys_issue_invoice_proc	fiscal/tax_system.c	/^static int tax_sys_issue_invoice_proc(struct tax_sys_issue_invoice * issue_inv_rec,$/;"	f	file:	signature:(struct tax_sys_issue_invoice * issue_inv_rec, struct issue_invoice_res * issue_inv_res)
+tax_sys_mount_roll	fiscal/tax_system.c	/^static int tax_sys_mount_roll(struct tax_sys_invoice_roll_record * inv_roll_rec)$/;"	f	file:	signature:(struct tax_sys_invoice_roll_record * inv_roll_rec)
+tax_sys_nul_daily_collect	fiscal/tax_system.c	/^static int tax_sys_nul_daily_collect(struct bcd_date * date)$/;"	f	file:	signature:(struct bcd_date * date)
+tax_sys_power_on_check	fiscal/tax_system.c	/^static int tax_sys_power_on_check(void)$/;"	f	file:	signature:(void)
+tax_sys_redeclare_duty	fiscal/tax_system.c	/^static int tax_sys_redeclare_duty(struct bcd_date *start_date, struct bcd_date *end_date)$/;"	f	file:	signature:(struct bcd_date *start_date, struct bcd_date *end_date)
+tax_sys_transact_prepare	fiscal/tax_system.c	/^static int tax_sys_transact_prepare(void)$/;"	f	file:	signature:(void)
+tax_sys_update_control	fiscal/tax_system.c	/^static int tax_sys_update_control(void)$/;"	f	file:	signature:(void)
+tax_sys_update_taxpayer	fiscal/tax_system.c	/^int tax_sys_update_taxpayer(void)$/;"	f	signature:(void)
+tax_sys_write_check_daily_detail	fiscal/tax_system.c	/^static int tax_sys_write_check_daily_detail(int cur_offset, int card_rec_nb)$/;"	f	file:	signature:(int cur_offset, int card_rec_nb)
+tax_sys_write_check_declare_detail	fiscal/tax_system.c	/^static int tax_sys_write_check_declare_detail(int rec_num, int cur_offset, int card_rec_nb)$/;"	f	file:	signature:(int rec_num, int cur_offset, int card_rec_nb)
+tax_sys_write_check_invoice_detail	fiscal/tax_system.c	/^static int tax_sys_write_check_invoice_detail(int rec_num, int index_h, int card_rec_nb)$/;"	f	file:	signature:(int rec_num, int index_h, int card_rec_nb)
+tax_title	print/print-flat.h	/^   char tax_title[MAX_TITLE_LENGTH + 1];$/;"	m	struct:print_payee_info	access:public
+tax_trans_buy_roll	fiscal/tax_system.c	/^static int tax_trans_buy_roll(int mode, struct tax_sys_buy_roll_record * sys_buy_roll,$/;"	f	file:	signature:(int mode, struct tax_sys_buy_roll_record * sys_buy_roll, struct buy_roll_info * card_buy_roll)
+tax_trans_daily_collect	fiscal/tax_system.c	/^static int tax_trans_daily_collect(int mode, struct tax_sys_daily_collect_record * sys_daily_collect,$/;"	f	file:	signature:(int mode, struct tax_sys_daily_collect_record * sys_daily_collect, struct daily_collect * card_daily_collect, struct daily_collect_res * res)
+tax_trans_data_collect	fiscal/tax_system.c	/^static int tax_trans_data_collect(int mode, struct declare_duty * card_declare_duty,$/;"	f	file:	signature:(int mode, struct declare_duty * card_declare_duty, struct declare_res * card_declare_res, struct data_collect * card_data_collect)
+tax_trans_declare_duty	fiscal/tax_system.c	/^static int tax_trans_declare_duty(int mode, struct tax_sys_declare_duty_record * sys_declare_duty, $/;"	f	file:	signature:(int mode, struct tax_sys_declare_duty_record * sys_declare_duty, struct declare_duty * card_declare_duty, struct declare_res * res)
+tax_trans_inspect_invoice	fiscal/tax_system.c	/^static int tax_trans_inspect_invoice(int mode, struct tax_sys_inspect_invoice *sys_inspect,$/;"	f	file:	signature:(int mode, struct tax_sys_inspect_invoice *sys_inspect, struct inspect_invoice * card_inspect)
+tax_trans_invoice_roll	fiscal/tax_system.c	/^static int tax_trans_invoice_roll(int mode, struct tax_sys_invoice_roll_record * sys_invoice_roll,$/;"	f	file:	signature:(int mode, struct tax_sys_invoice_roll_record * sys_invoice_roll, struct invoice_roll_info * card_invoice_roll)
+tax_trans_issue_invoice	fiscal/tax_system.c	/^static int tax_trans_issue_invoice(int mode, struct tax_sys_issue_invoice * sys_invoice, $/;"	f	file:	signature:(int mode, struct tax_sys_issue_invoice * sys_invoice, struct issue_invoice * card_invoice)
+tid	input/keyboard.c	/^static pthread_t tid;$/;"	v	file:
+tid	start_main.c	/^static pthread_t tid = 0;$/;"	v	file:
+title	print/print-flat.h	/^	struct print_title title;$/;"	m	struct:print_frame	typeref:struct:print_frame::print_title	access:public
+type	print/print-flat.h	/^    char type[MAX_TITLE_LENGTH + 1];$/;"	m	struct:print_comm_tile	access:public
+type	print/print-flat.h	/^    char type[MAX_TITLE_LENGTH + 1];$/;"	m	struct:print_title	access:public
+u_y_table	input/keyboard.c	/^uint u_y_table[5] = {'u', 'v', 'w', 'x', 'y'};$/;"	v
+uart_print	misc/common.c	/^int uart_print(const char *format, ...)$/;"	f	signature:(const char *format, ...)
+ui_get_keycode	ui/ui_api.c	/^int ui_get_keycode(int *key)$/;"	f	signature:(int *key)
+ui_handle_keycode	ui/ui_api.c	/^int ui_handle_keycode(int key)$/;"	f	signature:(int key)
+ui_pinyin	input/input.c	/^static int ui_pinyin(char *cont)$/;"	f	file:	signature:(char *cont)
+up_case_title	print/print-flat.h	/^ 	char up_case_title[MAX_TITLE_LENGTH];$/;"	m	struct:print_comm_monney	access:public
+up_total	print/print-flat.h	/^ 	char up_total[MAX_CHAR_PER_ITEM];$/;"	m	struct:print_comm_monney	access:public
+user_card_base	fiscal/tax_card_base.c	/^static struct user_card user_card_base = {$/;"	v	typeref:struct:user_card	file:
+user_card_check_card	fiscal/tax_system.c	/^static int user_card_check_card(uchar *taxpayer_nb, uchar * machine_nb, uchar * fis_card_nb)$/;"	f	file:	signature:(uchar *taxpayer_nb, uchar * machine_nb, uchar * fis_card_nb)
+user_card_chk_taxpayer_nb	fiscal/tax_system.c	/^static int user_card_chk_taxpayer_nb(uchar * taxpayer_nb)$/;"	f	file:	signature:(uchar * taxpayer_nb)
+user_card_get_ctl_data	fiscal/tax_system.c	/^static int user_card_get_ctl_data(uchar *card_nb, struct usr_ef01_record * res)$/;"	f	file:	signature:(uchar *card_nb, struct usr_ef01_record * res)
+user_card_get_declare_record	fiscal/tax_system.c	/^int user_card_get_declare_record(uchar * card_nb, uchar *buf)$/;"	f	signature:(uchar * card_nb, uchar *buf)
+user_card_get_fis_type	fiscal/tax_system.c	/^static int user_card_get_fis_type(struct tax_sys_app_info * app_info)$/;"	f	file:	signature:(struct tax_sys_app_info * app_info)
+user_card_get_mach_info	fiscal/tax_system.c	/^static int user_card_get_mach_info(int index, uchar *res)$/;"	f	file:	signature:(int index, uchar *res)
+user_card_get_mach_nb	fiscal/tax_system.c	/^static int user_card_get_mach_nb(uchar * num)$/;"	f	file:	signature:(uchar * num)
+user_card_get_taxpayer_name	fiscal/tax_system.c	/^static int user_card_get_taxpayer_name(uchar *buf)$/;"	f	file:	signature:(uchar *buf)
+user_card_get_tmp_dist	fiscal/tax_system.c	/^static int user_card_get_tmp_dist(struct tax_sys_invoice_roll_record * inv_roll_rec)$/;"	f	file:	signature:(struct tax_sys_invoice_roll_record * inv_roll_rec)
+user_card_power_on	fiscal/tax_system.c	/^static int user_card_power_on(void)$/;"	f	file:	signature:(void)
+write_uart	misc/uart.c	/^int write_uart(int fd, uchar *buf, int size) $/;"	f	signature:(int fd, uchar *buf, int size)
+z_sp_table	input/keyboard.c	/^uint z_sp_table[5] = {BACK, ESC, SHIFT, ' ', 'z'};$/;"	v

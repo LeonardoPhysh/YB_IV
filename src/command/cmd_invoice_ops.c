@@ -996,7 +996,7 @@ static int do_subtotal_comm_items(void)
         if (ret == -ETAX_INVOICE_MC_EMPTY)
             display_warn("未发现可用发票，请先装载发票！");
 
-        return FAIL;
+        return ret;
     }
 
     while (1) {
@@ -1088,10 +1088,8 @@ static int do_return_invoice(struct tax_sys_invoice_detail_record * ori_detail)
     issue_inv.origin_inv_num = ori_detail->detail_inv_num;
 
     ret = tax_system->issue_invoice(&issue_inv, &issue_res);
-    if (ret < 0) {
-        display_err_msg(ret);
-        return FAIL;
-    }
+    if (ret < 0) 
+        return ret;
 
     get_fiscal_code(&issue_res);
 
@@ -1595,7 +1593,6 @@ int cmd_man_issue_inv(void)
     ret = tax_system->is_fiscal_init();
     if (ret != POSITIVE) {
         display_warn("本机尚未税控初始化，请先进行初始化！");
-
         return FAIL;
     }
 
@@ -1639,7 +1636,7 @@ get_rate:
     do_add_comm_to_list(&tmp_item, 1);
     ret = do_subtotal_comm_items();
     if (ret != SUCCESS) {
-        display_err_msg(ret);
+        display_err_msg(ret, "手动开票出错！");
         return FAIL;
     }
 
@@ -1774,7 +1771,7 @@ show_ori:
 
     ret = do_return_invoice(&ori_detail);
     if (ret != SUCCESS) {
-        display_err_msg(ret);
+        display_err_msg(ret, "退票出错！");
         return FAIL;
     }
 

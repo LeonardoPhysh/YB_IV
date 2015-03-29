@@ -103,7 +103,7 @@ struct simple_frame {
 
 extern int show_str(int row, int col, char *str);
 extern int show_str_dmy_cur(int row, int col, char *str);
-extern int display_err_msg(int err);
+extern int display_err_msg(int err, char *msg);
 extern int question_user(char *title);
 extern int display_info(char *msg);
 extern int display_warn(char *msg);

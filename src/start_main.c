@@ -35,31 +35,27 @@ int system_init(void)
     
     ret = print_sys->print_sys_init(print_sys);
     if (ret != SUCCESS) {
-        display_warn("打印机未就绪！");
-        display_err_msg(ret);
+        display_err_msg(ret, "打印机未就绪！");
         return FAIL;
     }
 
     ret = print_sys->ops->print_boot_check();
     if (ret != SUCCESS) {
-        display_warn("打印机未就绪！");
-        display_err_msg(ret);
+        display_err_msg(ret, "打印机未就绪！");
         return FAIL;
     }
 
     /* create the keyboard pthread */
     tid = keyboard_init();
     if (tid < 0) {
-        display_warn("键盘未就绪！");
-        display_err_msg(ret);
+        display_err_msg(ret, "键盘未就绪！");
         return FAIL; 
     }
     
     /* initial card reader */
     ret = tax_system->card_init();
     if (ret < 0) {
-        display_warn("税控卡未就绪！");
-        display_err_msg(ret);
+        display_err_msg(ret, "税控卡未就绪！");
         return FAIL;
     }
 
@@ -71,8 +67,7 @@ int system_init(void)
     if (ret == POSITIVE) {
         ret = tax_system->power_on_check();
         if (ret != SUCCESS) {
-            display_warn("上电自检失败！");
-            display_err_msg(ret);
+            display_err_msg(ret, "上电自检失败！");
             return FAIL;
         }
     }

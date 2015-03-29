@@ -305,7 +305,7 @@ int clear_screen(void)
  *
  * ATTENTION: This funtion recommented to be used while 
  * a UI needs to get user input and this UI has no other 
- * interact element.
+ * interactivity element.
  */
 int show_simple_frame(struct simple_frame * frame) 
 {
@@ -316,7 +316,8 @@ int show_simple_frame(struct simple_frame * frame)
     clear_screen();
 
     item_num = frame->item_num;
-
+    
+    /* item's content may be longer than 12 CN_Bits */
     int i, y;
     for (i = 0; i < item_num; i++) {
         row = frame->items[i].pos.row;
@@ -505,12 +506,24 @@ int display_warn(char *msg)
     return SUCCESS;
 }
 
-int display_err_msg(int err)
+int display_err_msg(int err, char *msg)
 {
     char msg[48] = {0};
-    
-    sprintf(msg, "错误代码：%d", err);
-    display_info(msg);
+    struct simple_frame frame;
+
+    memset(&frame, 0, sizeof(frame));
+
+    frame.item_num = 2;
+    frame.items[0].pos.row = 1;
+    frame.items[0].pos.col = 1;
+    strcpy(frame.items[0].title, msg);
+
+    frame.items[1].pos.row = 4;
+    frame.items[1].pos.col = 1;
+    sprintf(frame.items[1].title, "错误代码：%d", err);
+
+    show_simple_frame(&frame);
+    sleep(1);
 
     clear_cache();
     get_keycode();
@@ -531,7 +544,7 @@ int set_cursor_on(int row, int col)
     /* set cursor on, blink on*/
     ret = lcm_set_cursor(row, col, ON, ON);
     if (ret < 0)
-        display_err_msg(ret);
+        display_err_msg(ret, "设置光标出错！");
 
     return ret;
 }
@@ -549,7 +562,7 @@ int set_cursor_off(int row, int col)
     /* set cursor off, blink off*/
     ret = lcm_set_cursor(row, col, OFF, OFF);
     if (ret < 0)
-        display_err_msg(ret);
+        display_err_msg(ret, "设置光标出错！");
 
     return ret;
 }

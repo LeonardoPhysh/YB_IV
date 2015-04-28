@@ -508,7 +508,6 @@ int display_warn(char *msg)
 
 int display_err_msg(int err, char *msg)
 {
-    char msg[48] = {0};
     struct simple_frame frame;
 
     memset(&frame, 0, sizeof(frame));

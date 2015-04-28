@@ -347,7 +347,7 @@ int tax_file_read_mach_info(struct machine_info_record * mach_info)
 
     fp = fopen(MACH_INFO_FILE, "rb+");
     if (fp == NULL)
-        return EFILE_OPEN_FAIL;
+        return -EFILE_OPEN_FAIL;
 
     memset(&record_node, 0, sizeof(record_node));
     ret = file_ops->read_record(fp, 1, &record_node);
@@ -424,7 +424,7 @@ int tax_file_read_sys_cfg(struct tax_sys_config_record * sys_cfg)
 
     fp = fopen(SYS_CFG_FILE, "rb+");
     if (fp == NULL)
-        return EFILE_OPEN_FAIL;
+        return -EFILE_OPEN_FAIL;
 
     memset(&record_node, 0, sizeof(record_node));
     ret = file_ops->read_record(fp, 1, &record_node);
@@ -499,7 +499,7 @@ int tax_file_read_fis_cfg(struct tax_sys_fis_config_record * fis_cfg)
 
     fp = fopen(FIS_CFG_FILE, "rb+");
     if (fp == NULL)
-        return EFILE_OPEN_FAIL;
+        return -EFILE_OPEN_FAIL;
 
     memset(&record_node, 0, sizeof(record_node));
     ret = file_ops->read_record(fp, 1, &record_node);
@@ -575,7 +575,7 @@ int tax_file_read_protect(struct tax_sys_protect_record * protect_rec)
 
     fp = fopen(PROTECT_FILE, "rb+");
     if (fp == NULL)
-        return EFILE_OPEN_FAIL;
+        return -EFILE_OPEN_FAIL;
 
     memset(&record_node, 0, sizeof(record_node));
     ret = file_ops->read_record(fp, 1, &record_node);
@@ -604,7 +604,7 @@ int tax_file_read_pin(struct tax_sys_pin_record * pin)
 
     fp = fopen(PIN_FILE, "rb+");
     if (fp == NULL)
-        return EFILE_OPEN_FAIL;
+        return -EFILE_OPEN_FAIL;
 
     memset(&record_node, 0, sizeof(record_node));
     ret = file_ops->read_record(fp, 1, &record_node);
@@ -735,7 +735,7 @@ int tax_file_read_origin_pin(struct tax_sys_pin_record * origin_pin)
 
     fp = fopen(ORIGIN_PIN_FILE, "rb+");
     if (fp == NULL)
-        return EFILE_OPEN_FAIL;
+        return -EFILE_OPEN_FAIL;
 
     memset(&record_node, 0, sizeof(record_node));
     ret = file_ops->read_record(fp, 1, &record_node);
@@ -811,7 +811,7 @@ int tax_file_read_app_info(struct tax_sys_app_info * app_info)
 
     fp = fopen(APP_FILE, "rb+");
     if (fp == NULL)
-        return EFILE_OPEN_FAIL;
+        return -EFILE_OPEN_FAIL;
 
     memset(&record_node, 0, sizeof(record_node));
     ret = file_ops->read_record(fp, 1, &record_node);
@@ -883,7 +883,7 @@ int tax_file_read_his_app_info(struct  tax_sys_his_app_info * his_app_info)
 
     fp = fopen(APP_FILE, "rb+");
     if (fp == NULL)
-        return EFILE_OPEN_FAIL;
+        return -EFILE_OPEN_FAIL;
 
     memset(&record_node, 0, sizeof(record_node));
     ret = file_ops->read_record(fp, 1, &record_node);
@@ -1035,7 +1035,7 @@ int tax_file_read_buyed_roll(struct tax_sys_buy_roll_record * buyed_roll)
 
     fp = fopen(AMOUNT_FILE, "rb+");
     if (fp == NULL)
-        return EFILE_OPEN_FAIL;
+        return -EFILE_OPEN_FAIL;
 
     memset(&record_node, 0, sizeof(record_node));
     ret = file_ops->read_record(fp, 1, &record_node);
@@ -1105,7 +1105,7 @@ int tax_file_read_last_dist(struct tax_sys_invoice_roll_record * dist_roll_rec)
 
     fp = fopen(AMOUNT_FILE, "rb+");
     if (fp == NULL)
-        return EFILE_OPEN_FAIL;
+        return -EFILE_OPEN_FAIL;
 
     memset(&record_node, 0, sizeof(record_node));
     ret = file_ops->read_record(fp, 1, &record_node);
@@ -1178,7 +1178,7 @@ int tax_file_read_cur_roll(struct tax_sys_buy_roll_record * cur_roll_record)
 
     fp = fopen(CUR_ROLL_FILE, "rb+");
     if (fp == NULL)
-        return EFILE_OPEN_FAIL;
+        return -EFILE_OPEN_FAIL;
 
     memset(&record_node, 0, sizeof(record_node));
     ret = file_ops->read_record(fp, 1, &record_node);
@@ -1251,7 +1251,7 @@ int tax_file_read_crln(struct tax_sys_cur_roll_left_record * cur_roll_left)
 
     fp = fopen(CRLN_FILE, "rb+");
     if (fp == NULL)
-        return EFILE_OPEN_FAIL;
+        return -EFILE_OPEN_FAIL;
 
     memset(&record_node, 0, sizeof(record_node));
     ret = file_ops->read_record(fp, 1, &record_node);
@@ -1321,7 +1321,7 @@ int tax_file_read_invoice_cfg(struct tax_sys_id_cfg_record * invoice_cfg_rec)
 
     fp = fopen(INVOICE_ID_CFG_FILE, "rb+");
     if (fp == NULL)
-        return EFILE_OPEN_FAIL;
+        return -EFILE_OPEN_FAIL;
 
     memset(&record_node, 0, sizeof(record_node));
     ret = file_ops->read_record(fp, 1, &record_node);

@@ -53,8 +53,7 @@ int debug_msg(const char *format, ...)
 {
 #ifdef CONFIG_DEBUG
 	int ret;
-	va_list arg_ptr;	
-	
+	va_list arg_ptr;		
 	va_start(arg_ptr, format);
 	ret = vprintf(format, arg_ptr);
 	if (ret < 0)

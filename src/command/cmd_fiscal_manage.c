@@ -2,8 +2,8 @@
  * com_comm_manage.c
  *  - implement function of fiscal manage
  * 
- * Author : Leonardo Phsy 
- * Date   : 2014.9.24 Rev01
+ * Author : Leonardo Physh 
+ * Date   : 2014.9.24
  */
 
 #include <stdio.h>
@@ -26,14 +26,12 @@
 /*
  * UI helper 
  */
-int show_setup_date(struct bcd_date *today)
+static int show_setup_date(struct bcd_date *today)
 {
     uint y, m, d;
-
     struct simple_frame frame;
 
     memset(&frame, 0, sizeof(frame));
-
     bcd_to_greg(today, &y, &m, &d);
 
     frame.item_num = 4;
@@ -58,7 +56,7 @@ int show_setup_date(struct bcd_date *today)
     return SUCCESS;
 }
 
-int show_setup_time(struct greg_time *now)
+static int show_setup_time(struct greg_time *now)
 {
     struct simple_frame frame;
 
@@ -87,7 +85,7 @@ int show_setup_time(struct greg_time *now)
     return SUCCESS;
 }
 
-int show_get_enddate(struct bcd_date *start, struct bcd_date *end)
+static int show_get_enddate(struct bcd_date *start, struct bcd_date *end)
 {
     uint s_y, s_m, s_d;
     uint e_y, e_m, e_d;
@@ -117,7 +115,7 @@ int show_get_enddate(struct bcd_date *start, struct bcd_date *end)
     return SUCCESS;
 }
 
-int show_get_verify_pin(void)
+static int show_get_verify_pin(void)
 {
     struct simple_frame frame;
 
@@ -141,7 +139,7 @@ int show_get_verify_pin(void)
 
 }
 
-int show_inspect_UI(char *title)
+static int show_inspect_UI(char *title)
 {
     struct simple_frame frame;
 
@@ -169,7 +167,7 @@ int show_inspect_UI(char *title)
 }
 
 
-int show_inspect_chk_info(char *title, struct tax_sys_check_idx *chk_idx)
+static int show_inspect_chk_info(char *title, struct tax_sys_check_idx *chk_idx)
 {
     char buf[10] = {0};
     struct simple_frame frame;
@@ -213,7 +211,7 @@ int do_set_date(void)
 
     ret = rt_ops->get_cur_date(&today);
     if (ret != SUCCESS) {
-        display_err_msg(ret);
+        display_err_msg(ret, "日期设置失败！");
         return FAIL;
     }
 
@@ -248,12 +246,11 @@ int do_set_date(void)
 
     ret = rt_ops->set_cur_date(&new_date);
     if (ret != SUCCESS) {
-        display_err_msg(ret);
+        display_err_msg(ret, "日期设置失败！");
         return FAIL;
     }
 
     display_info("日期设置成功!");
-
     return SUCCESS;
 }
 
@@ -270,7 +267,7 @@ int do_set_time(void)
 
     ret = rt_ops->get_cur_time(&now);
     if (ret != SUCCESS) {
-        display_err_msg(ret);
+        display_err_msg(ret, "时间设置失败！");
         return FAIL;
     }
 
@@ -297,7 +294,7 @@ int do_set_time(void)
 
     ret = rt_ops->set_cur_time(&new_time);
     if (ret != SUCCESS) {
-        display_err_msg(ret);
+        display_err_msg(ret, "时间设置失败！");
         return FAIL;
     }
 
@@ -437,8 +434,7 @@ int do_update_daily_record(struct tax_sys_check_info *chk_info,
         /* progress of updating record */
         ret = tax_system->write_check_daily_detail(cur_offset, chk_info->rec_num + 1);
         if (ret != SUCCESS) {
-            display_warn("写卡出错！");
-            display_err_msg(ret);
+            display_err_msg(ret, "写卡出错！");
             return ret;
         }
 
@@ -497,15 +493,14 @@ int do_update_declare_record(struct tax_sys_check_info *chk_info,
         } else {
             ret = tax_system->write_check_declare_detail(1, cur_offset, 
                     chk_info->rec_num + 1);
-            i ++;
-            cur_offset ++;
-            record_nb --;
+            i++;
+            cur_offset++;
+            record_nb--;
         }
         chk_info->rec_num ++;
         
         if (ret != SUCCESS) {
-            display_warn("写卡出错！");
-            display_err_msg(ret);
+            display_err_msg(ret, "写卡出错！");
             return ret;
         }
     }
@@ -577,8 +572,7 @@ int do_update_invoice_record(struct tax_sys_check_info *chk_info,
         chk_info->rec_num ++;
         
         if (ret != SUCCESS) {
-            display_warn("写卡出错！");
-            display_err_msg(ret);
+            display_err_msg(ret, "写卡出错！");
             return ret;
         }
     }
@@ -600,7 +594,6 @@ int cmd_normal_declare_duty(void)
     int ret;
     struct bcd_date today;
     struct bcd_date last_declare_date, declare_limit_date, declare_end_date;
-
     struct rt_operate *rt_ops = get_rt_ops();
     struct tax_system * tax_system = get_tax_system();
     struct tax_sys_app_info * g_app_info = get_sys_app_info();
@@ -705,7 +698,7 @@ int cmd_normal_declare_duty(void)
     return SUCCESS;
 
 fail:
-    display_err_msg(ret);
+    display_err_msg(ret, "税控申报失败！");
     return FAIL;
 }
 
@@ -784,7 +777,7 @@ int cmd_month_declare_duty(void)
     return SUCCESS;
 
 fail:
-    display_err_msg(ret);
+    display_err_msg(ret, "税控申报失败！");
     return FAIL;
 }
 
@@ -904,8 +897,7 @@ get_date:
             goto get_date;
         }
     } else {
-        display_warn("查找发票明细出错！");
-        display_err_msg(ret);
+        display_err_msg(ret, "查找发票明细出错！");
         return ret;
     }
 
@@ -967,8 +959,7 @@ get_inv_nb:
 
     ret = tax_file_find_invoice_detail((uint *)&inv_nb, &inv_detail);
     if (ret != SUCCESS || ret != -ETAX_INV_HAS_RETURNED) {
-        display_warn("查找发票明细出错！");
-        display_err_msg(ret);
+        display_err_msg(ret, "查找发票明细出错！");
         return FAIL;
     }
 
@@ -1034,8 +1025,7 @@ get_date:
 
     ret = tax_system->daily_collect();
     if (ret == SUCCESS) {
-        display_warn("日汇总出错！");
-        display_err_msg(ret);
+        display_err_msg(ret, "日汇总出错！");
         return ret;
     }
 
@@ -1048,8 +1038,7 @@ get_date:
             goto get_date;
         }
     } else {
-        display_warn("查找日汇总记录出错！");
-        display_err_msg(ret);
+        display_err_msg(ret, "查找日汇总记录出错！");
         return ret;
     }
 
@@ -1123,8 +1112,7 @@ get_date:
             goto get_date;
         }
     } else {
-        display_warn("查找申报记录出错！");
-        display_err_msg(ret);
+        display_err_msg(ret, "查找申报记录出错！");
         return ret;
     }
 
@@ -1201,8 +1189,7 @@ int cmd_update_control(void)
 
     ret = tax_system->update_control();
     if (ret != SUCCESS) {
-        display_warn("更新失败，请联系厂商！"); 
-        display_err_msg(ret);
+        display_err_msg(ret, "更新失败，请联系厂商！");
         return FAIL;
     }
 
@@ -1245,7 +1232,7 @@ int cmd_fiscal_init(void)
         if (ret == -EUI_ESC)
             return SUCCESS;
 
-        display_err_msg(ret);
+        display_err_msg(ret, "税控初始化失败！");
         return FAIL;
     }
 
@@ -1253,7 +1240,7 @@ int cmd_fiscal_init(void)
 
     ret = tax_system->fiscal_init();
     if (ret != SUCCESS) {
-        display_err_msg(ret);
+        display_err_msg(ret, "税控初始化失败！");
         return FAIL;
 
     } else {
@@ -1265,18 +1252,17 @@ int cmd_fiscal_init(void)
          */
         ret = tax_system->power_on_check();
         if (ret != SUCCESS) {
-            display_err_msg(ret);
+            display_err_msg(ret, "重置税控机失败！");
             return FAIL;
         }
 
         ret = plu_ops->plu_init();
         if (ret != SUCCESS) {
-            display_err_msg(ret);
+            display_err_msg(ret, "重置税控机失败！");
             return FAIL;
         }
 
         display_warn("税控初始化成功!!");
-
         return SUCCESS;
     }
 }
@@ -1311,8 +1297,7 @@ int cmd_mach_transfer(void)
 
     ret = tax_file_term_clear();
     if (ret != SUCCESS) {
-        display_warn("停机过户失败！");
-        display_err_msg(ret);
+        display_err_msg(ret, "停机过户失败！");
         return FAIL;
     }
 
@@ -1320,8 +1305,7 @@ int cmd_mach_transfer(void)
 
     ret = tax_system->fiscal_init();
     if (ret != SUCCESS) {
-        display_warn("税控初始化失败！");
-        display_err_msg(ret);
+        display_err_msg(ret, "税控初始化失败！");
         return FAIL;
 
     } else {
@@ -1333,15 +1317,13 @@ int cmd_mach_transfer(void)
          */
         ret = tax_system->power_on_check();
         if (ret != SUCCESS) {
-            display_warn("重置税控机失败！");
-            display_err_msg(ret);
+            display_err_msg(ret, "重置税控机失败！");
             return FAIL;
         }
 
         ret = plu_ops->plu_init();
         if (ret != SUCCESS) {
-            display_warn("重置税控机失败！");
-            display_err_msg(ret);
+            display_err_msg(ret, "重置税控机失败！");
             return FAIL;
         }
 
@@ -1380,8 +1362,7 @@ int cmd_update_taxpayer(void)
 
     ret = tax_system->update_taxpayer();
     if (ret != SUCCESS) {
-        display_warn("更新失败，请联系厂商！");
-        display_err_msg(ret);
+        display_err_msg(ret, "更新失败，请联系厂商！");
         return FAIL;
     }
 

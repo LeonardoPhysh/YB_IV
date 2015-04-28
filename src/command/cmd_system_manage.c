@@ -2,8 +2,8 @@
  * com_system_manage.c
  *  - implement function of system manage
  * 
- * Author : Leonardo Phsy 
- * Date   : 2014.9.24 Rev01
+ * Author : Leonardo Physh
+ * Date   : 2014.9.24
  */
 
 #include <stdlib.h>
@@ -22,11 +22,9 @@
 #include "tax_file_op.h"
 
 #include "ui_api.h"
-
 #include "plu.h"
 #include "print.h"
 #include "input.h"
-
 #include "common.h"
 #include "config.h"
 #include "ui_api.h"
@@ -189,7 +187,7 @@ int do_view_user(char *title)
         }
 
         show_simple_frame(&frame);
-        //highlight_line(pos + 1);
+        highlight_on(pos + 1);
 
         key_code = get_keycode();
         switch (key_code) {
@@ -240,10 +238,8 @@ int do_view_user(char *title)
     }
 
 fail:
-    display_warn("查询用户失败！");
-    display_err_msg(ret);
+    display_err_msg(ret, "查询用户失败！");
     return ret;
-
 }
 
 /*
@@ -322,7 +318,7 @@ show_user:
 
     ret = get_passwd(4, 6, passwd);
     if (ret == -EUI_ESC) {
-        ret = question_user("确认取消本次操作？");
+        ret = question_user("确认取消当前操作？");
         if (ret == POSITIVE)
             return FAIL;
         else {
@@ -360,8 +356,7 @@ show_user:
             return FAIL;
         }
 
-        display_warn("添加用户失败，请联系厂商！");
-        display_err_msg(ret);
+        display_err_msg(ret, "添加用户失败，请联系厂商！");
         return FAIL;
     }
 
@@ -397,15 +392,13 @@ int cmd_del_user(void)
     else if (ret >= 0)
         offset = ret;
     else {
-        display_warn("未知错误，请联系厂商！");
-        display_err_msg(ret);
+        display_err_msg(ret, "未知错误，请联系厂商！");
         return FAIL;
     }
 
     ret = tax_file_read_user(offset, &del_user);
     if (ret < 0) {
-        display_warn("删除用户失败！");
-        display_err_msg(ret);
+        display_err_msg(ret, "删除用户失败！");
         return FAIL;
     }
 
@@ -416,8 +409,7 @@ int cmd_del_user(void)
 
     ret = tax_file_delete_user(offset);
     if (ret < 0) {
-        display_warn("删除用户失败！");
-        display_err_msg(ret);
+        display_err_msg(ret, "删除用户失败！");
         return FAIL;
     }
 
@@ -450,15 +442,13 @@ int cmd_modify_user(void)
     else if (ret >= 0)
         offset = ret;
     else {
-        display_warn("未知错误，请联系厂商！");
-        display_err_msg(ret);
+        display_err_msg(ret, "未知错误，请联系厂商！");
         return FAIL;
     }
 
     ret = tax_file_read_user(offset, &old_user);
     if (ret == SUCCESS) {
-        display_warn("修改用户失败！");
-        display_err_msg(ret);
+        display_err_msg(ret, "修改用户失败！");
         return FAIL;
     }
 
@@ -551,8 +541,7 @@ show_user:
     tmp_user.level = new_perm;
     ret = tax_file_modify_user(offset, &tmp_user);
     if (ret != SUCCESS) {
-        display_warn("修改用户失败！");
-        display_err_msg(ret);
+        display_err_msg(ret, "修改用户失败！");
         return FAIL;
     }
 
@@ -865,8 +854,7 @@ int cmd_view_issue_info(void)
         display_warn("本机尚未初始化！");
         return FAIL;
     } else if (ret < 0) {
-        display_warn("未知错误！");
-        display_err_msg(ret);
+        display_err_msg(ret, "查看开票信息出错！");
         return FAIL;
     }
 
@@ -874,8 +862,7 @@ int cmd_view_issue_info(void)
 
     ret = tax_file_read_amount(&amt_rec);
     if (ret < 0) {
-        display_warn("获取申报信息失败！");
-        display_err_msg(ret);
+        display_err_msg(ret, "获取申报信息失败！");
         return FAIL;
     }
 
@@ -1152,7 +1139,7 @@ int cmd_sw_update_set_keycode(void)
 int cmd_system_setup(void)
 {
     /*
-     * no need, obsoleted API
+     * obsoleted API
      */
     display_warn("功能尚未完善！");
 
@@ -1179,7 +1166,7 @@ int cmd_view_date_time(void)
 
     ret = rt_ops->get_cur_date(&today);
     if (ret != SUCCESS) {
-        display_err_msg(ret);
+        display_err_msg(ret, "查看时间出错！");
         return FAIL;
     }
 
@@ -1187,7 +1174,7 @@ int cmd_view_date_time(void)
 
     ret = rt_ops->get_cur_time(&now);
     if (ret != SUCCESS) {
-        display_err_msg(ret);
+        display_err_msg(ret, "查看时间出错！");
         return FAIL;
     }
 
@@ -1209,8 +1196,5 @@ int cmd_view_date_time(void)
 
     return SUCCESS;
 }
-
-
-
 
 

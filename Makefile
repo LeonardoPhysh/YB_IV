@@ -29,8 +29,8 @@ INCLUDEDIR = $(TOPDIR)/include
 
 #定义交叉编译环境变量，当需要编译arm/mips等平台应用程序/库的时候修改它
 #cross compile tools defined 
-#CROSS_COMPILE = arm-linux-
-CROSS_COMPILE =
+CROSS_COMPILE = arm-linux-
+#CROSS_COMPILE =
 AS = $(CROSS_COMPILE)as
 LD = $(CROSS_COMPILE)ld
 CC = $(CROSS_COMPILE)gcc

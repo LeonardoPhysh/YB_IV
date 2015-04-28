@@ -405,12 +405,19 @@ static int print_sys_init(struct print_sys * print_sys)
     int ret;
     int fd;
     struct machine_info_record mach_rec;
-
-    ret = tax_file_read_mach_info(&mach_rec);
-    if (ret < 0)
-        return ret;
     
-    /* roll printer is build-in machine, do not need to check*/ 
+    /* fisrt time booting machine, machine_info_record is 
+     * not exsit */
+    ret = tax_file_read_mach_info(&mach_rec);
+    if (ret < 0) {
+        if (ret == -EFILE_OPEN_FAIL) {
+            return -EFUNC_FIRST_BOOT; 
+        } else 
+            return FAIL;
+
+    }
+    
+    /* roll printer is build-in machine, do not need to check */ 
     if (mach_rec.cur_print == ROLL_PRINT_TYPE) {
         print_sys->cur_print = ROLL_PRINT_TYPE;
         print_sys->print_nb = mach_rec.print_nb;

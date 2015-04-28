@@ -3,7 +3,7 @@
  *   -- Tax system core code
  * 
  * Author : Leonardo Physh 
- * Date   : 2014.7.30  Rev 01
+ * Date   : 2014.7.30
  */
 
 #include <stdio.h>
@@ -20,7 +20,6 @@
 #include "config.h"
 #include "error.h"
 #include "power.h"
-
 #include "tax_file_op.h"
 #include "tax_card_base.h"
 #include "tax_system.h"

@@ -2,11 +2,8 @@
  * cmd_invoice_manage.c - the set of functions of the menu "发票管理"
  *  - implement all of the functions to do management of invoice 
  *
- * Author : Leonardo.Phsy 
- * Date   : 2014.9.28 Rev01
- * ---------------------
- * Update Log:
- *    Add cmd_view_disted_roll() - 2014.12.8
+ * Author : Leonardo.Physh 
+ * Date   : 2014.9.28 
  */
 
 #include <stdio.h>
@@ -46,7 +43,7 @@ int cmd_dist_inv(void)
 
     ret = tax_file_is_empty(PROTECT_FILE);
     if (ret < 0) {
-        display_err_msg(ret);
+        display_err_msg(ret, "分发发票失败！");
         return FAIL;
     } else if (ret != POSITIVE) {
         display_warn("还有已分发的发票未使用，无法分发发票!");
@@ -92,7 +89,7 @@ int cmd_dist_inv(void)
         return SUCCESS;
     }
 
-    display_err_msg(ret);
+    display_err_msg(ret, "分发发票失败！");
     return FAIL;
 }
 
@@ -173,7 +170,7 @@ int cmd_mount_roll(void)
 
     }
 
-    display_err_msg(ret);
+    display_err_msg(ret, "装载发票失败！");
     return FAIL;
 }
 
@@ -436,7 +433,7 @@ int cmd_view_disted_roll(void)
             return FAIL;
         }
 
-        display_err_msg(ret);
+        display_err_msg(ret, "查看分发发票失败！");
         return FAIL;
     }
 

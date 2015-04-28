@@ -45,6 +45,7 @@ enum err_ui {
 enum err_func { 
 	EFUNC=200,
 	EFUNC_END_COVER_FAIL,
+    EFUNC_FIRST_BOOT,
 };
 
 /* Display */

@@ -2,8 +2,8 @@
  * com_other_ops.c
  *  - implement function of other sub-menu "其他"
  * 
- * Author : Leonardo Phsy 
- * Date   : 2014.9.24 Rev01
+ * Author : Leonardo Physh
+ * Date   : 2014.9.24
  */
 
 #include <stdlib.h>
@@ -792,6 +792,13 @@ int do_check_start_and_end(struct bcd_date * start_date, struct bcd_date * end_d
         if (ret > 0) 
             return 3;
     }
+    
+    if (cur_user->level == NORMAL_USER) {
+        /* normal user can only view invoice issued today */
+        if ((rt_ops->cmp_bcd_date(start_date, &today) != 0) || (
+                    rt_ops->cmp_bcd_date(end_date, &today) != 0))
+            return 4;
+    }
 
     return SUCCESS;
 }
@@ -831,8 +838,7 @@ input_ori:
     /* check invoice */
     ret = do_check_user_and_date(&ori_detail.detail_date);
     if (ret < 0) {
-        display_warn("查找发票信息出错！");
-        display_err_msg(ret);
+        display_err_msg(ret, "查找发票信息出错！");
         return FAIL;
     } else {
         if (ret == 1) {
@@ -845,7 +851,10 @@ input_ori:
     }
 
     show_single_inv_info(&ori_detail);
-
+    
+    /*
+     * flat printer do NOT need to print invoice stub
+     */
     if (print_sys->ops->print_invoice_stub) {
         ret = question_user("是否打印电子发票存根？");
         if (ret == POSITIVE) {
@@ -881,15 +890,13 @@ int cmd_view_period_collect(void)
 
     ret = rt_ops->get_cur_date(&today);
     if (ret < 0) {
-        display_warn("查询发票信息失败！");
-        display_err_msg(ret);
+        display_err_msg(ret, "查询发票信息失败！");
         return FAIL;
     }
 
     ret = tax_file_read_last_record(DAILY_COLLECT_FILE, (uchar *)&tmp_rec, sizeof(tmp_rec));
     if (ret < 0) {
-        display_warn("查询发票信息失败！");
-        display_err_msg(ret);
+        display_err_msg(ret, "查询发票信息失败！");
         return FAIL;
     }
 
@@ -967,6 +974,14 @@ show_ui:
             goto show_ui;
             break;
 
+        case 4:
+            display_warn("您只能查看今日数据！");
+            
+            memset(&start_date, 0, sizeof(start_date));
+            memset(&end_date, 0, sizeof(end_date));
+            goto show_ui;
+            break;
+
         default:
             break;
     }
@@ -982,8 +997,7 @@ show_ui:
             memset(&end_date, 0, sizeof(end_date));
             goto show_ui;
         } else {
-            display_warn("查询发票信息失败！");
-            display_err_msg(ret);
+            display_err_msg(ret, "查询发票信息失败！");
             return FAIL;
         }
     }
@@ -1069,8 +1083,7 @@ show_ui:
 
     ret = do_check_user_and_date(&used_roll.end_date);
     if (ret < 0) {
-        display_warn("查找发票卷信息出错！");
-        display_err_msg(ret);
+        display_err_msg(ret, "查找发票卷信息出错！");
         return FAIL;
     } else {
         if (ret == 1) {
@@ -1098,8 +1111,7 @@ show_ui:
     return SUCCESS;
 
 fail:
-    display_warn("查询使用卷信息失败！");
-    display_err_msg(ret);
+    display_err_msg(ret, "查询使用卷信息失败！");
     return FAIL;
 }
 
@@ -1311,8 +1323,7 @@ setup_print:
 
     ret = file_ops->creat_file(MACH_INFO_FILE, MACH_INFO_FILE_MODE, MACH_INFO_REC_NUM);
     if (ret < 0) {
-        display_warn("出厂设置出错！");
-        display_err_msg(ret);
+        display_err_msg(ret, "出厂设置出错！");
         return ret;
     }
 
@@ -1328,8 +1339,7 @@ setup_print:
 
     ret = rt_ops->get_cur_date(&today);
     if (ret < 0) {
-        display_warn("出厂设置出错！");
-        display_err_msg(ret);
+        display_err_msg(ret, "出厂设置出错！");
         return ret;
     }
 
@@ -1341,8 +1351,7 @@ setup_print:
 
     ret = tax_file_save_mach_info(&mach_info);
     if (ret != SUCCESS) {
-        display_warn("出厂设置出错！");
-        display_err_msg(ret);
+        display_err_msg(ret, "出厂设置出错！");
         return ret;
     }
 
@@ -1362,8 +1371,7 @@ int cmd_print_setup(void)
 
     ret = tax_file_read_mach_info(&mach_rec); 
     if (ret < 0) {
-        display_warn("打印设置出错！");
-        display_err_msg(ret);
+        display_err_msg(ret, "打印设置出错！");
         return FAIL;
     }
 

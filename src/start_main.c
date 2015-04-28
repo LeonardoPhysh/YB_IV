@@ -13,6 +13,7 @@
 
 #include "config.h"
 #include "common.h"
+#include "error.h"
 #include "uart.h"
 #include "input.h"
 #include "print.h"
@@ -33,16 +34,22 @@ int system_init(void)
 
     display_info("正在进行硬件自检，请稍后...");
     
+    /* 
+     * fisrt time boot up, there is no printer information
+     * skip printer checking.
+     */
     ret = print_sys->print_sys_init(print_sys);
     if (ret != SUCCESS) {
-        display_err_msg(ret, "打印机未就绪！");
-        return FAIL;
-    }
-
-    ret = print_sys->ops->print_boot_check();
-    if (ret != SUCCESS) {
-        display_err_msg(ret, "打印机未就绪！");
-        return FAIL;
+        if (ret != -EFUNC_FIRST_BOOT) {
+            display_err_msg(ret, "打印机未就绪！");
+            return FAIL;
+        }
+    } else {
+        ret = print_sys->ops->print_boot_check();
+        if (ret != SUCCESS) {
+            display_err_msg(ret, "打印机未就绪！");
+            return FAIL;
+        }
     }
 
     /* create the keyboard pthread */
@@ -51,7 +58,7 @@ int system_init(void)
         display_err_msg(ret, "键盘未就绪！");
         return FAIL; 
     }
-    
+
     /* initial card reader */
     ret = tax_system->card_init();
     if (ret < 0) {

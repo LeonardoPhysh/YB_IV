@@ -2,8 +2,8 @@
  * com_comm_manage.c
  *  - implement function of plu manage
  * 
- * Author : Leonardo Phsy 
- * Date   : 2014.9.24 Rev01
+ * Author : Leonardo Physh 
+ * Date   : 2014.9.24
  */
 
 #include <stdlib.h>
@@ -24,7 +24,9 @@
 #include "common.h"
 #include "config.h"
 
-
+/*
+ * UI Helper
+ */
 int show_plu_item(int type, char * title, struct plu_item * plu_item) 
 {
     struct simple_frame frame;
@@ -56,10 +58,8 @@ int show_plu_item(int type, char * title, struct plu_item * plu_item)
     snprintf(frame.items[4].title, MAX_TITLE_LEN, "%s%d", "库存: ", plu_item->stock);
 
     show_simple_frame(&frame);
-
     return SUCCESS;
 }
-
 
 /*
  * get_fis_type - get a tax rate index
@@ -347,8 +347,7 @@ input_num:
             goto input_num;
         }
 
-        display_warn("查询商品失败！");
-        display_err_msg(ret);
+        display_err_msg(ret, "查询商品失败！");
         return FAIL;
     }
 
@@ -386,8 +385,7 @@ get_bc:
             goto get_bc;
         }
 
-        display_warn("查询商品失败，请联系厂商！");
-        display_err_msg(ret);
+        display_err_msg(ret, "查询商品失败，请联系厂商！");
         return FAIL;
     }
 
@@ -424,8 +422,7 @@ input_name:
             goto input_name;
         }        
 
-        display_warn("查询商品失败，请联系厂商！");
-        display_err_msg(ret);
+        display_err_msg(ret, "查询商品失败，请联系厂商！");
         return FAIL;
     }
 
@@ -433,15 +430,6 @@ input_name:
     return SUCCESS;
 }
 
-int do_delete_plu()
-{
-
-}
-
-int do_modify_plu()
-{
-
-}
 
 /*
  * cmd_add_dpt - service for sub-menu "部类添加"
@@ -483,7 +471,6 @@ int cmd_add_dpt(void)
 
 add_dpt:
     show_simple_frame(&frame);
-
     ret = get_chn_str(3, 4, dpt_name);
     if (ret == -EUI_ESC) {
         ret = question_user("确认取消本次操作？");
@@ -495,7 +482,7 @@ add_dpt:
         return FAIL;
 
     /* get_chn_str do not check the string for up-layer, 
-     * we need it ourself */
+     * we need to check it ourself */
     if (strlen(dpt_name) == 0) {
         display_warn("部类名称不能为空！");
         goto add_dpt;
@@ -508,12 +495,11 @@ add_dpt:
 
     ret = plu_ops->append_dpt(dpt_num, &dpt_item);
     if (ret != SUCCESS) {
-        display_warn("添加部类错误！");
+        display_err_msg(ret, "添加部类错误！");
         return FAIL;
     }
 
     display_warn("添加成功部类成功！");
-
     return SUCCESS;
 }
 
@@ -660,7 +646,7 @@ dpt_name:
 
     ret = plu_ops->modify_dpt(dpt_num, &dpt_item);
     if (ret != SUCCESS) {
-        display_warn("修改部类错误！");
+        display_err_msg(ret, "修改部类错误！");
         return FAIL;
     }
 
@@ -918,8 +904,7 @@ show_plu:
 
     ret = plu_ops->delete_plu(plu_item.plu_num);
     if (ret < 0) {
-        display_warn("删除商品失败，请联系厂商！");
-        display_err_msg(ret);
+        display_err_msg(ret, "删除商品失败，请联系厂商！");
         return FAIL;
     }
 
@@ -965,8 +950,7 @@ show_plu:
 
     ret = plu_ops->delete_plu(plu_item.plu_num);
     if (ret < 0) {
-        display_warn("删除商品失败，请联系厂商！");
-        display_err_msg(ret);
+        display_err_msg(ret, "删除商品失败，请联系厂商！");
         return FAIL;
     }
 
@@ -1012,8 +996,7 @@ show_plu:
 
     ret = plu_ops->delete_plu(plu_item.plu_num);
     if (ret < 0) {
-        display_warn("删除商品失败，请联系厂商！");
-        display_err_msg(ret);
+        display_err_msg(ret, "删除商品失败，请联系厂商！");
         return FAIL;
     }
 
@@ -1118,8 +1101,7 @@ input_count:
 
     ret = plu_ops->modify_plu(plu_item.plu_num, &new_item);
     if (ret < 0) {
-        display_warn("修改商品失败，请联系厂商！");
-        display_err_msg(ret);
+        display_err_msg(ret, "修改商品失败，请联系厂商！");
         return FAIL;
     }
 
@@ -1209,8 +1191,7 @@ input_count:
 
     ret = plu_ops->modify_plu(plu_item.plu_num, &new_item);
     if (ret < 0) {
-        display_warn("修改商品失败，请联系厂商！");
-        display_err_msg(ret);
+        display_err_msg(ret, "修改商品失败，请联系厂商！");
         return FAIL;
     }
 
@@ -1300,8 +1281,7 @@ input_count:
 
     ret = plu_ops->modify_plu(plu_item.plu_num, &new_item);
     if (ret < 0) {
-        display_warn("修改商品失败，请联系厂商！");
-        display_err_msg(ret);
+        display_err_msg(ret, "修改商品失败，请联系厂商！");
         return FAIL;
     }
 
@@ -1451,8 +1431,7 @@ input_stock:
 
     ret = plu_ops->modify_plu(plu_item.plu_num, &plu_item);
     if (ret != SUCCESS) {
-        display_warn("进货管理失败");
-        display_err_msg(ret);
+        display_err_msg(ret, "进货管理失败");
         return FAIL;
     }
 

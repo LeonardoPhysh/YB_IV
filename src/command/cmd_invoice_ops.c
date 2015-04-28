@@ -29,7 +29,6 @@
  * global variables define
  */
 static int g_hang_flag = NEGATIVE;
-
 static struct tax_sys_transact_items g_normal_trans_items;
 static struct tax_sys_transact_items g_hang_trans_items;
 static struct tax_sys_invoice_detail_record g_inv_detail;
@@ -56,7 +55,6 @@ static int show_trans_input_plu(int type, int item_num)
     sprintf(frame.items[2].title, "%s", "小计：0.00");
 
     show_simple_frame(&frame);
-
     return SUCCESS;
 }
 
@@ -90,7 +88,6 @@ static int show_trans_ensure_plu(int type, int item_num, struct plu_item *plu_it
     sprintf(frame.items[4].title, "%s%d", "库存：", plu_item->stock);
 
     show_simple_frame(&frame);
-
     return SUCCESS;
 }
 
@@ -121,7 +118,6 @@ static int show_trans_input_count(int item_num, struct plu_item* plu_item)
     sprintf(frame.items[4].title, "%s%d", "库存：", plu_item->stock);
 
     show_simple_frame(&frame);
-
     return SUCCESS;
 }
 
@@ -268,7 +264,6 @@ static int show_return_orige_info(struct tax_sys_invoice_detail_record * ori_det
     sprintf(frame.items[3].title, "%s%.2f", "总金额(元):", (float)ori_detail->detail_amt_total);
 
     show_simple_frame(&frame);
-    
     return SUCCESS;
 }
 
@@ -325,7 +320,7 @@ inline static int get_hang_flag(void)
 
 /* --ATTENTION-- 
  *  get_plu_num & get_plu_count & get_paid_up
- *  these input method have special inline operate, do put 
+ *  these input methods have special inline operation, do NOT put 
  *  them into input.c 
  */
 static int get_plu_num(int row, int col, int *plu_num)
@@ -420,7 +415,6 @@ static int get_plu_num(int row, int col, int *plu_num)
 
 handled:
     *plu_num = atoi(ascii_no);
-
     return ret;
 }
 
@@ -498,7 +492,6 @@ static int get_plu_count(int *count, struct plu_item * tmp_item)
 
 handled:
     *count = atoi(ascii_no);
-
     return ret;
 }
 
@@ -987,7 +980,8 @@ static int do_add_comm_to_list(struct plu_item * tmp_item, int count)
  */
 static int do_subtotal_comm_items(void)
 {
-    int ret, paid_up;
+    int ret;
+    int paid_up = 0;
     uint invoice_nb;
     struct tax_system *tax_system = get_tax_system();
 
@@ -1067,7 +1061,7 @@ static int do_return_invoice(struct tax_sys_invoice_detail_record * ori_detail)
         return ret;
 
     ret = tax_system->get_invoice_nb((uint *)&inv_nb);
-    if (ret < 0)
+    if (ret != SUCCESS) 
         return ret;
 
     count = ori_detail->item_num;
@@ -1101,10 +1095,8 @@ static int do_return_invoice(struct tax_sys_invoice_detail_record * ori_detail)
     memcpy(inv_detail.detail_fiscal_code, issue_res.tax_num, 20);
 
     ret = tax_file_append_invoice_detail(&inv_detail);
-    if (ret < 0) {
-        display_err_msg(ret);
-        return FAIL;
-    }
+    if (ret < 0)
+        return ret; 
 
     return SUCCESS;
 }
@@ -1168,7 +1160,7 @@ static int do_issue_invoice(void)
 
         default:
             if (ret != SUCCESS) {
-                display_err_msg(ret);
+                display_err_msg(ret, "开票检查出错！");
                 return FAIL;
             }
 
@@ -1177,13 +1169,13 @@ static int do_issue_invoice(void)
 
     ret = rt_ops->get_cur_date(&issue_inv.date);
     if (ret != SUCCESS) {
-        display_err_msg(ret);
+        display_err_msg(ret, "开票检查出错！");
         return FAIL;
     }
 
     ret = tax_system->get_invoice_nb(&issue_inv.invoice_num);
     if (ret != SUCCESS) {
-        display_err_msg(ret);
+        display_err_msg(ret, "开票检查出错！");
         return FAIL;
     }
 
@@ -1212,7 +1204,7 @@ static int do_issue_invoice(void)
 
     ret = tax_system->issue_invoice(&issue_inv, &inv_res);
     if (ret != SUCCESS) {
-        display_err_msg(ret);
+        display_err_msg(ret, "开票出错！");
         return FAIL;
     }
 
@@ -1248,18 +1240,18 @@ static int do_print_invoice(void)
     }
 
     memcpy(g_inv_detail.register_num, sys_app_info->taxpayer_nb, 8);
-
+ 
     /* save invoice detail */
     ret = tax_file_append_invoice_detail(&g_inv_detail);
     if (ret < 0) {
-        display_err_msg(ret);
+        display_err_msg(ret, "未知错误，请联系厂商！");
         return ret;
     }
 
     display_info("正在打印发票...");
     ret = print_sys->ops->print_invoice(&g_inv_detail);
     if (ret != SUCCESS) {
-        display_err_msg(ret);
+        display_err_msg(ret, "打印发票出错！");
         return FAIL;
     }
 
@@ -1267,7 +1259,7 @@ static int do_print_invoice(void)
     if (ret == NEGATIVE) {
         display_info("请做退票或废票处理！");
         return FAIL;
-    }
+    } 
 
     return SUCCESS;
 }
@@ -1280,7 +1272,6 @@ static int do_print_invoice(void)
 static int do_decrease_plu_count(void)
 {
     int ret;
-
     struct plu_item tmp_item;
     struct plu_operate *plu_ops = get_plu_ops();
 
@@ -1310,12 +1301,11 @@ static int do_transact(void)
     uchar barcode[13] = {0};
     struct plu_item tmp_item;
     struct plu_operate *plu_ops = get_plu_ops();
-    struct tax_system * tax_system = get_tax_system();
+    struct tax_system *tax_system = get_tax_system();
 
     ret = tax_system->is_fiscal_init();
     if (ret != POSITIVE) {
         display_warn("本机尚未税控初始化，请先进行初始化！");
-
         return FAIL;
     }
 
@@ -1323,7 +1313,7 @@ static int do_transact(void)
 
     ret = plu_ops->get_plu_count(&plu_count);
     if (ret != SUCCESS) {
-        display_err_msg(ret);
+        display_err_msg(ret, "商品销售出错！");
         return FAIL;
     }
 
@@ -1332,6 +1322,9 @@ static int do_transact(void)
         return FAIL;
     }
 
+    /*
+     * ##Main loop##
+     */
     while (1) { 
         plu_num = 0;
         memset(barcode, 0, 13);
@@ -1461,10 +1454,9 @@ input_count:
 
 subtotal:
     ret = do_subtotal_comm_items();
-    if (ret != SUCCESS) {
-        display_err_msg(ret);
+    if (ret != SUCCESS) 
         return FAIL;
-    }
+
 
 input_payer:
     show_trans_input_payer();
@@ -1490,9 +1482,16 @@ input_drawer:
         else
             goto input_drawer;
     }
-    
+
     if (strlen(g_inv_detail.drawer) == 0)
         strcpy(g_inv_detail.drawer, "无");
+
+    /* before issue invoie, we should dec plu_count */
+    ret = do_decrease_plu_count(); 
+    if (ret != SUCCESS){
+        display_err_msg(ret, "销售商品出错！");
+        return FAIL;
+    }
 
     ret = do_issue_invoice();
     if (ret != SUCCESS)
@@ -1501,13 +1500,6 @@ input_drawer:
     ret = do_print_invoice();
     if (ret != SUCCESS)
         return FAIL;
-
-    /* transact success, dec plu_count */
-    ret = do_decrease_plu_count(); 
-    if (ret != SUCCESS){
-        display_err_msg(ret);
-        return FAIL;
-    }
 
     return SUCCESS;
 }
@@ -1520,7 +1512,6 @@ int cmd_transact_by_barcode(void)
 {
 #ifdef CONFIG_HPP
     int ret;
-
     memset(g_normal_trans_items, 0, sizeof(g_normal_trans_items));
 
     /* save transact type */
@@ -1543,18 +1534,12 @@ int cmd_transact_by_barcode(void)
  */
 int cmd_transact_by_num(void)
 {
-    int ret;
     memset(&g_normal_trans_items, 0, sizeof(g_normal_trans_items));
 
     /* save transact type */
     g_normal_trans_items.type =  BY_PLU_NUM; 
 
-    ret = do_transact();
-    if (ret != SUCCESS) {
-        return FAIL;
-    }
-
-    return SUCCESS;
+    return do_transact();
 }
 
 /*
@@ -1611,14 +1596,22 @@ input_name:
         goto input_name;
     }
 
-    ret = get_inter_num(3, 4, (int *)&tmp_item.price);
-    if (ret == -EUI_ESC) {
-        ret = question_user("确定取消本次操作？");
-        if (ret == POSITIVE)
-            return FAIL;
-
+    if (strlen(tmp_item.name) == 0) {
+        display_warn("商品名称不能为空！");
         goto input_name;
     }
+    
+    do {
+        ret = get_inter_num(3, 4, (int *)&tmp_item.price);
+        if (ret == -EUI_ESC) {
+            ret = question_user("确定取消本次操作？");
+            if (ret == POSITIVE)
+                return FAIL;
+
+            goto input_name;
+        } 
+    }while (tmp_item.price == 0);
+
 
 get_rate:
     rate = get_fis_type();
@@ -1692,6 +1685,16 @@ int cmd_return_inv(void)
     struct tax_system * tax_system = get_tax_system();
 
     ret = tax_system->get_invoice_nb((uint *)&inv_num);
+    if (ret != SUCCESS) {
+        if (ret == -ETAX_INVOICE_MC_EMPTY){
+            display_warn("当前发票以用尽，无法退票！");
+        } else {
+            display_err_msg(ret, "退票出错！");
+        }
+
+        return FAIL;
+    }
+
     memset(&ori_detail, 0, sizeof(ori_detail));
 
 input_ori:
@@ -1800,10 +1803,10 @@ int cmd_spoil_cur_inv(void)
     if (ret < 0) {
         if (ret == -ETAX_INVOICE_MC_EMPTY) {
             display_warn("当前发票卷已用尽，无法废票！");
-            return FAIL;
+        } else {
+            display_err_msg(ret, "废票出错！");
         }
 
-        display_err_msg(ret);
         return FAIL;
     }
 
@@ -1818,14 +1821,14 @@ int cmd_spoil_cur_inv(void)
     issue_inv.invoice_type = SPOIL_INVOICE;
     ret = rt_ops->get_cur_date(&issue_inv.date);
     if (ret < 0) {
-        display_err_msg(ret);
-        return ret;
+        display_err_msg(ret, "废票出错！");
+        return FAIL;
     }
 
     ret = tax_system->issue_invoice(&issue_inv, &issue_res);
     if (ret < 0) {
-        display_err_msg(ret);
-        return ret;
+        display_err_msg(ret, "废票出错！");
+        return FAIL;
     }
 
     get_fiscal_code(&issue_res); 
@@ -1837,7 +1840,7 @@ int cmd_spoil_cur_inv(void)
 
     ret = tax_file_append_invoice_detail(&inv_detail);
     if (ret < 0) {
-        display_err_msg(ret);
+        display_err_msg(ret, "废票出错！");
         return FAIL;
     }
 
@@ -1853,12 +1856,10 @@ int cmd_spoil_left_inv(void)
 {
     int ret;
     char title[50] = {0};
-
     struct bcd_date today;
     struct issue_invoice_res issue_res;
     struct tax_sys_issue_invoice issue_inv;
     struct tax_sys_invoice_detail_record inv_detail;
-
     struct rt_operate * rt_ops = get_rt_ops();
     struct tax_system * tax_system = get_tax_system();
     struct tax_sys_cur_roll_left_record * gp_crln = get_cur_roll_left();
@@ -1868,7 +1869,7 @@ int cmd_spoil_left_inv(void)
 
     ret = rt_ops->get_cur_date(&today);
     if (ret < 0) {
-        display_err_msg(ret);
+        display_err_msg(ret, "废票出错！");
         return FAIL;
     }
 
@@ -1876,10 +1877,10 @@ int cmd_spoil_left_inv(void)
     if (ret < 0) {
         if (ret == -ETAX_INVOICE_MC_EMPTY) {
             display_warn("当前发票卷已用尽，无法废票！");
-            return FAIL;
+        } else {
+            display_err_msg(ret, "废票出错！");
         }
 
-        display_err_msg(ret);
         return FAIL;
     }
 
@@ -1900,7 +1901,7 @@ int cmd_spoil_left_inv(void)
         ret = tax_system->get_invoice_nb(&issue_inv.invoice_num);
         if (ret < 0) {
             if (ret != -ETAX_INVOICE_MC_EMPTY) {
-                display_err_msg(ret);
+                display_err_msg(ret, "当前发票卷已用尽，无法废票！");
                 return FAIL;
             } else 
                 break;
@@ -1908,7 +1909,7 @@ int cmd_spoil_left_inv(void)
 
         ret = tax_system->issue_invoice(&issue_inv, &issue_res);
         if (ret < 0) {
-            display_err_msg(ret);
+            display_err_msg(ret, "废票出错！");
             return ret;
         }
 
@@ -1919,13 +1920,12 @@ int cmd_spoil_left_inv(void)
 
         ret = tax_file_append_invoice_detail(&inv_detail);
         if (ret < 0) {
-            display_err_msg(ret);
+            display_err_msg(ret, "废票出错！");
             return FAIL;
         }
     }
 
     display_warn("作废剩余票成功！");
-
     return SUCCESS;
 }
 
@@ -1943,7 +1943,6 @@ int cmd_spoil_area_inv(void)
     struct issue_invoice_res issue_res;
     struct tax_sys_issue_invoice issue_inv;
     struct tax_sys_invoice_detail_record inv_detail;
-
     struct rt_operate * rt_ops = get_rt_ops();
     struct tax_system * tax_system = get_tax_system();
     struct tax_sys_cur_roll_left_record * gp_crln = get_cur_roll_left();
@@ -1953,7 +1952,7 @@ int cmd_spoil_area_inv(void)
 
     ret = rt_ops->get_cur_date(&today);
     if (ret < 0) {
-        display_err_msg(ret);
+        display_err_msg(ret, "废票出错！");
         return FAIL;
     }
 
@@ -1961,10 +1960,10 @@ int cmd_spoil_area_inv(void)
     if (ret < 0) {
         if (ret == -ETAX_INVOICE_MC_EMPTY) {
             display_warn("当前发票卷已用尽，无法废票！");
-            return FAIL;
+        } else {
+            display_err_msg(ret, "废票出错！");
         }
 
-        display_err_msg(ret);
         return FAIL;
     }
 
@@ -2002,7 +2001,7 @@ input_nb:
         ret = tax_system->get_invoice_nb(&issue_inv.invoice_num);
         if (ret < 0) {
             if (ret != -ETAX_INVOICE_MC_EMPTY) {
-                display_err_msg(ret);
+                display_err_msg(ret, "当前发票卷已用尽，无法废票！");
                 return FAIL;
             } else 
                 break;
@@ -2010,7 +2009,7 @@ input_nb:
 
         ret = tax_system->issue_invoice(&issue_inv, &issue_res);
         if (ret < 0) {
-            display_err_msg(ret);
+            display_err_msg(ret, "废票出错！");
             return ret;
         }
 
@@ -2021,14 +2020,14 @@ input_nb:
 
         ret = tax_file_append_invoice_detail(&inv_detail);
         if (ret < 0) {
-            display_err_msg(ret);
+            display_err_msg(ret, "废票出错！");
             return FAIL;
         }
     }
 
     display_warn("废票成功！");
-
     return SUCCESS;
 }
 
 /* end of transact.c */
+

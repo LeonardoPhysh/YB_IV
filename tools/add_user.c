@@ -27,7 +27,7 @@ int tax_file_append_user(struct user * new_user)
     struct user tmp_user;
       
     printf("Open file done\n");
-    fp = fopen(USER_FILE, "rb+");
+    fp = fopen("user.dat", "rb+");
     if (fp == NULL)
         return -EFILE_OPEN_FAIL;
 
@@ -59,7 +59,6 @@ int tax_file_append_user(struct user * new_user)
     }
     
     printf("Add record done.\n");
-
     fclose(fp);
 
     return SUCCESS;

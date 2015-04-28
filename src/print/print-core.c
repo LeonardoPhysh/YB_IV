@@ -414,7 +414,6 @@ static int print_sys_init(struct print_sys * print_sys)
             return -EFUNC_FIRST_BOOT; 
         } else 
             return FAIL;
-
     }
     
     /* roll printer is build-in machine, do not need to check */ 

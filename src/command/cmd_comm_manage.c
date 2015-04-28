@@ -27,7 +27,7 @@
 /*
  * UI Helper
  */
-int show_plu_item(int type, char * title, struct plu_item * plu_item) 
+static int show_plu_item(int type, char *title, struct plu_item *plu_item) 
 {
     struct simple_frame frame;
     memset(&frame, 0, sizeof(frame));
@@ -61,7 +61,7 @@ int show_plu_item(int type, char * title, struct plu_item * plu_item)
     return SUCCESS;
 }
 
-/*
+/* # open to other modules #
  * get_fis_type - get a tax rate index
  *  @return : tax index 
  */
@@ -184,6 +184,7 @@ int get_fis_type(void)
     }
 }
 
+/* #open to other modules# */
 char * get_fis_type_name(int index)
 {
     int rate_nb;
@@ -204,7 +205,7 @@ char * get_fis_type_name(int index)
  * do_view_dpt - list all dpt item 
  *  @return : choosen dpt_num
  */
-int do_view_dpt(char *title)
+static int do_view_dpt(char *title)
 {
     int ret;
     int key_code;
@@ -321,7 +322,7 @@ int do_view_dpt(char *title)
  *  @type : BY_BARCODE/BY_NAME
  *  @return : plu_num
  */
-int do_view_plu_by_num(struct plu_item *item)
+static int do_view_plu_by_num(struct plu_item *item)
 {
     int ret;
     int plu_num; 
@@ -355,7 +356,7 @@ input_num:
     return SUCCESS;
 }
 
-int do_view_plu_by_barcode(struct plu_item *item)
+static int do_view_plu_by_barcode(struct plu_item *item)
 {
     int ret;
     char barcode[14] = {0};
@@ -396,7 +397,7 @@ get_bc:
     return ret;
 }
 
-int do_view_plu_by_name(struct plu_item * item)
+static int do_view_plu_by_name(struct plu_item * item)
 {
     int ret;
     char name[24] = {0};

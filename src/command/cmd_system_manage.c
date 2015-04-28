@@ -33,7 +33,7 @@
 /*
  * UI helper 
  */
-int show_add_user_perm(void)
+static int show_add_user_perm(void)
 {
     struct simple_frame frame;
     memset(&frame, 0, sizeof(frame));
@@ -55,7 +55,7 @@ int show_add_user_perm(void)
     return SUCCESS;
 }
 
-int show_add_user_info(char *title, struct user * user)
+static int show_add_user_info(char *title, struct user * user)
 {
     struct simple_frame frame;
     memset(&frame, 0, sizeof(frame));
@@ -81,7 +81,7 @@ int show_add_user_info(char *title, struct user * user)
     return SUCCESS;
 }
 
-int show_print_info(struct printer_type * printer)
+static int show_print_info(struct printer_type * printer)
 {
     struct simple_frame frame;
     memset(&frame, 0, sizeof(frame));
@@ -112,7 +112,7 @@ int show_print_info(struct printer_type * printer)
 /*
  * common base APIs
  */
-int do_view_user(char *title)
+static int do_view_user(char *title)
 {
     int ret;
     int i, key_code, pos, page, page_item, user_num;

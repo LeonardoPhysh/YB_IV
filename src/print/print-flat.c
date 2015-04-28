@@ -652,7 +652,6 @@ static int print_boot_check(void)
         return -EPRINT_NODEV; 
 
     close(print_fd);
-
     return SUCCESS;
 }  
 

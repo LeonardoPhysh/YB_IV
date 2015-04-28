@@ -31,7 +31,7 @@
 /* 
  * UI Heper 
  */
-int show_view_single_inv_UI(void)
+static int show_view_single_inv_UI(void)
 {
     struct simple_frame frame;
     memset(&frame, 0, sizeof(frame));
@@ -49,7 +49,7 @@ int show_view_single_inv_UI(void)
     return SUCCESS;
 }
 
-int show_view_period_collect_UI(void)
+static int show_view_period_collect_UI(void)
 {
     struct simple_frame frame;
     memset(&frame, 0, sizeof(frame));
@@ -75,7 +75,7 @@ int show_view_period_collect_UI(void)
     return SUCCESS;
 }
 
-int show_view_used_roll_UI(void)
+static int show_view_used_roll_UI(void)
 {
     struct simple_frame frame;
     memset(&frame, 0, sizeof(frame));
@@ -93,7 +93,7 @@ int show_view_used_roll_UI(void)
     return SUCCESS;
 }
 
-int show_view_declare_info_UI(void)
+static int show_view_declare_info_UI(void)
 {
     struct simple_frame frame;
     memset(&frame, 0, sizeof(frame));
@@ -115,7 +115,7 @@ int show_view_declare_info_UI(void)
     return SUCCESS;
 }
 
-int show_view_daily_collect_UI(void)
+static int show_view_daily_collect_UI(void)
 {
     struct simple_frame frame;
     memset(&frame, 0, sizeof(frame));
@@ -137,7 +137,7 @@ int show_view_daily_collect_UI(void)
     return SUCCESS;
 }
 
-int show_develop_sys_UI(void)
+static int show_develop_sys_UI(void)
 {
     struct simple_frame frame;
     memset(&frame, 0, sizeof(frame));
@@ -159,7 +159,7 @@ int show_develop_sys_UI(void)
     return SUCCESS;
 }
 
-int show_develop_print_UI(void)
+static int show_develop_print_UI(void)
 {
     struct simple_frame frame;
     memset(&frame, 0, sizeof(frame));
@@ -181,7 +181,7 @@ int show_develop_print_UI(void)
     return SUCCESS;
 }
 
-int show_print_setup_UI(void)
+static int show_print_setup_UI(void)
 {
     struct simple_frame frame;
     memset(&frame, 0, sizeof(frame));
@@ -206,7 +206,7 @@ int show_print_setup_UI(void)
 /*
  * Content UI 
  */
-int show_single_inv_info(struct tax_sys_invoice_detail_record * ori_detail)
+static int show_single_inv_info(struct tax_sys_invoice_detail_record * ori_detail)
 {
     int key, pos, item;
     char buf[20] = {0};
@@ -352,7 +352,7 @@ show_ui:
     }
 }
 
-int show_dayly_collect_info(struct tax_sys_daily_collect_record * daily_rec)
+static int show_dayly_collect_info(struct tax_sys_daily_collect_record * daily_rec)
 {
     int key, pos, item;
     char *fis_name;
@@ -449,7 +449,7 @@ show_ui:
     }
 }
 
-int show_declare_info(struct tax_sys_declare_duty_record * declare_rec)
+static int show_declare_info(struct tax_sys_declare_duty_record * declare_rec)
 {
     int key, pos, item;
     char *fis_name;
@@ -566,7 +566,7 @@ show_frame:
 }
 
 
-int show_used_roll_info(struct tax_sys_used_roll_id_record * used_roll)
+static int show_used_roll_info(struct tax_sys_used_roll_id_record * used_roll)
 {
     int key, pos;
     char buf[40] = {0};
@@ -656,7 +656,7 @@ int show_used_roll_info(struct tax_sys_used_roll_id_record * used_roll)
     }
 }
 
-int show_period_collect(struct tax_sys_period_collect_record * collect_rec)
+static int show_period_collect(struct tax_sys_period_collect_record * collect_rec)
 {
     int key, pos;
     char buf_t[20] = {0};
@@ -729,7 +729,7 @@ int show_period_collect(struct tax_sys_period_collect_record * collect_rec)
     }
 }
 
-int do_check_user_and_date(struct bcd_date * date)
+static int do_check_user_and_date(struct bcd_date * date)
 {
     int ret;
     struct bcd_date today;
@@ -762,7 +762,7 @@ int do_check_user_and_date(struct bcd_date * date)
     return SUCCESS;
 }
 
-int do_check_start_and_end(struct bcd_date * start_date, struct bcd_date * end_date)
+static int do_check_start_and_end(struct bcd_date * start_date, struct bcd_date * end_date)
 {
     int ret;
     struct bcd_date today;
@@ -1260,6 +1260,7 @@ int cmd_develop_sys(void)
     char mach_nb[16 + 1] = {0};
     struct bcd_date today;
     struct machine_info_record mach_info;
+    struct tax_sys_config_record sys_cfg;
     struct file_operate * file_ops = get_file_ops();
     struct rt_operate * rt_ops = get_rt_ops();
     struct tax_system * tax_system = get_tax_system();
@@ -1321,12 +1322,21 @@ setup_print:
 
     display_info("正在生成出厂设置...");
 
+    /* create machine infomation recrod */
     ret = file_ops->creat_file(MACH_INFO_FILE, MACH_INFO_FILE_MODE, MACH_INFO_REC_NUM);
     if (ret < 0) {
         display_err_msg(ret, "出厂设置出错！");
         return ret;
     }
-
+    
+    /* create system configuration record */
+    ret = file_ops->creat_file(SYS_CFG_FILE, SYS_CFG_FILE_MODE, SYS_CFG_REC_NUM);
+    if (ret < 0) {
+        display_err_msg(ret, "出厂设置出错！");
+        return ret;
+    }
+    
+    memset(&sys_cfg, 0, sizeof(sys_cfg));
     memset(&mach_info, 0, sizeof(mach_info));
 
     int i;
@@ -1350,6 +1360,12 @@ setup_print:
     strcpy(mach_info.sw_version, SW_VERSION);
 
     ret = tax_file_save_mach_info(&mach_info);
+    if (ret != SUCCESS) {
+        display_err_msg(ret, "出厂设置出错！");
+        return ret;
+    }
+    
+    ret = tax_file_save_sys_cfg(&sys_cfg);
     if (ret != SUCCESS) {
         display_err_msg(ret, "出厂设置出错！");
         return ret;

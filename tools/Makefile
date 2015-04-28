@@ -11,7 +11,8 @@ new_lcm_tst:
 	arm-linux-gcc --static -I../include ../src/misc/common.c lcm_api.c -o new_lcm_tst -lm
 
 add_user:
-	arm-linux-gcc -I../include --static add_user.c ../src/misc/file_core.c -o add_user
+	#arm-linux-gcc -I../include --static add_user.c ../src/misc/file_core.c -o add_user
+	gcc -I../include --static add_user.c ../src/misc/file_core.c -o add_user
 
 add_mach:
 	arm-linux-gcc -I../include --static add_machine.c ../src/misc/common.c ../src/misc/file_core.c -o add_mach -lm

@@ -197,6 +197,7 @@ static int show_inspect_chk_info(char *title, struct tax_sys_check_idx *chk_idx)
     return SUCCESS;
 }
 
+/* #open to other modules# */
 int do_set_date(void)
 {
     int ret;
@@ -254,6 +255,7 @@ int do_set_date(void)
     return SUCCESS;
 }
 
+/* #open to other modules# */
 int do_set_time(void)
 {
     int ret;
@@ -303,7 +305,7 @@ int do_set_time(void)
     return SUCCESS;
 }
 
-inline int do_check_date(struct bcd_date *s_date, struct bcd_date * e_date)
+static inline int do_check_date(struct bcd_date *s_date, struct bcd_date * e_date)
 {
     int ret;
     struct bcd_date today;
@@ -331,7 +333,7 @@ inline int do_check_date(struct bcd_date *s_date, struct bcd_date * e_date)
  *                      inspect or not.
  *  @return : POSITIVE upon OK or NEGATIVE upon fail.
  */
-int do_inspect_prepare(int type, struct tax_sys_check_info *chk_info)
+static int do_inspect_prepare(int type, struct tax_sys_check_info *chk_info)
 {
     int ret;
     struct bcd_date today;
@@ -396,7 +398,7 @@ get_pin:
  *  @chk_info:
  *  @chk_idx:
  */
-int do_update_daily_record(struct tax_sys_check_info *chk_info, 
+static int do_update_daily_record(struct tax_sys_check_info *chk_info, 
         struct tax_sys_check_idx *chk_idx)
 {
     int ret;
@@ -446,7 +448,7 @@ int do_update_daily_record(struct tax_sys_check_info *chk_info,
     return SUCCESS;
 }
 
-int do_update_declare_record(struct tax_sys_check_info *chk_info, 
+static int do_update_declare_record(struct tax_sys_check_info *chk_info, 
         struct tax_sys_check_idx *chk_idx) 
 {
     int ret;
@@ -509,7 +511,7 @@ int do_update_declare_record(struct tax_sys_check_info *chk_info,
     return SUCCESS;
 }
 
-int do_update_invoice_record(struct tax_sys_check_info *chk_info, 
+static int do_update_invoice_record(struct tax_sys_check_info *chk_info, 
         struct tax_sys_check_idx *chk_idx) 
 {
     int ret, key;

@@ -489,7 +489,9 @@ int display_info(char *msg)
     frame.items[0].pos.row = 1;
     frame.items[0].pos.col = 1;
     strcpy(frame.items[0].title, msg);
-
+    
+    /* for debug */
+    printf("%s", msg);
     show_simple_frame(&frame);
     sleep(1);
 
@@ -520,7 +522,9 @@ int display_err_msg(int err, char *msg)
     frame.items[1].pos.row = 4;
     frame.items[1].pos.col = 1;
     sprintf(frame.items[1].title, "错误代码：%d", err);
-
+    
+    /* for debug */
+    printf("err_num:%d :%s", err, msg);
     show_simple_frame(&frame);
     sleep(1);
 

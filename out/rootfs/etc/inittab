@@ -1,0 +1,9 @@
+#/etc/inittab
+::sysinit:/etc/init.d/rcS
+::askfirst:-/bin/sh
+
+#run fiscal_os
+::respawn:/usr/bin/fiscal_os
+
+::ctrlaltdel:/sbin/reboot
+::shutdown:/bin/umount -a -r

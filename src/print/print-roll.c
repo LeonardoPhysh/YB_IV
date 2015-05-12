@@ -1,8 +1,8 @@
 /*
  * print.c - Provide printer operations APIs
  *
- * Author: Leonardo Physh
- * Data: 2014.7.21 Rev 01
+ * Author: Leonardo Physh <leonardo.physh@gmail.com>
+ * Data: 2015.3.21
  */
 
 #include <stdio.h>

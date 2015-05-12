@@ -1,9 +1,8 @@
 /*
- * DO NOT NEED
  * input.c - Input function base on keyboard function
  *  - implement multi-functions of input 
  *
- * Author : Leonardo Physh
+ * Author : Leonardo Physh <leonardo.physh@gmail.com>
  * Date   : 2014.9.28
  */
 
@@ -181,7 +180,7 @@ handled:
 }
 
 /*
- * get_string - get a string with local echo  
+ * get_string - get a string(letter&number) with local echo  
  *
  * @return : status 
  */
@@ -203,7 +202,7 @@ int get_string(int row, int col, char *str)
         show_str(row, col, ascii_no);
 
         key = get_keycode();
-        if (islower(key)) {
+        if (islower(key) || (key >= '0' && key <= '9')) {
             if (offset < MAX_STR_LEN) {
                 sprintf(ascii_no + offset, "%c", (char)key);
                 offset ++;

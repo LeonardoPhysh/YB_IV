@@ -1,7 +1,7 @@
 /*
  * common.c - Define some common methodd used offenly in system
  * 
- * Author : Leonardo Physh  
+ * Author : Leonardo Physh <leonardo.physh@gmail.com>
  * Date   : 2014.8.25
  */
 
@@ -41,10 +41,9 @@ int uart_print(const char *format, ...)
 	va_start(arg_ptr, format);
 	ret = vfprintf(dev, format, arg_ptr);
 	if (ret < 0)
-		return FAIL;
-		
-	va_end(arg_ptr);
-	
+		return FAIL;	
+	va_end(arg_ptr);	
+
 	return SUCCESS;
 }
 

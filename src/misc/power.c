@@ -2,7 +2,7 @@
  * power.c - power protect main file 
  *  - implement the power detect function 
  *
- * Author : Leonardo Physh 
+ * Author : Leonardo Physh <leonardo.physh@gmail.com> 
  * Date   : 2014.9.12
  */
 
@@ -34,3 +34,5 @@ struct power_state * get_power_state(void)
 {
     return &pm_base;
 }
+
+/* End of power.c */

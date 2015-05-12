@@ -2,7 +2,7 @@
  * serial.c - UART module 
  *  - implement of UART ops 
  *  
- * Author : Leonardo Physh 
+ * Author : Leonardo Physh <leonardo.physh@gmail.com> 
  * Update Data : 2010.10.22 
  */
 
@@ -298,5 +298,5 @@ int card_uart_setup(int fd)
     return SUCCESS; 
 }
 
-
+/* End of uart.c */
 

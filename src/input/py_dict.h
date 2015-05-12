@@ -3,7 +3,7 @@
  *  - define pinyin index table and GB2312 region-posion code
  *
  * Author : Leonardo Physh 
- * Date   : 2014.9.10 Rev01
+ * Date   : 2014.9.10
  */
 
 #ifndef __PY_DICT_H__

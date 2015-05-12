@@ -33,6 +33,7 @@ int system_init(void)
     struct tax_system * tax_system = get_tax_system();
 
     display_info("正在进行硬件自检，请稍后...");
+    debug_msg("HW checking...\n"); 
     
     /* 
      * fisrt time boot up, there is no printer information
@@ -44,7 +45,7 @@ int system_init(void)
             display_err_msg(ret, "打印机未就绪！");
             return FAIL;
         }
-    } else {
+    } else if (ret == SUCCESS){
         ret = print_sys->ops->print_boot_check();
         if (ret != SUCCESS) {
             display_err_msg(ret, "打印机未就绪！");
@@ -78,6 +79,8 @@ int system_init(void)
             return FAIL;
         }
     }
+    
+    debug_msg("HW check done.\n");
 
     sleep(1);
     return SUCCESS;
@@ -99,6 +102,8 @@ int main(void)
     int key;
 
     signal(SIGINT, sign_handle);
+        
+    debug_msg("system booting...\n");
 
     ret = system_init();
     if (ret != SUCCESS) {
@@ -123,4 +128,6 @@ int main(void)
 
     return 0;
 }
+
+/* End of start_main.c */
 

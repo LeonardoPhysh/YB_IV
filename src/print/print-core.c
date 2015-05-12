@@ -3,7 +3,7 @@
  *  The core of print subsystem, provide the set of operations of printer 
  *  for upper layer. Hide the printer detail.
  *
- *  Author : Leonardo Physh <leonardo.physh@yahoo.com.hk>
+ *  Author : Leonardo Physh <leonardo.physh@gmail.com>
  *  Date : 2015.1.20
  */
 #include <stdio.h>
@@ -390,6 +390,8 @@ static struct print_ops print_sys_ops = {
     .print_invoice = print_sys_invoice,
 };
 /* Above is Obsolated Design */
+
+
 
 extern struct printer_type * get_flat_printer(void);
 extern struct printer_type * get_roll_printer(void);

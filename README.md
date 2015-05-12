@@ -10,3 +10,8 @@ Refer to Tiny2416's User Manual is a good way.
 
 About Dot Printer Driver
 FP-650K USB chip used Ateml's chip
+
+#rootfs
+We miss tmp var proc sys while upload them to cloud, so please create
+these folders yourself.
+

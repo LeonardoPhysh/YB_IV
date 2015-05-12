@@ -1,7 +1,7 @@
 /*
  * print.c - Provide printer operations APIs
  *
- * Author: Leonardo Physh <leonardo.physh@yahoo.com.hk>
+ * Author: Leonardo Physh <leonardo.physh@gmail.com>
  * Data  : 2014.7.21
  */
 

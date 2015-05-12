@@ -2,7 +2,7 @@
  * plu.c - PLU file operate APIs 
  *   - implement PLU file_ops APIs 
  * 
- * Author : Leonardo Physh 
+ * Author : Leonardo Physh <leonardo.physh@gmail.com> 
  * Date   : 2014.9.15
  */
 
@@ -1389,9 +1389,10 @@ static int plu_file_create_file(void)
 
 #ifdef CONFIG_DEBUG
     assert(file_ops != NULL);
-    debug_msg("DOING PLU CREATE FILES.\n");
 #endif 
 
+    debug_msg("DOING PLU CREATE FILES.\n");
+    
     ret = file_ops->creat_dir(COM_PATH);
     if (ret < 0)
         return ret;

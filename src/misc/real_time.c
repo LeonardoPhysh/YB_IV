@@ -2,8 +2,8 @@
  * Real time control function 
  *  - implement functions about date and time 
  * 
- * Author : Leonardo Physh 
- * Date   : 2014.9.1 Rev01
+ * Author : Leonardo Physh <leonardo.physh@gmail.com>
+ * Date   : 2014.9.1 
  */
 
 #include <stdio.h>

@@ -1310,7 +1310,7 @@ setup_print:
 
     /* we set FLAT_PRINT_TYPE as default printer type 
      * and print_nb = 2 means we support two kinds of 
-     * prnter <roll printer is embedded into machine> 
+     * printer <roll printer is embedded into machine> 
      */
     if (key == '1') {
         print_nb = 1;

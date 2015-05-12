@@ -4900,7 +4900,7 @@ int tax_sys_card_init(void)
         return -ETAX_NUL_USER_CARD;
 
     /*
-     * FC UC used the same uart, so just needs to do 
+     * FC UC used the same uart(serial poart), so just needs to do 
      * initial for once.
      */
     ret = fiscal_card->device_init();

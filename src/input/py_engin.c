@@ -3,7 +3,7 @@
  *  - define Pinyin IME 
  *
  * Author : Leonardo Physh 
- * Date   : 2014.9.10 Rev01 
+ * Date   : 2014.9.10 
  */
 
 #include <stdio.h>

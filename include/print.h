@@ -4,7 +4,7 @@
  *   if we have to support more printers in future,
  *   we can start the job from here.
  *
- * Author : Leonardo Physh <leonardo.physh@yahoo.com.hk> 
+ * Author : Leonardo Physh <leonardo.physh@gmail.com> 
  * Date   : 2014.4.21
  */
 

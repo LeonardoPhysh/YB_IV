@@ -6,7 +6,7 @@
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 A_E_table	input/keyboard.c	/^uint A_E_table[5] = {'A', 'B', 'C', 'D', 'E'};$/;"	v
 CHINESE_CHAR_SIZE	print/print-flat.h	56;"	d
-CHN_PAD_BLANK	input/input.c	477;"	d	file:
+CHN_PAD_BLANK	input/input.c	476;"	d	file:
 CMD_CHECK_PAPER	print/print-flat.h	40;"	d
 CMD_ENTER_CHINESE	print/print-flat.h	38;"	d
 CMD_EXIT_CHINESE	print/print-flat.h	39;"	d
@@ -20,7 +20,7 @@ CMD_SET_TOP_MARGIN	print/print-flat.h	35;"	d
 COMM_COUNT_POS	print/print-flat.h	48;"	d
 COMM_MONNEY_POS	print/print-flat.h	50;"	d
 COMM_UNIT_POS	print/print-flat.h	49;"	d
-CONTENT_SIZE	input/input.c	452;"	d	file:
+CONTENT_SIZE	input/input.c	451;"	d	file:
 DEFAULT_BOT_PARA_B1	print/print-flat.h	27;"	d
 DEFAULT_BOT_PARA_B2	print/print-flat.h	28;"	d
 DEFAULT_LEFT_MARGIN	print/print-flat.h	22;"	d
@@ -29,7 +29,7 @@ DEFAULT_RIGHT_MARGIN	print/print-flat.h	23;"	d
 DEFAULT_TOP_PARA_T1	print/print-flat.h	25;"	d
 DEFAULT_TOP_PARA_T2	print/print-flat.h	26;"	d
 F_J_table	input/keyboard.c	/^uint F_J_table[5] = {'F', 'G', 'H', 'I', 'J'};$/;"	v
-IME_PAD_BLANK	input/input.c	476;"	d	file:
+IME_PAD_BLANK	input/input.c	475;"	d	file:
 IME_STATUS	input/keyboard.c	/^static volatile int IME_STATUS = INPUT_LOW_CASE;$/;"	v	file:
 INDEX_NUM_A	input/py_dict.h	15;"	d
 INDEX_NUM_B	input/py_dict.h	16;"	d
@@ -244,18 +244,16 @@ display_info	ui/ui_api.c	/^int display_info(char *msg)$/;"	f	signature:(char *ms
 display_str	ui/ui_api.c	/^int display_str(int row, int col, char *format, ...)$/;"	f	signature:(int row, int col, char *format, ...)
 display_warn	ui/ui_api.c	/^int display_warn(char *msg)$/;"	f	signature:(char *msg)
 do_add_comm_to_list	command/cmd_invoice_ops.c	/^static int do_add_comm_to_list(struct plu_item * tmp_item, int count)$/;"	f	file:	signature:(struct plu_item * tmp_item, int count)
-do_check_date	command/cmd_fiscal_manage.c	/^inline int do_check_date(struct bcd_date *s_date, struct bcd_date * e_date)$/;"	f	signature:(struct bcd_date *s_date, struct bcd_date * e_date)
+do_check_date	command/cmd_fiscal_manage.c	/^static inline int do_check_date(struct bcd_date *s_date, struct bcd_date * e_date)$/;"	f	file:	signature:(struct bcd_date *s_date, struct bcd_date * e_date)
 do_check_origin_inv	command/cmd_invoice_ops.c	/^static int do_check_origin_inv(struct tax_sys_invoice_detail_record * inv_detail)$/;"	f	file:	signature:(struct tax_sys_invoice_detail_record * inv_detail)
-do_check_start_and_end	command/cmd_other_ops.c	/^int do_check_start_and_end(struct bcd_date * start_date, struct bcd_date * end_date)$/;"	f	signature:(struct bcd_date * start_date, struct bcd_date * end_date)
-do_check_user_and_date	command/cmd_other_ops.c	/^int do_check_user_and_date(struct bcd_date * date)$/;"	f	signature:(struct bcd_date * date)
+do_check_start_and_end	command/cmd_other_ops.c	/^static int do_check_start_and_end(struct bcd_date * start_date, struct bcd_date * end_date)$/;"	f	file:	signature:(struct bcd_date * start_date, struct bcd_date * end_date)
+do_check_user_and_date	command/cmd_other_ops.c	/^static int do_check_user_and_date(struct bcd_date * date)$/;"	f	file:	signature:(struct bcd_date * date)
 do_decrease_plu_count	command/cmd_invoice_ops.c	/^static int do_decrease_plu_count(void)$/;"	f	file:	signature:(void)
-do_delete_plu	command/cmd_comm_manage.c	/^int do_delete_plu()$/;"	f
 do_get_comm_item	command/cmd_invoice_ops.c	/^static int do_get_comm_item(char * title)$/;"	f	file:	signature:(char * title)
 do_hang_up_transact	command/cmd_invoice_ops.c	/^static int do_hang_up_transact(void)$/;"	f	file:	signature:(void)
-do_inspect_prepare	command/cmd_fiscal_manage.c	/^int do_inspect_prepare(int type, struct tax_sys_check_info *chk_info)$/;"	f	signature:(int type, struct tax_sys_check_info *chk_info)
+do_inspect_prepare	command/cmd_fiscal_manage.c	/^static int do_inspect_prepare(int type, struct tax_sys_check_info *chk_info)$/;"	f	file:	signature:(int type, struct tax_sys_check_info *chk_info)
 do_issue_invoice	command/cmd_invoice_ops.c	/^static int do_issue_invoice(void)$/;"	f	file:	signature:(void)
 do_modify_comm_items	command/cmd_invoice_ops.c	/^static int do_modify_comm_items(void)$/;"	f	file:	signature:(void)
-do_modify_plu	command/cmd_comm_manage.c	/^int do_modify_plu()$/;"	f
 do_print_invoice	command/cmd_invoice_ops.c	/^static int do_print_invoice(void)$/;"	f	file:	signature:(void)
 do_print_invoke	print/print-flat.c	/^static int do_print_invoke(void)$/;"	f	file:	signature:(void)
 do_return_invoice	command/cmd_invoice_ops.c	/^static int do_return_invoice(struct tax_sys_invoice_detail_record * ori_detail)$/;"	f	file:	signature:(struct tax_sys_invoice_detail_record * ori_detail)
@@ -263,15 +261,15 @@ do_set_date	command/cmd_fiscal_manage.c	/^int do_set_date(void)$/;"	f	signature:
 do_set_time	command/cmd_fiscal_manage.c	/^int do_set_time(void)$/;"	f	signature:(void)
 do_subtotal_comm_items	command/cmd_invoice_ops.c	/^static int do_subtotal_comm_items(void)$/;"	f	file:	signature:(void)
 do_transact	command/cmd_invoice_ops.c	/^static int do_transact(void)$/;"	f	file:	signature:(void)
-do_update_daily_record	command/cmd_fiscal_manage.c	/^int do_update_daily_record(struct tax_sys_check_info *chk_info, $/;"	f	signature:(struct tax_sys_check_info *chk_info, struct tax_sys_check_idx *chk_idx)
-do_update_declare_record	command/cmd_fiscal_manage.c	/^int do_update_declare_record(struct tax_sys_check_info *chk_info, $/;"	f	signature:(struct tax_sys_check_info *chk_info, struct tax_sys_check_idx *chk_idx)
-do_update_invoice_record	command/cmd_fiscal_manage.c	/^int do_update_invoice_record(struct tax_sys_check_info *chk_info, $/;"	f	signature:(struct tax_sys_check_info *chk_info, struct tax_sys_check_idx *chk_idx)
+do_update_daily_record	command/cmd_fiscal_manage.c	/^static int do_update_daily_record(struct tax_sys_check_info *chk_info, $/;"	f	file:	signature:(struct tax_sys_check_info *chk_info, struct tax_sys_check_idx *chk_idx)
+do_update_declare_record	command/cmd_fiscal_manage.c	/^static int do_update_declare_record(struct tax_sys_check_info *chk_info, $/;"	f	file:	signature:(struct tax_sys_check_info *chk_info, struct tax_sys_check_idx *chk_idx)
+do_update_invoice_record	command/cmd_fiscal_manage.c	/^static int do_update_invoice_record(struct tax_sys_check_info *chk_info, $/;"	f	file:	signature:(struct tax_sys_check_info *chk_info, struct tax_sys_check_idx *chk_idx)
 do_view_comm_items	command/cmd_invoice_ops.c	/^static int do_view_comm_items(void)$/;"	f	file:	signature:(void)
-do_view_dpt	command/cmd_comm_manage.c	/^int do_view_dpt(char *title)$/;"	f	signature:(char *title)
-do_view_plu_by_barcode	command/cmd_comm_manage.c	/^int do_view_plu_by_barcode(struct plu_item *item)$/;"	f	signature:(struct plu_item *item)
-do_view_plu_by_name	command/cmd_comm_manage.c	/^int do_view_plu_by_name(struct plu_item * item)$/;"	f	signature:(struct plu_item * item)
-do_view_plu_by_num	command/cmd_comm_manage.c	/^int do_view_plu_by_num(struct plu_item *item)$/;"	f	signature:(struct plu_item *item)
-do_view_user	command/cmd_system_manage.c	/^int do_view_user(char *title)$/;"	f	signature:(char *title)
+do_view_dpt	command/cmd_comm_manage.c	/^static int do_view_dpt(char *title)$/;"	f	file:	signature:(char *title)
+do_view_plu_by_barcode	command/cmd_comm_manage.c	/^static int do_view_plu_by_barcode(struct plu_item *item)$/;"	f	file:	signature:(struct plu_item *item)
+do_view_plu_by_name	command/cmd_comm_manage.c	/^static int do_view_plu_by_name(struct plu_item * item)$/;"	f	file:	signature:(struct plu_item * item)
+do_view_plu_by_num	command/cmd_comm_manage.c	/^static int do_view_plu_by_num(struct plu_item *item)$/;"	f	file:	signature:(struct plu_item *item)
+do_view_user	command/cmd_system_manage.c	/^static int do_view_user(char *title)$/;"	f	file:	signature:(char *title)
 end_cover_int	misc/common.c	/^int end_cover_int(uchar *dist, uchar *src)$/;"	f	signature:(uchar *dist, uchar *src)
 end_cover_llong	misc/common.c	/^int end_cover_llong(uchar *dist, uchar *src)$/;"	f	signature:(uchar *dist, uchar *src)
 end_cover_long	misc/common.c	/^int end_cover_long(uchar *dist, uchar *src)$/;"	f	signature:(uchar *dist, uchar *src)
@@ -1022,31 +1020,31 @@ set_parity	misc/uart.c	/^int set_parity(int fd, int databits, int stopbits, int 
 set_questtion_title	ui/ui_api.c	/^inline static int set_questtion_title(char *str)$/;"	f	file:	signature:(char *str)
 set_shutdown_flag	ui/ui_api.c	/^int set_shutdown_flag(int flag)$/;"	f	signature:(int flag)
 set_speed	misc/uart.c	/^int set_speed(int fd, int speed)$/;"	f	signature:(int fd, int speed)
-show_add_user_info	command/cmd_system_manage.c	/^int show_add_user_info(char *title, struct user * user)$/;"	f	signature:(char *title, struct user * user)
-show_add_user_perm	command/cmd_system_manage.c	/^int show_add_user_perm(void)$/;"	f	signature:(void)
-show_chn_pad	input/input.c	485;"	d	file:
+show_add_user_info	command/cmd_system_manage.c	/^static int show_add_user_info(char *title, struct user * user)$/;"	f	file:	signature:(char *title, struct user * user)
+show_add_user_perm	command/cmd_system_manage.c	/^static int show_add_user_perm(void)$/;"	f	file:	signature:(void)
+show_chn_pad	input/input.c	484;"	d	file:
 show_current_ui	ui/ui_api.c	/^int show_current_ui(int id)$/;"	f	signature:(int id)
-show_dayly_collect_info	command/cmd_other_ops.c	/^int show_dayly_collect_info(struct tax_sys_daily_collect_record * daily_rec)$/;"	f	signature:(struct tax_sys_daily_collect_record * daily_rec)
-show_declare_info	command/cmd_other_ops.c	/^int show_declare_info(struct tax_sys_declare_duty_record * declare_rec)$/;"	f	signature:(struct tax_sys_declare_duty_record * declare_rec)
-show_develop_print_UI	command/cmd_other_ops.c	/^int show_develop_print_UI(void)$/;"	f	signature:(void)
-show_develop_sys_UI	command/cmd_other_ops.c	/^int show_develop_sys_UI(void)$/;"	f	signature:(void)
-show_get_enddate	command/cmd_fiscal_manage.c	/^int show_get_enddate(struct bcd_date *start, struct bcd_date *end)$/;"	f	signature:(struct bcd_date *start, struct bcd_date *end)
-show_get_verify_pin	command/cmd_fiscal_manage.c	/^int show_get_verify_pin(void)$/;"	f	signature:(void)
-show_ime_pad	input/input.c	479;"	d	file:
-show_inspect_UI	command/cmd_fiscal_manage.c	/^int show_inspect_UI(char *title)$/;"	f	signature:(char *title)
-show_inspect_chk_info	command/cmd_fiscal_manage.c	/^int show_inspect_chk_info(char *title, struct tax_sys_check_idx *chk_idx)$/;"	f	signature:(char *title, struct tax_sys_check_idx *chk_idx)
-show_inter_num	input/input.c	309;"	d	file:
+show_dayly_collect_info	command/cmd_other_ops.c	/^static int show_dayly_collect_info(struct tax_sys_daily_collect_record * daily_rec)$/;"	f	file:	signature:(struct tax_sys_daily_collect_record * daily_rec)
+show_declare_info	command/cmd_other_ops.c	/^static int show_declare_info(struct tax_sys_declare_duty_record * declare_rec)$/;"	f	file:	signature:(struct tax_sys_declare_duty_record * declare_rec)
+show_develop_print_UI	command/cmd_other_ops.c	/^static int show_develop_print_UI(void)$/;"	f	file:	signature:(void)
+show_develop_sys_UI	command/cmd_other_ops.c	/^static int show_develop_sys_UI(void)$/;"	f	file:	signature:(void)
+show_get_enddate	command/cmd_fiscal_manage.c	/^static int show_get_enddate(struct bcd_date *start, struct bcd_date *end)$/;"	f	file:	signature:(struct bcd_date *start, struct bcd_date *end)
+show_get_verify_pin	command/cmd_fiscal_manage.c	/^static int show_get_verify_pin(void)$/;"	f	file:	signature:(void)
+show_ime_pad	input/input.c	478;"	d	file:
+show_inspect_UI	command/cmd_fiscal_manage.c	/^static int show_inspect_UI(char *title)$/;"	f	file:	signature:(char *title)
+show_inspect_chk_info	command/cmd_fiscal_manage.c	/^static int show_inspect_chk_info(char *title, struct tax_sys_check_idx *chk_idx)$/;"	f	file:	signature:(char *title, struct tax_sys_check_idx *chk_idx)
+show_inter_num	input/input.c	308;"	d	file:
 show_man_issue_inv	command/cmd_invoice_ops.c	/^static int show_man_issue_inv(void)$/;"	f	file:	signature:(void)
-show_period_collect	command/cmd_other_ops.c	/^int show_period_collect(struct tax_sys_period_collect_record * collect_rec)$/;"	f	signature:(struct tax_sys_period_collect_record * collect_rec)
-show_plu_item	command/cmd_comm_manage.c	/^int show_plu_item(int type, char * title, struct plu_item * plu_item) $/;"	f	signature:(int type, char * title, struct plu_item * plu_item)
-show_print_info	command/cmd_system_manage.c	/^int show_print_info(struct printer_type * printer)$/;"	f	signature:(struct printer_type * printer)
-show_print_setup_UI	command/cmd_other_ops.c	/^int show_print_setup_UI(void)$/;"	f	signature:(void)
+show_period_collect	command/cmd_other_ops.c	/^static int show_period_collect(struct tax_sys_period_collect_record * collect_rec)$/;"	f	file:	signature:(struct tax_sys_period_collect_record * collect_rec)
+show_plu_item	command/cmd_comm_manage.c	/^static int show_plu_item(int type, char *title, struct plu_item *plu_item) $/;"	f	file:	signature:(int type, char *title, struct plu_item *plu_item)
+show_print_info	command/cmd_system_manage.c	/^static int show_print_info(struct printer_type * printer)$/;"	f	file:	signature:(struct printer_type * printer)
+show_print_setup_UI	command/cmd_other_ops.c	/^static int show_print_setup_UI(void)$/;"	f	file:	signature:(void)
 show_return_input_orige	command/cmd_invoice_ops.c	/^static int show_return_input_orige(uint inv_num)$/;"	f	file:	signature:(uint inv_num)
 show_return_orige_info	command/cmd_invoice_ops.c	/^static int show_return_orige_info(struct tax_sys_invoice_detail_record * ori_detail)$/;"	f	file:	signature:(struct tax_sys_invoice_detail_record * ori_detail)
-show_setup_date	command/cmd_fiscal_manage.c	/^int show_setup_date(struct bcd_date *today)$/;"	f	signature:(struct bcd_date *today)
-show_setup_time	command/cmd_fiscal_manage.c	/^int show_setup_time(struct greg_time *now)$/;"	f	signature:(struct greg_time *now)
+show_setup_date	command/cmd_fiscal_manage.c	/^static int show_setup_date(struct bcd_date *today)$/;"	f	file:	signature:(struct bcd_date *today)
+show_setup_time	command/cmd_fiscal_manage.c	/^static int show_setup_time(struct greg_time *now)$/;"	f	file:	signature:(struct greg_time *now)
 show_simple_frame	ui/ui_api.c	/^int show_simple_frame(struct simple_frame * frame) $/;"	f	signature:(struct simple_frame * frame)
-show_single_inv_info	command/cmd_other_ops.c	/^int show_single_inv_info(struct tax_sys_invoice_detail_record * ori_detail)$/;"	f	signature:(struct tax_sys_invoice_detail_record * ori_detail)
+show_single_inv_info	command/cmd_other_ops.c	/^static int show_single_inv_info(struct tax_sys_invoice_detail_record * ori_detail)$/;"	f	file:	signature:(struct tax_sys_invoice_detail_record * ori_detail)
 show_spoil_invoice_num	command/cmd_invoice_ops.c	/^static int show_spoil_invoice_num(void) $/;"	f	file:	signature:(void)
 show_str	ui/ui_api.c	/^int show_str(int row, int col, char *str)$/;"	f	signature:(int row, int col, char *str)
 show_str_dmy_cur	ui/ui_api.c	/^int show_str_dmy_cur(int row, int col, char *str)$/;"	f	signature:(int row, int col, char *str)
@@ -1057,12 +1055,12 @@ show_trans_input_count	command/cmd_invoice_ops.c	/^static int show_trans_input_c
 show_trans_input_drawer	command/cmd_invoice_ops.c	/^static int show_trans_input_drawer(void)$/;"	f	file:	signature:(void)
 show_trans_input_payer	command/cmd_invoice_ops.c	/^static int show_trans_input_payer(void)$/;"	f	file:	signature:(void)
 show_trans_input_plu	command/cmd_invoice_ops.c	/^static int show_trans_input_plu(int type, int item_num)$/;"	f	file:	signature:(int type, int item_num)
-show_used_roll_info	command/cmd_other_ops.c	/^int show_used_roll_info(struct tax_sys_used_roll_id_record * used_roll)$/;"	f	signature:(struct tax_sys_used_roll_id_record * used_roll)
-show_view_daily_collect_UI	command/cmd_other_ops.c	/^int show_view_daily_collect_UI(void)$/;"	f	signature:(void)
-show_view_declare_info_UI	command/cmd_other_ops.c	/^int show_view_declare_info_UI(void)$/;"	f	signature:(void)
-show_view_period_collect_UI	command/cmd_other_ops.c	/^int show_view_period_collect_UI(void)$/;"	f	signature:(void)
-show_view_single_inv_UI	command/cmd_other_ops.c	/^int show_view_single_inv_UI(void)$/;"	f	signature:(void)
-show_view_used_roll_UI	command/cmd_other_ops.c	/^int show_view_used_roll_UI(void)$/;"	f	signature:(void)
+show_used_roll_info	command/cmd_other_ops.c	/^static int show_used_roll_info(struct tax_sys_used_roll_id_record * used_roll)$/;"	f	file:	signature:(struct tax_sys_used_roll_id_record * used_roll)
+show_view_daily_collect_UI	command/cmd_other_ops.c	/^static int show_view_daily_collect_UI(void)$/;"	f	file:	signature:(void)
+show_view_declare_info_UI	command/cmd_other_ops.c	/^static int show_view_declare_info_UI(void)$/;"	f	file:	signature:(void)
+show_view_period_collect_UI	command/cmd_other_ops.c	/^static int show_view_period_collect_UI(void)$/;"	f	file:	signature:(void)
+show_view_single_inv_UI	command/cmd_other_ops.c	/^static int show_view_single_inv_UI(void)$/;"	f	file:	signature:(void)
+show_view_used_roll_UI	command/cmd_other_ops.c	/^static int show_view_used_roll_UI(void)$/;"	f	file:	signature:(void)
 shutdown	ui/ui_api.c	/^int shutdown(void)$/;"	f	signature:(void)
 sign_1_table	input/keyboard.c	/^uint sign_1_table[5] = {'.', '\/', '?', '=', '|'};$/;"	v
 sign_2_table	input/keyboard.c	/^uint sign_2_table[5] = {'-', '+', '^', '%', '$'};$/;"	v

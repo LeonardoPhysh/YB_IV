@@ -42,7 +42,7 @@ int lcm_open(void)
  *  @row, col: position
  *  @size : date size 
  *  @datap : data buffer 
- *  @return : status
+ *  @return : state
  */
 int create_data(int row, int col, int size, char *str, struct lcm_data *datap)
 {
@@ -62,7 +62,7 @@ int create_data(int row, int col, int size, char *str, struct lcm_data *datap)
 
 /*
  * lcm_clear - clear screen 
- *  @return : status 
+ *  @return : state 
  */
 int lcm_clear(void) 
 {

@@ -2,8 +2,8 @@
  * Key Board Funtion Base on Serial 
  *  - Define key board function code 
  *  
- * Author : Leonardo Physh 
- * Date   : 2014.9.10 Rev01
+ * Author : Leonardo Physh <leonardo.physh@gmail.com>
+ * Date   : 2014.9.10 
  */
 
 #include <stdio.h>

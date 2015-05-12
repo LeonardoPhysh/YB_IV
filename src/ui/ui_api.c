@@ -4,7 +4,7 @@
  *  - inline is vain, lcm_xxx is hiden from other modules, 
  *    compliler will not generate inline code.
  * 
- * Author : Leonrdo Phsy <leonardo.physh@yahoo.com.hk> 
+ * Author : Leonrdo Physh <leonardo.physh@gmail.com> 
  * Date   : 2014.10.14
  */
 
@@ -20,11 +20,9 @@
 #include "error.h"
 #include "common.h"
 #include "command.h"
-
 #include "tax_file_op.h"
 #include "keyboard.h"
 #include "input.h"
-
 #include "ui.h"
 #include "lcm_api.h"
 #include "ui_api.h"
@@ -490,8 +488,6 @@ int display_info(char *msg)
     frame.items[0].pos.col = 1;
     strcpy(frame.items[0].title, msg);
     
-    /* for debug */
-    printf("%s", msg);
     show_simple_frame(&frame);
     sleep(1);
 
@@ -524,7 +520,7 @@ int display_err_msg(int err, char *msg)
     sprintf(frame.items[1].title, "错误代码：%d", err);
     
     /* for debug */
-    printf("err_num:%d :%s", err, msg);
+    printf("err_num:%d", err);
     show_simple_frame(&frame);
     sleep(1);
 
@@ -556,7 +552,7 @@ int set_cursor_on(int row, int col)
  * --ATTENTION-- 
  *  we DO NOT use lcm API to set cursor, 'cause cursor 
  *  implement internal LCM. if you don't know how cursor 
- *  work, do use it. 
+ *  work, do NOT use it. 
  */
 int set_cursor_off(int row, int col)
 {
@@ -658,14 +654,13 @@ handled:
 int log_in(void)
 {
     int ret;
-
+    struct simple_frame frame;
     char username[USER_NAME_LEN + 1];
     char password[USER_PASSWD_LEN + 1];
-
+ 
     memset(username, 0, USER_NAME_LEN + 1);
     memset(password, 0, USER_PASSWD_LEN + 1);
 
-    struct simple_frame frame;
     memset(&frame, 0, sizeof(frame));
     memset(&login_user, 0, sizeof(login_user));
 

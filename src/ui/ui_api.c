@@ -480,7 +480,6 @@ int display_str(int row, int col, char *format, ...)
 int display_info(char *msg)
 {
     struct simple_frame frame;
-
     memset(&frame, 0, sizeof(frame));
 
     frame.item_num = 1;

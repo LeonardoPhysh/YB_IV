@@ -32,9 +32,10 @@ int system_init(void)
     struct print_sys * print_sys = get_print_sys();
     struct tax_system * tax_system = get_tax_system();
 
-    display_info("正在进行硬件自检，请稍后...");
     debug_msg("HW checking...\n"); 
     
+    display_info("正在进行硬件自检，请稍后...");
+
     /* 
      * fisrt time boot up, there is no printer information
      * skip printer checking.

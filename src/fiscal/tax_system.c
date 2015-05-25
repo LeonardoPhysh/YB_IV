@@ -682,7 +682,6 @@ static int fiscal_card_get_taxpayer_name(uchar *buf)
 static int fiscal_card_get_app_info(struct tax_sys_app_info * app_info)
 {
     int ret;
-
     struct fiscal_card * fiscal_card;
 
     fiscal_card = get_fiscal_card();
@@ -917,7 +916,6 @@ static int is_user_card_ready(void)
 {
     int ret;
     uchar res;
-
     struct user_card * user_card;
 
     user_card = get_user_card();
@@ -1145,7 +1143,6 @@ static int user_card_get_fis_type(struct tax_sys_app_info * app_info)
     int ret; 
     char * ptr;
     uchar res[47];
-
     struct user_card * user_card;
     struct tax_sys_fiscal_type * fis_type;
 
@@ -1734,6 +1731,26 @@ static int tax_base_check_date(struct tax_sys_app_info * app_info)
 {
     int ret;
     struct rt_operate * rt_ops = get_rt_ops();
+
+    /* Debug */
+    char buf[25] = {0};
+
+    bcd_to_str((uchar *)&app_info->app_start_date, buf, 4);
+    debug_msg("%s", buf);
+    memset(buf, 0, 25);
+
+    bcd_to_str((uchar*)&app_info->init_date, buf, 4);
+    debug_msg("%s", buf);
+    memset(buf, 0, 25);
+
+    bcd_to_str((uchar*)&app_info->issue_limit_date, buf, 4);
+    debug_msg("%s", buf);
+    memset(buf, 0, 25);
+
+    bcd_to_str((uchar*)&app_info->app_vaild_date, buf, 4);
+    debug_msg("%s", buf);
+    memset(buf, 0, 25);
+    /* Debug end */
 
     /* application start date and init date */
     ret = rt_ops->cmp_bcd_date(&app_info->app_start_date, &app_info->init_date);
@@ -4610,11 +4627,10 @@ static int tax_sys_func_init(void)
 static int tax_sys_fiscal_pre_init(void)
 {
     int ret;
-
     struct fiscal_card * fiscal_card;
     struct user_card * user_card;
-
     struct machine_info_record * mach_info = get_mach_info();
+
     ret = tax_file_read_mach_info(mach_info);
     if (ret < 0)
         return ret;
@@ -4655,7 +4671,6 @@ static int tax_sys_fiscal_pre_init(void)
     ret = user_card_power_on();
     if (ret != SUCCESS)
         goto card_off;
-
 
     ret = is_user_card_ready();
     if (ret != POSITIVE) {
@@ -4731,7 +4746,6 @@ card_off:
 static int tax_sys_fiscal_init(void)
 {
     int ret;
-
     struct fiscal_card * fiscal_card;
     struct user_card * user_card;
     struct rt_operate * rt_operate = get_rt_ops();

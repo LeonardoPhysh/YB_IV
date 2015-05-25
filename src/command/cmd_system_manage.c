@@ -145,17 +145,17 @@ static int do_view_user(char *title)
     frame.items[0].pos.col = (12 - strlen(title) / 2) / 2;
 
     frame.items[1].pos.row = 2;
-    frame.items[1].pos.col = 1;
+    frame.items[1].pos.col = 2; //row 1 for current line mark 
     frame.items[2].pos.row = 2;
     frame.items[2].pos.col = 9;
 
     frame.items[3].pos.row = 3;
-    frame.items[3].pos.col = 1;
+    frame.items[3].pos.col = 2;
     frame.items[4].pos.row = 3;
     frame.items[4].pos.col = 9;
 
     frame.items[5].pos.row = 4;
-    frame.items[5].pos.col = 1;
+    frame.items[5].pos.col = 2;
     frame.items[6].pos.row = 4;
     frame.items[6].pos.col = 9;
 
@@ -163,30 +163,51 @@ static int do_view_user(char *title)
 
     set_ime_status(INPUT_LOW_CASE);
 
-    i = 1;
-    page_item = pos = page = 0;
+    i = 0;
+    pos = 1;
+    page_item = page = 0;
 
     clear_cache();
     while (1) {
-        if (user_num - i >= 0) {
-            sprintf(frame.items[1].title, "%s", users[i - 1].name);
-            sprintf(frame.items[2].title, "%s", level[users[i - 1].level]);
-            page_item = 1;
-        } 
-
-        if (user_num - i >= 1) {
-            sprintf(frame.items[3].title, "%s", users[i].name);
-            sprintf(frame.items[4].title, "%s", level[users[i].level]);
-            page_item = 2;
-        }
-
-        if (user_num - i >= 2) {
-            sprintf(frame.items[5].title, "%s", users[i + 1].name);
-            sprintf(frame.items[6].title, "%s", level[users[i + 1].level]);
+        if (user_num - i >= 3) { 
+            sprintf(frame.items[1].title, "%s", users[i].name);
+            sprintf(frame.items[2].title, "%s", level[users[i].level]);
+            sprintf(frame.items[3].title, "%s", users[i + 1].name);
+            sprintf(frame.items[4].title, "%s", level[users[i + 1].level]);
+            sprintf(frame.items[5].title, "%s", users[i + 2].name);
+            sprintf(frame.items[6].title, "%s", level[users[i + 2].level]);
+            
             page_item = 3;
+        } else if (user_num - i == 2){
+            sprintf(frame.items[1].title, "%s", users[i].name);
+            sprintf(frame.items[2].title, "%s", level[users[i].level]);
+            sprintf(frame.items[3].title, "%s", users[i + 1].name);
+            sprintf(frame.items[4].title, "%s", level[users[i + 1].level]);
+            memset(frame.items[5].title, 0, MAX_TITLE_LEN);
+            memset(frame.items[6].title, 0, MAX_TITLE_LEN);
+
+            page_item = 2;
+        } else if < (user_num - i == 1) { 
+            sprintf(frame.items[1].title, "%s", users[i].name);
+            sprintf(frame.items[2].title, "%s", level[users[i].level]);
+            memset(frame.items[3].title, 0, MAX_TITLE_LEN);
+            memset(frame.items[4].title, 0, MAX_TITLE_LEN);
+            memset(frame.items[5].title, 0, MAX_TITLE_LEN);
+            memset(frame.items[6].title, 0, MAX_TITLE_LEN);
+            
+            page_item = 1;
+        } else {
+            page_item = 0;
+            memset(frame.items[1].title, 0, MAX_TITLE_LEN);
+            memset(frame.items[2].title, 0, MAX_TITLE_LEN);
+            memset(frame.items[3].title, 0, MAX_TITLE_LEN);
+            memset(frame.items[4].title, 0, MAX_TITLE_LEN);
+            memset(frame.items[5].title, 0, MAX_TITLE_LEN);
+            memset(frame.items[6].title, 0, MAX_TITLE_LEN);
         }
 
         show_simple_frame(&frame);
+highlight:
         highlight_on(pos + 1);
 
         key_code = get_keycode();
@@ -205,12 +226,13 @@ static int do_view_user(char *title)
 
             case UP:
                 if (pos > 0) {
+                    highlight_off(pos + 1);
                     pos --;
-
+                    goto highlight;
                 } else {
                     if (page > 0) {
                         page --;
-                        pos = 2;
+                        pos = 3;
                         i -= 3;
                     }
                 }
@@ -219,10 +241,11 @@ static int do_view_user(char *title)
             case DOWN:
                 if (pos < 2) {
                     pos ++;
+                    goto highlight;
                 } else {
                     if (user_num - i >= 3) {
                         page ++;
-                        pos = 0;
+                        pos = 1;
                         i += 3;
                     }
                 }
@@ -231,7 +254,7 @@ static int do_view_user(char *title)
             default:
                 if (isdigit(key_code)) {
                     if (key_code >= '1' && (key_code - '0') < page_item) {
-                        return i + (key_code - '0') - 2;
+                        return i + (key_code - '0') - 1;
                     }
                 }
         }

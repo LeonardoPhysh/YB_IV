@@ -1828,7 +1828,6 @@ static int card_power_off(int CARD)
 static int card_power_rst(int CARD)
 {
     int ret;
-
     struct card_send_buf *send_buf;
     struct card_res_buf *res_buf;
 

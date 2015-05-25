@@ -650,11 +650,11 @@ static int do_get_comm_item(char * title)
     frame.items[0].pos.row = 1;
     frame.items[0].pos.col = 6 - strlen(title)/4;
     frame.items[1].pos.row = 2;
-    frame.items[1].pos.col = 1;
+    frame.items[1].pos.col = 2; //row 1 for current line mark
     frame.items[2].pos.row = 3;
-    frame.items[2].pos.col = 1;
+    frame.items[2].pos.col = 2;
     frame.items[3].pos.row = 4;
-    frame.items[3].pos.col = 1;
+    frame.items[3].pos.col = 2;
 
     strcpy(frame.items[0].title, title);
 
@@ -680,9 +680,14 @@ static int do_get_comm_item(char * title)
                     g_normal_trans_items.comm_items[i].comm_plu_name);
             memset(frame.items[2].title, 0, MAX_TITLE_LEN);
             memset(frame.items[3].title, 0, MAX_TITLE_LEN);
+        } else {
+            memset(frame.items[1].title, 0, MAX_TITLE_LEN);
+            memset(frame.items[2].title, 0, MAX_TITLE_LEN);
+            memset(frame.items[3].title, 0, MAX_TITLE_LEN);
         }
 
         show_simple_frame(&frame);
+highlight:
         highlight_on(1 + pos);
 
         key_code = get_keycode();
@@ -690,13 +695,12 @@ static int do_get_comm_item(char * title)
             case UP:
                 if (pos > 1) {
                     highlight_off(1 + pos--);
-                    highlight_on(1 + pos);
+                    goto highlight;
                 } else {
                     if (i > 0) {
                         i -= 3;
                         highlight_off(1 + pos);
                         pos = 3;
-                        highlight_on(1 + pos);
                     }
                 }
                 break;
@@ -705,13 +709,12 @@ static int do_get_comm_item(char * title)
                 if (count > i + pos) {
                     if (pos < 3) {
                         highlight_off(1 + pos++);
-                        highlight_on(1 + pos);
+                        goto highlight;
                     } else {
                         if (count - i > 3) {
                             i += 3;
                             highlight_off(1 + pos);
                             pos = 1;
-                            highlight_on(1 + pos);
                         }
                     }
                 }
@@ -770,6 +773,7 @@ static int do_view_comm_items(void)
             return SUCCESS;
         else if (ret == -EUI_ESC)
             return ret;
+        
         item = ret;
 
         plu_item = &g_normal_trans_items.comm_items[item].plu_item;

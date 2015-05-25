@@ -78,12 +78,12 @@ int get_fis_type(void)
     frame.item_num = 4;
     frame.items[0].pos.row = 1;
     frame.items[0].pos.col = 3;
-    frame.items[1].pos.row = 2;
-    frame.items[1].pos.col = 1;
+    frame.items[1].pos.row = 2;  // row 1 for current mark
+    frame.items[1].pos.col = 2;
     frame.items[2].pos.row = 3;
-    frame.items[2].pos.col = 1;
+    frame.items[2].pos.col = 2;
     frame.items[3].pos.row = 4;
-    frame.items[3].pos.col = 1;
+    frame.items[3].pos.col = 2;
 
     snprintf(frame.items[0].title, MAX_TITLE_LEN, "%s", "请选择税种税率");
 
@@ -93,39 +93,48 @@ int get_fis_type(void)
         return FAIL;
     }
 
-    i = 1;
-    pos = 1;
-    page = 0;
+    i = 0; pos = 1; page = 0;
     clear_cache();
     while (1) {
-        if (fis_type_num - i >= 0 ) {
+        if (fis_type_num - i >= 3) {
             snprintf(frame.items[1].title, MAX_TITLE_LEN, "%d-%s(%d)", i,
-                    app_info->fis_type[i - 1].item_cn_name,
-                    app_info->fis_type[i - 1].index);
-            page_item = 1;
-        } else {
-            memset(frame.items[1].title, 0, MAX_TITLE_LEN);
-        }
-
-        if (fis_type_num - i >= 1) {
-            snprintf(frame.items[2].title, MAX_TITLE_LEN, "%d-%s(%d)", i, 
                     app_info->fis_type[i].item_cn_name,
                     app_info->fis_type[i].index);
-            page_item = 2;
-        } else {
-            memset(frame.items[2].title, 0, MAX_TITLE_LEN);
-        }
-
-        if (fis_type_num - i >= 2) {
-            snprintf(frame.items[3].title, MAX_TITLE_LEN, "%d-%s(%d)", i, 
+            snprintf(frame.items[2].title, MAX_TITLE_LEN, "%d-%s(%d)", i, 
                     app_info->fis_type[i + 1].item_cn_name,
                     app_info->fis_type[i + 1].index);
+            snprintf(frame.items[3].title, MAX_TITLE_LEN, "%d-%s(%d)", i, 
+                    app_info->fis_type[i + 2].item_cn_name,
+                    app_info->fis_type[i + 2].index);
+
             page_item = 3;
+        } else if (fis_type_num - i == 2){
+            snprintf(frame.items[1].title, MAX_TITLE_LEN, "%d-%s(%d)", i,
+                    app_info->fis_type[i].item_cn_name,
+                    app_info->fis_type[i].index);
+            snprintf(frame.items[2].title, MAX_TITLE_LEN, "%d-%s(%d)", i, 
+                    app_info->fis_type[i + 1].item_cn_name,
+                    app_info->fis_type[i + 1].index);
+
+            page_item = 2;
+            memset(frame.items[3].title, 0, MAX_TITLE_LEN);
+        } else if (fis_type_num - i == 1) {
+            snprintf(frame.items[1].title, MAX_TITLE_LEN, "%d-%s(%d)", i,
+                    app_info->fis_type[i].item_cn_name,
+                    app_info->fis_type[i].index);
+
+            page_item = 1;
+            memset(frame.items[2].title, 0, MAX_TITLE_LEN);
+            memset(frame.items[3].title, 0, MAX_TITLE_LEN);
         } else {
+            page_item = 0;
+            memset(frame.items[1].title, 0, MAX_TITLE_LEN);
+            memset(frame.items[2].title, 0, MAX_TITLE_LEN);
             memset(frame.items[3].title, 0, MAX_TITLE_LEN);
         }
-
+ 
         show_simple_frame(&frame);
+highlight:
         highlight_on(1 + pos);
 
         key_code = get_keycode();
@@ -139,21 +148,19 @@ int get_fis_type(void)
                 break;
 
             case ENTER:
-                return app_info->fis_type[i + pos - 2].index; 
+                return app_info->fis_type[i + pos - 1].index; 
                 break;
 
             case UP:
                 if (pos > 1) {
                     highlight_off(1 + pos--);
-                    highlight_on(1 + pos);
+                    goto highlight;
                 } else {
                     if (page > 0) {
                         page --;
                         i -= 3;
                         highlight_off(1 + pos);
                         pos = 3;
-                        highlight_on(1 + pos);
-
                     }
                 }
                 break;
@@ -161,14 +168,13 @@ int get_fis_type(void)
             case DOWN:
                 if (pos < 2) {
                     highlight_off(1 + pos++);
-                    highlight_on(1 + pos);
+                    goto highlight;
                 } else {
                     if (fis_type_num - i >= 3) {
                         page ++;
                         i += 3;
                         highlight_off(1 + pos);
                         pos = 1;
-                        highlight_on(1 + pos);
                     }
                 }
                 break;
@@ -176,7 +182,7 @@ int get_fis_type(void)
             default:
                 if (isdigit(key_code)) {
                     if (key_code >= '1' && (key_code - '0') < page_item) {
-                        return app_info->fis_type[i + (key_code - '0') - 2].index;
+                        return app_info->fis_type[i + (key_code - '0') - 1].index;
                     } 
                 } 
                 break; 
@@ -235,12 +241,12 @@ static int do_view_dpt(char *title)
     frame.item_num = 4;
     frame.items[0].pos.row = 1;
     frame.items[0].pos.col = 6 - strlen(title)/4;
-    frame.items[1].pos.row = 2;
-    frame.items[1].pos.col = 1;
+    frame.items[1].pos.row = 2; //row 1 for current line mark 
+    frame.items[1].pos.col = 2;
     frame.items[2].pos.row = 3;
-    frame.items[2].pos.col = 1;
+    frame.items[2].pos.col = 2;
     frame.items[3].pos.row = 4;
-    frame.items[3].pos.col = 1;
+    frame.items[3].pos.col = 2;
 
     strcpy(frame.items[0].title, title);
 
@@ -260,9 +266,14 @@ static int do_view_dpt(char *title)
             snprintf(frame.items[1].title, MAX_TITLE_LEN, "%s%d %s", "部类", i + 1, dpt_items[i].name);
             memset(frame.items[2].title, 0, MAX_TITLE_LEN);
             memset(frame.items[3].title, 0, MAX_TITLE_LEN);
+        } else {
+            memset(frame.items[1].title, 0, MAX_TITLE_LEN);
+            memset(frame.items[2].title, 0, MAX_TITLE_LEN);
+            memset(frame.items[3].title, 0, MAX_TITLE_LEN);
         }
 
         show_simple_frame(&frame);
+highlight:
         highlight_on(1 + pos);
 
         key_code = get_keycode();
@@ -270,13 +281,12 @@ static int do_view_dpt(char *title)
             case UP:
                 if (pos > 1) {
                     highlight_off(1 + pos--);
-                    highlight_on(1 + pos);
+                    goto highlight;
                 } else {
                     if (i > 0) {
                         i -= 3;
                         highlight_off(1 + pos);
                         pos = 3;
-                        highlight_on(1 + pos);
                     }
                 }
                 break;
@@ -285,13 +295,12 @@ static int do_view_dpt(char *title)
                 if (count > i + pos) {
                     if (pos < 3) {
                         highlight_off(1 + pos++);
-                        highlight_on(1 + pos);
+                        goto highlight;
                     } else {
                         if (count - i > 3) {
                             i += 3;
                             highlight_off(1 + pos);
                             pos = 1;
-                            highlight_on(1 + pos);
                         }
                     }
                 }

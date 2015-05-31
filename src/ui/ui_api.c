@@ -571,8 +571,8 @@ int set_cursor_off(int row, int col)
  */
 int highlight_on(int row)
 {
-    return lcm_printf(row, 1, " >");
-    //return lcm_rev_line(row);
+    //return lcm_printf(row, 1, " >");
+    return lcm_rev_line(row);
 }
 
 /*
@@ -581,8 +581,8 @@ int highlight_on(int row)
  */
 int highlight_off(int row)
 {
-    return lcm_printf(row, 1, "  ");
-    //return lcm_rev_line(row);
+    //return lcm_printf(row, 1, "  ");
+    return lcm_rev_line(row);
 }
 
 /*

@@ -145,17 +145,20 @@ static int do_view_user(char *title)
     frame.items[0].pos.col = (12 - strlen(title) / 2) / 2;
 
     frame.items[1].pos.row = 2;
-    frame.items[1].pos.col = 2; //row 1 for current line mark 
+    //frame.items[1].pos.col = 2;
+    frame.items[1].pos.col = 1;
     frame.items[2].pos.row = 2;
     frame.items[2].pos.col = 9;
 
     frame.items[3].pos.row = 3;
-    frame.items[3].pos.col = 2;
+    //frame.items[3].pos.col = 2;
+    frame.items[3].pos.col = 1;
     frame.items[4].pos.row = 3;
     frame.items[4].pos.col = 9;
 
     frame.items[5].pos.row = 4;
-    frame.items[5].pos.col = 2;
+    //frame.items[5].pos.col = 2;
+    frame.items[5].pos.col = 1;
     frame.items[6].pos.row = 4;
     frame.items[6].pos.col = 9;
 
@@ -187,7 +190,7 @@ static int do_view_user(char *title)
             memset(frame.items[6].title, 0, MAX_TITLE_LEN);
 
             page_item = 2;
-        } else if < (user_num - i == 1) { 
+        } else if (user_num - i == 1) { 
             sprintf(frame.items[1].title, "%s", users[i].name);
             sprintf(frame.items[2].title, "%s", level[users[i].level]);
             memset(frame.items[3].title, 0, MAX_TITLE_LEN);

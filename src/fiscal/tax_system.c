@@ -2094,14 +2094,11 @@ static int tax_sys_dist_invoice(struct tax_sys_invoice_roll_record * inv_roll_re
 {
     int ret;
     int err_flag; 
-
     struct fiscal_card *fiscal_card;
     struct user_card *user_card;
-
     struct tax_sys_invoice_roll_record tmp_inv_roll;
     struct tax_sys_invoice_roll_record last_dist_record;
     struct tax_sys_protect_record prot_rec;
-
     struct tax_sys_fis_config_record * gp_fis_cfg = get_fis_config();
     struct tax_sys_app_info * gp_app_info = get_sys_app_info();
     struct machine_info_record * gp_mach_info = get_mach_info();
@@ -2112,9 +2109,13 @@ static int tax_sys_dist_invoice(struct tax_sys_invoice_roll_record * inv_roll_re
 
 #if CONFIG_DEBUG
     assert(inv_roll_rec != NULL);
-    debug_msg("DOING DISTRIBUTE INVOICE\n");
+#else 
+    if (inv_roll_rec == NULL)
+        return FAIL;
 #endif 
 
+    debug_msg("DOING DISTRIBUTE INVOICE\n");
+    
     fiscal_card = get_fiscal_card();
     if (!fiscal_card)
         return -ETAX_NUL_FISCAL_CARD;
@@ -2320,16 +2321,18 @@ static int tax_sys_mount_roll(struct tax_sys_invoice_roll_record * inv_roll_rec)
     int ret; 
     struct fiscal_card *fiscal_card;
     struct user_card * user_card;
-
     struct tax_sys_pin_record *gp_pin = get_pin();
 
 #if CONFIG_DEBUG
     assert(inv_roll_rec != NULL);
-    debug_msg("DOING MOUNT ROLL\n");
+#else
+    if (inv_roll_rec == NULL)
+        return FAIL;
 #endif 
 
-    ret = SUCCESS;
+    debug_msg("\nDOING MOUNT ROLL\n");
 
+    ret = SUCCESS;
     fiscal_card = get_fiscal_card();
     if (!fiscal_card)
         return -ETAX_NUL_FISCAL_CARD;
@@ -2372,7 +2375,6 @@ static int tax_sys_mount_roll(struct tax_sys_invoice_roll_record * inv_roll_rec)
     ret = tax_trans_invoice_roll(0, inv_roll_rec, &card_roll_info);
     if (ret < 0)
         return ret;
-
 
     ret = fiscal_card->input_invoice_nb(&card_roll_info);
     if (ret < 0)
@@ -3087,9 +3089,7 @@ static int tax_sys_issue_invoice_proc(struct tax_sys_issue_invoice * issue_inv_r
         struct issue_invoice_res * issue_inv_res)
 {
     int ret;
-
     struct fiscal_card * fiscal_card;
-
     struct tax_sys_pin_record *gp_pin = get_pin();
     struct tax_sys_fis_config_record * gp_fis_cfg = get_fis_config();
     struct tax_sys_cur_roll_left_record * gp_cur_roll_left = get_cur_roll_left();
@@ -3123,6 +3123,8 @@ static int tax_sys_issue_invoice_proc(struct tax_sys_issue_invoice * issue_inv_r
     struct power_state *pm = get_power_state();
     pm->check_power_state();
 #endif 
+    
+    debug_msg("Verify Pin\n");
 
     struct tax_sys_pin_record new_pin;
     ret = fiscal_card->verify_fiscal_pin(gp_pin->pin, new_pin.pin);
@@ -3136,6 +3138,8 @@ static int tax_sys_issue_invoice_proc(struct tax_sys_issue_invoice * issue_inv_r
     ret = tax_trans_issue_invoice(0, issue_inv_rec, &card_issue_inv_rec);
     if (ret != SUCCESS)
         goto card_off;
+
+    debug_msg("Issue Invoice\n");
 
     ret = fiscal_card->issue_invoice(&card_issue_inv_rec, issue_inv_res);
     if (ret < 0)
@@ -3168,6 +3172,8 @@ static int tax_sys_issue_invoice_proc(struct tax_sys_issue_invoice * issue_inv_r
     if (ret < 0)
         goto card_off;
 
+    debug_msg("Append Roll ID\n");
+
     /* update : current roll id */
     memset(&cur_roll_id_rec, 0, sizeof(cur_roll_id_rec));
     cur_roll_id_rec.date = issue_inv_rec->date;
@@ -3195,6 +3201,8 @@ static int tax_sys_issue_invoice_proc(struct tax_sys_issue_invoice * issue_inv_r
         today_id_rec.item[i].amount = issue_inv_rec->item[i].amount;
     }
 
+    debug_msg("Append Today ID\n");
+
     ret = tax_file_append_today_id(&today_id_rec);
     if (ret < 0)
         goto card_off;
@@ -3203,7 +3211,6 @@ static int tax_sys_issue_invoice_proc(struct tax_sys_issue_invoice * issue_inv_r
 
 card_off:
     fiscal_card->power_off(FISCAL_CARD);
-
     return ret;
 }
 

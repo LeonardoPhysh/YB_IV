@@ -533,7 +533,7 @@ static int ui_pinyin(char *cont)
 
                 /* somewhere blink cursor, concel it */ 
                 if (pos > 0) {
-                    set_cursor_off(4, 5 + (pos - 1) * 2);
+                    //set_cursor_off(4, 5 + (pos - 1) * 2);
                     pos = page = 0;
                 }
                 set_ime_status(ime_state);
@@ -543,7 +543,7 @@ static int ui_pinyin(char *cont)
 
             case ESC:
                 if (pos > 0) {
-                    set_cursor_off(4, 5 + (pos - 1) * 2);
+                    //set_cursor_off(4, 5 + (pos - 1) * 2);
                     pos = page = 0;
                 }
 
@@ -558,7 +558,7 @@ static int ui_pinyin(char *cont)
 
                 if (count > 0) {
                     if (pos > 0) {
-                        set_cursor_off(4, 5 + (pos - 1) * 2);
+                        //set_cursor_off(4, 5 + (pos - 1) * 2);
                         pos = page = 0;
                     }
 
@@ -585,7 +585,7 @@ static int ui_pinyin(char *cont)
             case ENTER:
                 if (count > 0) {
                     if (chn != NULL && pos > 0) {
-                        set_cursor_off(4, 5 + (pos - 1) * 2);
+                        //set_cursor_off(4, 5 + (pos - 1) * 2);
                         pos = page = 0;
                         show_str(4, 1, ime_pad[ime_state]);
 
@@ -596,13 +596,14 @@ static int ui_pinyin(char *cont)
                     return ENTER;
 
                 break;
-
+#if 0
+            // cursor function error, remove it    
             case LEFT:
                 if (chn != NULL) {
                     if (pos > 1) {
-                        set_cursor_off(4, 5 + (pos - 1) * 2);
+                        //set_cursor_off(4, 5 + (pos - 1) * 2);
                         pos --;
-                        set_cursor_on(4, 5 + (pos - 1) * 2);
+                        //set_cursor_on(4, 5 + (pos - 1) * 2);
                     } 
                 }
 
@@ -612,26 +613,26 @@ static int ui_pinyin(char *cont)
                 if (chn != NULL) {
                     if (pos < 4 && strlen(chn) / 2 > pos){
                         if (pos != 0)
-                            set_cursor_off(4, 5 + (pos - 1) * 2);
+                            //set_cursor_off(4, 5 + (pos - 1) * 2);
 
                         pos ++;  
-                        set_cursor_off(4, 5 + (pos - 1) * 2);
+                        //set_cursor_off(4, 5 + (pos - 1) * 2);
                     }
                 }
                 break;
-
+#endif 
             case UP:
                 if (chn != NULL) {
                     if (page > 0) {
                         if (pos != 0)
-                            set_cursor_off(4, 5 + (pos - 1) * 2);
+                            //set_cursor_off(4, 5 + (pos - 1) * 2);
 
                         chn -= 8;
                         get_chn_pad(chn, chn_content);
                         show_chn_pad(4, 4, chn_content);
 
                         pos = 1;
-                        set_cursor_on(4, 5 + (pos - 1) * 2);
+                        //set_cursor_on(4, 5 + (pos - 1) * 2);
                         page --;
                     }
                 }
@@ -641,15 +642,14 @@ static int ui_pinyin(char *cont)
                 if (chn != NULL) {
                     if (strlen(chn) > 8) {
                         if (pos != 0)
-                            set_cursor_off(4, 5 + (pos - 1) * 2);
+                            //set_cursor_off(4, 5 + (pos - 1) * 2);
 
                         chn += 8;
                         get_chn_pad(chn, chn_content);
                         show_chn_pad(4, 4, chn_content);
 
                         pos = 1;
-                        set_cursor_on(4, 5 + (pos - 1) * 2);
-
+                        //set_cursor_on(4, 5 + (pos - 1) * 2);
                         page ++;
                     }
                 }
@@ -665,7 +665,7 @@ static int ui_pinyin(char *cont)
                     if (islower(keycode)) {
                         if (count < 5) {
                             if (pos > 0) {
-                                set_cursor_off(4, 5 + (pos - 1) * 2);
+                                //set_cursor_off(4, 5 + (pos - 1) * 2);
                                 pos = page = 0;
                             }
 
@@ -685,7 +685,7 @@ static int ui_pinyin(char *cont)
                         if (chn != NULL) {
                             if ((keycode - '0') <= (strlen(chn) / 2)) {
                                 if (pos > 0) 
-                                    set_cursor_off(4, 5 + (pos - 1) * 2);
+                                    //set_cursor_off(4, 5 + (pos - 1) * 2);
 
                                 count = pos = page = 0;
                                 memcpy(cont, chn + (keycode - '1') * 2, 2);
@@ -701,7 +701,6 @@ static int ui_pinyin(char *cont)
     }
 
 handled:
-
     return SUCCESS;
 }
 

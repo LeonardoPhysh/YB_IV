@@ -403,8 +403,10 @@ static int get_plu_num(int row, int col, int *plu_num)
                     break;
 
                 case ENTER:
-                    ret = SUCCESS;
-                    goto handled;
+                    if (atoi(ascii_no) != 0) {
+                        ret = SUCCESS;
+                        goto handled;
+                    }
                     break;
 
                 default:
@@ -463,7 +465,6 @@ static int get_plu_count(int *count, struct plu_item * tmp_item)
                             *count = atoi(ascii_no);
                         }
                     }
-
                     break;
 
                 case BACK:
@@ -480,8 +481,10 @@ static int get_plu_count(int *count, struct plu_item * tmp_item)
                     break;
 
                 case ENTER:
-                    ret = SUCCESS;
-                    goto handled;
+                    if (atoi(ascii_no) != 0) {
+                        ret = SUCCESS;
+                        goto handled;
+                    }
                     break;
 
                 default:
@@ -570,8 +573,10 @@ static int get_paid_up(int *paid_up)
                     break;
 
                 case ENTER:
-                    ret = SUCCESS;
-                    goto handled;
+                    if (atoi(ascii_no) != 0) {
+                        ret = SUCCESS;
+                        goto handled;
+                    }
                     break;
 
                 default:
@@ -582,7 +587,6 @@ static int get_paid_up(int *paid_up)
 
 handled:
     *paid_up = atoi(ascii_no);
-
     return ret;
 }
 
@@ -649,12 +653,18 @@ static int do_get_comm_item(char * title)
     frame.item_num = 4;
     frame.items[0].pos.row = 1;
     frame.items[0].pos.col = 6 - strlen(title)/4;
+
     frame.items[1].pos.row = 2;
-    frame.items[1].pos.col = 2; //row 1 for current line mark
+    //frame.items[1].pos.col = 2; //row 1 for current line mark
+    frame.items[1].pos.col = 1;
+
     frame.items[2].pos.row = 3;
-    frame.items[2].pos.col = 2;
+    //frame.items[2].pos.col = 2;
+    frame.items[2].pos.col = 1;
+
     frame.items[3].pos.row = 4;
-    frame.items[3].pos.col = 2;
+    //frame.items[3].pos.col = 2;
+    frame.items[3].pos.col = 1;
 
     strcpy(frame.items[0].title, title);
 
@@ -773,7 +783,7 @@ static int do_view_comm_items(void)
             return SUCCESS;
         else if (ret == -EUI_ESC)
             return ret;
-        
+
         item = ret;
 
         plu_item = &g_normal_trans_items.comm_items[item].plu_item;
@@ -793,7 +803,7 @@ static int do_view_comm_items(void)
             key = get_keycode();
             if (key == ESC) 
                 return ret;
-            
+
             if (key == BACK)
                 break;
         } while (key != ENTER);
@@ -850,7 +860,7 @@ static int do_modify_comm_items(void)
         sprintf(frame.items[4].title, "%s%d", "数量：", g_normal_trans_items.comm_items[item].num);
 
         show_simple_frame(&frame);
-        
+
         if (type == BY_PLU_NUM) {
             new_plu_num = plu_item->plu_num;
             while (1) {
@@ -1244,7 +1254,7 @@ static int do_print_invoice(void)
     }
 
     memcpy(g_inv_detail.register_num, sys_app_info->taxpayer_nb, 8);
- 
+
     /* save invoice detail */
     ret = tax_file_append_invoice_detail(&g_inv_detail);
     if (ret < 0) {
@@ -1461,7 +1471,6 @@ subtotal:
     if (ret != SUCCESS) 
         return FAIL;
 
-
 input_payer:
     show_trans_input_payer();
     ret = get_chn_str(2, 1, g_inv_detail.payer_name);
@@ -1604,7 +1613,7 @@ input_name:
         display_warn("商品名称不能为空！");
         goto input_name;
     }
-    
+
     do {
         ret = get_inter_num(3, 4, (int *)&tmp_item.price);
         if (ret == -EUI_ESC) {

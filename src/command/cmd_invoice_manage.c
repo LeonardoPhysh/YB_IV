@@ -111,27 +111,23 @@ int cmd_mount_roll(void)
     ret = tax_system->is_fiscal_init();
     if (ret != POSITIVE) {
         display_warn("税控功能未启用，请先进行税控初始化!");
-
         return FAIL;
     }
 
     if (gp_crln->cur_roll_left > 0) {
         display_warn("当前发票卷未使用完, 无法装载");
-
         return SUCCESS;
     }
 
     ret = tax_file_is_empty(PROTECT_FILE);
     if (ret == POSITIVE) {
         display_warn("无已分发发票，请先分发发票！");
-
         return SUCCESS;
     }
 
     ret = tax_file_read_protect(&prot_rec);
     if (ret < 0) {
         display_warn("装载失败!");
-
         return FAIL;
     }
 
@@ -161,13 +157,11 @@ int cmd_mount_roll(void)
         ret = tax_file_clear(PROTECT_FILE);
         if (ret < 0) {
             display_warn("装载失败！");
-
             return FAIL;
         }
 
         display_warn("装载成功！");
         return SUCCESS;
-
     }
 
     display_err_msg(ret, "装载发票失败！");

@@ -78,12 +78,18 @@ int get_fis_type(void)
     frame.item_num = 4;
     frame.items[0].pos.row = 1;
     frame.items[0].pos.col = 3;
-    frame.items[1].pos.row = 2;  // row 1 for current mark
-    frame.items[1].pos.col = 2;
+    
+    frame.items[1].pos.row = 2;
+    //frame.items[1].pos.col = 2;
+    frame.items[1].pos.col = 1;
+    
     frame.items[2].pos.row = 3;
-    frame.items[2].pos.col = 2;
+    //frame.items[2].pos.col = 2;
+    frame.items[2].pos.col = 1;
+    
     frame.items[3].pos.row = 4;
-    frame.items[3].pos.col = 2;
+    //frame.items[3].pos.col = 2;
+    frame.items[3].pos.col = 1;
 
     snprintf(frame.items[0].title, MAX_TITLE_LEN, "%s", "请选择税种税率");
 
@@ -241,12 +247,18 @@ static int do_view_dpt(char *title)
     frame.item_num = 4;
     frame.items[0].pos.row = 1;
     frame.items[0].pos.col = 6 - strlen(title)/4;
-    frame.items[1].pos.row = 2; //row 1 for current line mark 
-    frame.items[1].pos.col = 2;
+    
+    frame.items[1].pos.row = 2; 
+    //frame.items[1].pos.col = 2;
+    frame.items[1].pos.col = 1;
+    
     frame.items[2].pos.row = 3;
-    frame.items[2].pos.col = 2;
+    //frame.items[2].pos.col = 2;
+    frame.items[2].pos.col =1 ;
+    
     frame.items[3].pos.row = 4;
-    frame.items[3].pos.col = 2;
+    //frame.items[3].pos.col = 2;
+    frame.items[3].pos.col = 1;
 
     strcpy(frame.items[0].title, title);
 

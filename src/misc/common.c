@@ -76,8 +76,7 @@ int end_cover_short(uchar *dist, uchar *src)
 {
     int size;
     uchar *pos;
-    uchar tmp[10];
-
+    uchar tmp[10] = {0};
     pos = src;
 
     size = sizeof(short);
@@ -96,7 +95,7 @@ int end_cover_int(uchar *dist, uchar *src)
 {
     int size;
     uchar *pos;
-    uchar tmp[10];
+    uchar tmp[10] = {0};
     pos = src;
 
     size = sizeof(int);
@@ -115,8 +114,7 @@ int end_cover_long(uchar *dist, uchar *src)
 {
     int size;
     uchar *pos;
-    uchar tmp[10];
-
+    uchar tmp[10] = {0};
     pos = src;
 
     size = sizeof(long);
@@ -135,8 +133,7 @@ int end_cover_llong(uchar *dist, uchar *src)
 {
     int size;
     uchar *pos;
-    uchar tmp[10];
-
+    uchar tmp[10] = {0};
     pos = src;
 
     size = sizeof(long long);

@@ -133,7 +133,7 @@
  */
 #define CUR_ROLL_FILE 	FIS_FILE_PATH"cur_roll.dat"
 #define CUR_ROLL_FILE_MODE 	DELETE_UNAVAIL_MODE
-#define CUR_ROLL_REC_NUM 	1
+#define CUR_ROLL_REC_NUM 	3000
 
 /* 
  * current roll left invoice number 

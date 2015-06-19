@@ -3101,6 +3101,9 @@ static int tax_sys_issue_invoice_proc(struct tax_sys_issue_invoice * issue_inv_r
 #ifdef CONFIG_DEBUG
     assert(issue_inv_rec != NULL);
     assert(issue_inv_res != NULL);
+#else
+    if (issue_inv_rec == NULL || issue_inv_res == NULL)
+        return FAIL;
 #endif 
 
     debug_msg("DOING ISSUE INVOICE.\n");
@@ -3172,7 +3175,6 @@ static int tax_sys_issue_invoice_proc(struct tax_sys_issue_invoice * issue_inv_r
     if (ret < 0)
         goto card_off;
 
-    debug_msg("Append Roll ID\n");
 
     /* update : current roll id */
     memset(&cur_roll_id_rec, 0, sizeof(cur_roll_id_rec));
@@ -3180,6 +3182,8 @@ static int tax_sys_issue_invoice_proc(struct tax_sys_issue_invoice * issue_inv_r
     cur_roll_id_rec.type = issue_inv_rec->invoice_type;
     cur_roll_id_rec.amout_total = issue_inv_rec->amt_total;
 
+    debug_msg("Append Roll ID\n");
+    
     ret = tax_file_append_cur_roll_id(&cur_roll_id_rec);
     if (ret < 0)
         goto card_off;
